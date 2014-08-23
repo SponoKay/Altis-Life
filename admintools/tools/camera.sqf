@@ -1,0 +1,1 @@
+_this exec "camera.sqs";

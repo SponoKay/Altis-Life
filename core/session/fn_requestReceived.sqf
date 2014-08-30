@@ -34,7 +34,7 @@ if(count (_this select 6) > 0) then {
 		missionNamespace setVariable [(_x select 0),(_x select 1)];
 	} foreach (_this select 6);
 };
-life_paycheck = life_paycheck * (__GETC__(life_donator) + 1);
+life_paycheck = life_paycheck * (__GETC__(life_donator) / 2 + 1);
 life_gear = _this select 8;
 [] call life_fnc_loadGear;
 

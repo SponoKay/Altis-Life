@@ -6,7 +6,7 @@ _vehicle = cursorTarget;
 if((_vehicle isKindOf "Car") || !(_vehicle isKindOf "Air") || !(_vehicle isKindOf "Ship")) then
 {
 	_owners = _vehicle getVariable "vehicle_info_owners";
-	if(isNil {_owners}) exitWith {hint localize "STR_NOTF_VehCheat"; deleteVehicle _vehicle;};
+	if(isNil {_owners}) exitWith {hint localize "STR_NOTF_VehCheat";};
 	life_action_inUse = true;
 	hint localize "STR_NOTF_Searching";
 	sleep 3;

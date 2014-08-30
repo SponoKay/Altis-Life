@@ -64,6 +64,7 @@ switch (_shop) do
 			[
 				["B_Quadbike_01_F",5000],
 				["C_Hatchback_01_F",15000],
+				["C_Hatchback_01_sport_F",125000],
 				["C_Offroad_01_F",25000],
 				["C_SUV_01_F",35000],
 				["C_Van_01_transport_F",90000]
@@ -364,7 +365,6 @@ switch (_shop) do
 			{
 				_return set[count _return,["C_Hatchback_01_sport_F",50000]];	
 				_return set[count _return,["B_MRAP_01_F",150000]];
-				_return set[count _return,["B_UGV_01_F",50000]];
 			};
 				
 				if(__GETC__(life_coplevel) > 2) then //lvl 3 - Adjudant/Adjudant-chef -

@@ -101,6 +101,7 @@ class Life_Client_Core
 		class pickupMoney {};
 		class ticketAction {};
 		class packupSpikes {};
+		class packupBarriere {};
 		class storeVehicle {};
 		class robAction {};
 		class captureHideout {};
@@ -273,6 +274,7 @@ class Life_Client_Core
 		file = "core\cop";
 		class copMarkers {};
 		class copLights {};
+		class copEnter {};
 		class vehInvSearch {};
 		class copSearch {};
 		class bountyReceive {};
@@ -342,6 +344,7 @@ class Life_Client_Core
 		class pickaxeUse {};
 		class lockpick {};
 		class spikeStrip {};
+		class barriere {};
 		class jerryRefuel {};
 		class flashbang {};
 		class boltcutter {};

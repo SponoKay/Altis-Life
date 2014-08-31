@@ -66,6 +66,15 @@ switch (true) do
 		};
 	};
 	
+	case (_item == "barriere"):
+	{
+		if(!isNull life_barriere) exitWith {hint "Vous deployez déjà une barrière"};
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			[] spawn life_fnc_barriere;
+		};
+	};
+	
 	case (_item == "fuelF"):
 	{
 		if(vehicle player != player) exitWith {hint localize "STR_ISTR_RefuelInVehicle"};

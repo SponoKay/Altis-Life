@@ -21,7 +21,7 @@ switch (_shop) do
 	case "iron": {["Vendeur de fer",["iron_r","copper_r"]]};
 	case "diamond": {["Joaillier",["diamond","diamondc"]]};
 	case "salt": {["Vendeur de sel",["salt_r"]]};
-	case "cop": {["Boutique Policier",["donuts","coffee","spikeStrip","water","rabbit","apple","redgull","fuelF","mauer"]]};
+	case "cop": {["Boutique Policier",["donuts","coffee","spikeStrip","barriere","water","rabbit","apple","redgull","fuelF","mauer"]]};
 	case "cement": {["Vendeur de ciment",["cement"]]};
 	case "blackmarket": {["Marche noir",["cement","salt_r","diamondc","iron_r","copper_r","glass","oilp","apple","peach","lockpick","water","rabbit","redgull","tbacon","pickaxe","fuelF"]]};
 	case "rebmarket": {["Marche Rebelle",["menotte","spikeStrip","water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach"]]};

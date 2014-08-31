@@ -10,8 +10,8 @@ enableSaving[false,false];
 
 life_versionInfo = "Altis Life RPG v3.1.4.5";
 [] execVM "briefing.sqf"; //Load Briefing
-//[] execVM "admintools\loop.sqf";
-[] execVM "AdminMenu.sqf";
+[] execVM "admintools\loop.sqf";
+//[] execVM "AdminMenu.sqf";
 [] execVM "Anticheat.sqf";
 [] execVM "KRON_Strings.sqf";
 0 = execVM "IgiLoad\IgiLoadInit.sqf";

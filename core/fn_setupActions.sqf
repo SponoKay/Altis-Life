@@ -6,6 +6,22 @@
 */
 switch (playerSide) do
 {
+	case west:
+	{
+		//entrer dans un vehicule meme verouillé
+		life_actions = life_actions + [player addAction["Monter en conducteur dans le véhicule verouillé",life_fnc_copEnter,"driver",200,false,false,"",'!isNull cursorTarget && ((cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")) && (locked cursorTarget) != 0 && cursorTarget distance player < 5']];
+		life_actions = life_actions + [player addAction["Monter en passager dans le véhicule verouillé",life_fnc_copEnter,"passenger",100,false,false,"",'!isNull cursorTarget && ((cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")) && (locked cursorTarget) != 0 && cursorTarget distance player < 5']]; 
+		life_actions = life_actions + [player addAction["Descendre",life_fnc_copEnter,"exit",100,false,false,"",'(vehicle player != player) && (locked(vehicle player)==2)']];
+		
+		//Place barriere
+		life_actions = life_actions + [player addAction["Placer la barrière",{if(!isNull life_barriere) then {detach life_barriere; life_barriere = ObjNull;};},"",999,false,false,"",'!isNull life_barriere']];
+		
+		//Reprendre des barriere
+		life_actions = life_actions + [player addAction["Reprendre la barrière",life_fnc_packupBarriere,"",0,false,false,"",
+		' _barriere = nearestObjects[getPos player,["RoadBarrier_F"],8] select 0; !isNil "_barriere" && !isNil {(_barriere getVariable "item")}']];
+		life_actions = life_actions + [player addAction["Reprendre la barrière",life_fnc_pickupItem,"",0,false,false,"",
+		' !isNull cursorTarget && (typeOf cursorTarget) == "Land_Suitcase_F" && ((cursorTarget getVariable "item") select 0) == "barriere" && (player distance cursorTarget) < 3 ']];
+	};
 	case civilian:
 	{
 		//Restrain Actions

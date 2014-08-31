@@ -149,6 +149,7 @@ life_inv_items =
 	"life_inv_cokep",
 	"life_inv_diamondr",
 	"life_inv_spikeStrip",
+	"life_inv_barriere",
 	"life_inv_rock",
 	"life_inv_cement",
 	"life_inv_goldbar",
@@ -235,6 +236,7 @@ sell_array =
 	["glass",400],
 	["fuelF",500],
 	["spikeStrip",1200],
+	["barriere",1200],
 	["cement",1950],
 	["goldbar",100000],
 	["menotte",800]
@@ -263,6 +265,7 @@ buy_array =
 	["fuelF",850],
 	["peach",68],
 	["spikeStrip",2500],
+	["barriere",2500],
 	["blastingcharge",35000],
 	["boltcutter",7500],
 	["defusekit",2500],

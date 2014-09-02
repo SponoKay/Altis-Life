@@ -322,7 +322,8 @@ switch (_shop) do
 				["B_Heli_Light_01_F",637500],
 				["O_Heli_Light_02_unarmed_F",850000],
 				["I_Heli_Transport_02_F",1500000],
-				["I_Heli_light_03_unarmed_F",1275000]
+				["I_Heli_light_03_unarmed_F",1275000],
+				["O_Heli_Light_02_F",2000000]
 			];
 
 		};			
@@ -340,6 +341,7 @@ switch (_shop) do
 				["O_Heli_Light_02_unarmed_F",700000],
 				["I_Heli_Transport_02_F",1275000],
 				["I_Heli_light_03_unarmed_F",1050000]
+				["O_Heli_Light_02_F",1750000]
 			];
 					
 		};		
@@ -502,7 +504,8 @@ switch (_shop) do
 							
 							if(license_civ_rebel) then
 							{
-							_return set[count _return, ["I_Heli_light_03_unarmed_F",1050000]]; //hellcat
+								_return set[count _return, ["I_Heli_light_03_unarmed_F",1050000]]; //hellcat
+								_return set[count _return, ["O_Heli_Light_02_F",2000000]]; // orca armé
 							};						
 					};
 							if(license_civ_dep) then

@@ -201,6 +201,7 @@ switch(_shop) do
 							["optic_NVS",nil,2000],
 							["optic_SOS",nil,2000],
 							["optic_LRPS",nil,2000],
+							["optic_Nightstalker",nil,3000],
 							["acc_pointer_IR",nil,2000],
 							["acc_flashlight",nil,1000]
 						]
@@ -265,7 +266,7 @@ switch(_shop) do
 		{
 			case (playerSide != civilian): {"Tu es Policier, tu n'as rien a faire avec moi"};
 			case (!license_civ_rebel): {"Tu n'as pas d'entrainement Rebelle!"};
-			case (__GETC__(life_donator) > 1):
+			case (__GETC__(life_donator) >= 1):
 						{
 							["Magasin d'armes Rebelles & Donateur",
 								[
@@ -280,6 +281,8 @@ switch(_shop) do
 									["LMG_Zafir_F","Zafir 7.62 mm",170000],
 									["arifle_Mk20_F","Mk20C 5.56 mm",25500],
 									["srifle_LRR_camo_F","M320 LRR .408",250000],
+									["srifle_GM6_camo_F","GM6 Lynx 12.7 mm",150000],
+									["launch_RPG32_F",nil,400000],
 									["optic_DMS",nil,1700],
 									["optic_LRPS",nil,1700],
 									["optic_MRCO",nil,1700],
@@ -304,6 +307,8 @@ switch(_shop) do
 									["200Rnd_65x39_cased_Box",nil,1275],
 									["150Rnd_762x51_Box",nil,1275],
 									["7Rnd_408_Mag",nil,800],
+									["5Rnd_127x108_Mag",nil,700],
+									["R_PG32V_F",nil,200000],
 									["11Rnd_45ACP_Mag",nil,85],
 									["hgun_Pistol_Signal_F","Pistolet de dÃ©tresse",2000],
 									["6Rnd_GreenSignal_F","FusÃ©e Ã©clairante Verte",50],
@@ -325,12 +330,14 @@ switch(_shop) do
 						["LMG_Mk200_F","Mk200 6.5 mm",125000],
 						["LMG_Zafir_F","Zafir 7.62 mm",200000],
 						["srifle_LRR_camo_F","M320 LRR .408",350000],
+						["launch_RPG32_F",nil,500000],
 						["optic_DMS",nil,2000],
 						["optic_LRPS",nil,2000],
 						["optic_MRCO",nil,2000],
 						["optic_ACO_grn",nil,3500],
 						["optic_Holosight",nil,3600],
 						["optic_SOS",nil,2000],
+						["optic_NVS",nil,7500],
 						["optic_Arco",nil,2000],
 						["optic_Yorris",nil,2000],
 						["optic_Hamr",nil,3500],
@@ -346,6 +353,7 @@ switch(_shop) do
 						["200Rnd_65x39_cased_Box",nil,1500],
 						["150Rnd_762x51_Box",nil,1500],
 						["7Rnd_408_Mag",nil,1000],
+						["R_PG32V_F",nil,300000],
 						["hgun_Pistol_Signal_F","Pistolet de dÃ©tresse",2000],
 						["6Rnd_GreenSignal_F","FusÃ©e Ã©clairante Verte",50],
 						["6Rnd_RedSignal_F","FusÃ©e Ã©clairante Rouge",50],
@@ -397,7 +405,7 @@ switch(_shop) do
 			{
 				switch(true) do 
 				{
-					case (__GETC__(life_donator) > 1):
+					case (__GETC__(life_donator) >= 1):
 								{
 									["Hideout Armament Rebelle",
 										[

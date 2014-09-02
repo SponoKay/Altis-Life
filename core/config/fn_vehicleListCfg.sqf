@@ -340,7 +340,7 @@ switch (_shop) do
 				["B_Heli_Light_01_F",525000],
 				["O_Heli_Light_02_unarmed_F",700000],
 				["I_Heli_Transport_02_F",1275000],
-				["I_Heli_light_03_unarmed_F",1050000]
+				["I_Heli_light_03_unarmed_F",1050000],
 				["O_Heli_Light_02_F",1750000]
 			];
 					
@@ -427,14 +427,14 @@ switch (_shop) do
 			_return set[count _return,["I_Heli_light_03_unarmed_F",250000]];
 		};
 
+		if(__GETC__(life_coplevel) > 3) then //lvl 4
+		{
+			_return set[count _return,["B_Heli_Light_01_armed_F",1000000]];
+		};
+
 		if(__GETC__(life_coplevel) > 4) then //lvl 5 - Lieutenant
 		{
 			_return set[count _return,["B_Heli_Transport_01_F",1500000]];	
-		};
-
-		if(__GETC__(life_coplevel) > 6) then //lvl 7 - Commandant
-		{
-			_return set[count _return,["B_Heli_Attack_01_F",2000000]];	
 		};					
 	};
 

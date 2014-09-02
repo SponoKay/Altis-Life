@@ -23,15 +23,15 @@ switch(_shop) do
 					["Armurerie",
 						[
 							["hgun_P07_snds_F","Stun Pistol",2000],
+							["hgun_Pistol_heavy_01_MRD_F",nil,2000],
 							["hgun_PDW2000_F","PDW2000 9 mm",6200],
 							["SMG_02_F","Sting 9 mm",6200],
-							["arifle_sdar_F","Taser Rifle",2500],
 							["hgun_Pistol_Signal_F","Pistolet de dÃ©tresse",2000],
 							["6Rnd_GreenSignal_F","FusÃ©e Ã©clairante Verte",50],
 							["6Rnd_RedSignal_F","FusÃ©e Ã©clairante Rouge",50],
 							["16Rnd_9x21_Mag",nil,50],
-							["30Rnd_9x21_Mag",nil,60],
-							["20Rnd_556x45_UW_mag","Taser Rifle Magazine",50]
+							["11Rnd_45ACP_Mag",nil,70],
+							["30Rnd_9x21_Mag",nil,60]
 						]
 					];
 				};
@@ -41,17 +41,17 @@ switch(_shop) do
 					["Armurerie",
 						[
 							["hgun_P07_snds_F","Stun Pistol",2000],
+							["hgun_Pistol_heavy_01_MRD_F",nil,2000],
 							["hgun_PDW2000_F","PDW2000 9 mm",6200],
 							["SMG_02_F","Sting 9 mm",6200],
-							["arifle_sdar_F","Taser Rifle",2500],
 							["arifle_Mk20_F","Mk20C 5.56 mm",5000],
 							["arifle_MXC_F","MXC 6.5 mm",5000],
 							["hgun_Pistol_Signal_F","Pistolet de dÃ©tresse",2000],
 							["6Rnd_GreenSignal_F","FusÃ©e Ã©clairante Verte",50],
 							["6Rnd_RedSignal_F","FusÃ©e Ã©clairante Rouge",50],
 							["16Rnd_9x21_Mag",nil,50],
+							["11Rnd_45ACP_Mag",nil,70],
 							["30Rnd_9x21_Mag",nil,60],
-							["20Rnd_556x45_UW_mag","Taser Rifle Magazine",50],
 							["30Rnd_556x45_Stanag",nil,100],
 							["30Rnd_65x39_caseless_mag",nil,100]
 						]
@@ -63,9 +63,9 @@ switch(_shop) do
 					["Armurerie",
 						[
 							["hgun_P07_snds_F","Stun Pistol",2000],
+							["hgun_Pistol_heavy_01_MRD_F",nil,2000],
 							["hgun_PDW2000_F","PDW2000 9 mm",6200],
 							["SMG_02_F","Sting 9 mm",6200],
-							["arifle_sdar_F","Taser Rifle",2500],
 							["arifle_Mk20_F","Mk20C 5.56 mm",5000],
 							["arifle_MXC_F","MXC 6.5 mm",5000],
 							["srifle_LRR_LRPS_F","M320 LRR .408",50000],
@@ -73,18 +73,20 @@ switch(_shop) do
 							["srifle_EBR_F","Mk18 ABR 7.62 mm",10000],
 							["arifle_MXM_F","MXM 6.5 mm",5000],
 							["arifle_Katiba_F","Katiba 6.5 mm",5000],
+							["launch_Titan_short_F",nil,100000],
 							["hgun_Pistol_Signal_F","Pistolet de dÃ©tresse",2000],
 							["6Rnd_GreenSignal_F","FusÃ©e Ã©clairante Verte",50],
 							["6Rnd_RedSignal_F","FusÃ©e Ã©clairante Rouge",50],
 							["16Rnd_9x21_Mag",nil,50],
+							["11Rnd_45ACP_Mag",nil,70],
 							["30Rnd_9x21_Mag",nil,60],
-							["20Rnd_556x45_UW_mag","Taser Rifle Magazine",50],
 							["30Rnd_556x45_Stanag",nil,100],
 							["20Rnd_762x51_Mag",nil,100],
 							["30Rnd_65x39_caseless_mag",nil,100],
 							["30Rnd_65x39_caseless_green",nil,100],
 							["7Rnd_408_Mag",nil,100],
-							["200Rnd_65x39_cased_Box",nil,100]
+							["200Rnd_65x39_cased_Box",nil,100],
+							["Titan_AP",nil,75000]
 						]
 					];
 				};				
@@ -94,9 +96,9 @@ switch(_shop) do
 					["Armurerie",
 						[
 							["hgun_P07_snds_F","Stun Pistol",2000],
+							["hgun_Pistol_heavy_01_MRD_F",nil,2000],
 							["hgun_PDW2000_F","PDW2000 9 mm",6200],
 							["SMG_02_F","Sting 9 mm",6200],
-							["arifle_sdar_F","Taser Rifle",2500],
 							["arifle_Mk20_F","Mk20C 5.56 mm",5000],
 							["arifle_MXC_F","MXC 6.5 mm",5000],
 							["srifle_LRR_LRPS_F","M320 LRR .408",50000],
@@ -106,12 +108,13 @@ switch(_shop) do
 							["arifle_Katiba_F","Katiba 6.5 mm",5000],
 							["srifle_GM6_SOS_F","GM6 Lynx 12.7 mm",35000],
 							["LMG_Zafir_F","Zafir 7.62 mm",10000],
+							["launch_Titan_short_F",nil,100000],
 							["hgun_Pistol_Signal_F","Pistolet de dÃ©tresse",2000],
 							["6Rnd_GreenSignal_F","FusÃ©e Ã©clairante Verte",50],
 							["6Rnd_RedSignal_F","FusÃ©e Ã©clairante Rouge",50],
 							["16Rnd_9x21_Mag",nil,50],
+							["11Rnd_45ACP_Mag",nil,70],
 							["30Rnd_9x21_Mag",nil,60],
-							["20Rnd_556x45_UW_mag","Taser Rifle Magazine",50],
 							["30Rnd_556x45_Stanag",nil,100],
 							["30Rnd_65x39_caseless_mag",nil,100],
 							["20Rnd_762x51_Mag",nil,100],
@@ -119,8 +122,8 @@ switch(_shop) do
 							["7Rnd_408_Mag",nil,100],
 							["200Rnd_65x39_cased_Box",nil,100],
 							["150Rnd_762x51_Box",nil,100],
-							["5Rnd_127x108_Mag",nil,100]
-
+							["5Rnd_127x108_Mag",nil,100],
+							["Titan_AP",nil,75000]
 						]
 					];
 				};				
@@ -308,7 +311,7 @@ switch(_shop) do
 									["150Rnd_762x51_Box",nil,1275],
 									["7Rnd_408_Mag",nil,800],
 									["5Rnd_127x108_Mag",nil,700],
-									["R_PG32V_F",nil,200000],
+									["RPG32_F",nil,200000],
 									["11Rnd_45ACP_Mag",nil,85],
 									["hgun_Pistol_Signal_F","Pistolet de dÃ©tresse",2000],
 									["6Rnd_GreenSignal_F","FusÃ©e Ã©clairante Verte",50],
@@ -353,7 +356,7 @@ switch(_shop) do
 						["200Rnd_65x39_cased_Box",nil,1500],
 						["150Rnd_762x51_Box",nil,1500],
 						["7Rnd_408_Mag",nil,1000],
-						["R_PG32V_F",nil,300000],
+						["RPG32_F",nil,300000],
 						["hgun_Pistol_Signal_F","Pistolet de dÃ©tresse",2000],
 						["6Rnd_GreenSignal_F","FusÃ©e Ã©clairante Verte",50],
 						["6Rnd_RedSignal_F","FusÃ©e Ã©clairante Rouge",50],

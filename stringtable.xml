@@ -2045,6 +2045,11 @@
 			<English>You can't gather from inside a car!</English>
 			<French>Vous ne pouvez pas récolter dans une voiture!</French>
 		</Key>
+		<Key ID="STR_NOTF_NoLootingPerson">
+			<Original>You are not allowed to loot dead bodies</Original>
+			<English>You are not allowed to loot dead bodies</English>
+			<French>Vous n'êtes pas autorisé à piller les morts</French>
+		</Key>
 	</Package>
 	<Package name="Jail_Strings">
 		<Key ID="STR_Jail_Warn">

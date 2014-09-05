@@ -8,7 +8,7 @@ StartProgress = false;
 if(!isDedicated) then { X_Client = true;};
 enableSaving[false,false];
 
-life_versionInfo = "Altis Life RPG v3.1.4.5";
+life_versionInfo = "Altis Life RPG v3.1.4.7";
 [] execVM "briefing.sqf"; //Load Briefing
 [] execVM "admintools\loop.sqf";
 //[] execVM "AdminMenu.sqf";
@@ -26,3 +26,5 @@ life_versionInfo = "Altis Life RPG v3.1.4.5";
 call compileFinal preprocessFileLineNumbers "FAR_revive\FAR_revive_init.sqf";
 
 StartProgress = true;
+
+"BIS_fnc_MP_packet" addPublicVariableEventHandler {_this call life_fnc_MPexec};

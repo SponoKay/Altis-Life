@@ -72,10 +72,12 @@ if(_backpack != "") then {_handle = [_backpack,true,false,false,false] spawn lif
 {player addItemToBackpack _x;} foreach (_bItems);
 {(backpackContainer player) addItemCargoGlobal [_x,1];} foreach (_bMags);
 life_maxWeight = 100;
-life_maxWeightT = 100;
 {
     _item = [_x,1] call life_fnc_varHandle;
     [true,_item,1] call life_fnc_handleInv;
 } foreach (_yItems);
 life_maxWeight = 24;
-life_maxWeightT = 24;
+
+if(playerSide == independent && {uniform player == "U_Rangemaster"}) then {
+	[[player,0,"textures\medic_uniform.jpg"],"life_fnc_setTexture",true,false] spawn life_fnc_MP;
+};

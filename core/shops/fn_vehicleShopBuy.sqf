@@ -91,6 +91,6 @@ if(_mode) then {
 	[[(getPlayerUID player),playerSide,_vehicle,_colorIndex],"TON_fnc_vehicleCreate",false,false] spawn life_fnc_MP;
 };
 
-[] call SOCK_fnc_updateRequest; //Sync silently because it's obviously silently..
+[0] call SOCK_fnc_updatePartial;
 closeDialog 0; //Exit the menu.
 true;

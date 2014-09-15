@@ -5465,7 +5465,7 @@ class Mission
 			vehicle="Land_CargoBox_V1_F";
 			skill=0.60000002;
 			text="fed_bank";
-			init="this allowDamage false; this enableSimulation false; this addAction[""Crack Safe"",life_fnc_robFederal,"""",99,false,false,"""",' playerSide == civilian && !(_target getVariable [""fed_rob_ip"",false]) && !(_target getVariable [""fed_locked"",false]) && (currentWeapon player) != """"'];";
+			init="this allowDamage false; this enableSimulation false; this addAction[""Ouvrir le coffre"",life_fnc_safeOpen,"""",0,false,false,"""",' playerSide == civilian && {_target getVariable[""safe_open"",false]} '];  this addAction[""Fermer le coffre"",life_fnc_safeFix,"""",0,false,false,"""",' playerSide == west && {_target getVariable [""safe_open"",false]} ' ];";
 		};
 		class Item110
 		{

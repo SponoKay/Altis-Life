@@ -29,11 +29,11 @@ switch (_side) do
 	{
 		if(license_civ_rebel) then {
 			_return = [
+				["reb_spawn_5","QG Rebelle Sofia","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["reb_spawn_1","Camp Katalaki","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["reb_spawn_2","Camp Frini","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["reb_spawn_3","Camp Iraklia","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["reb_spawn_4","Camp Sfaka","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["reb_spawn_5","Camp Sofia","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
+				["reb_spawn_4","Camp Sfaka","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
 			];
 		}
 		else {

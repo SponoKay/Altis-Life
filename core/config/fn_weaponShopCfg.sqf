@@ -292,6 +292,7 @@ switch(_shop) do
 									["optic_ACO_grn",nil,2975],
 									["optic_Holosight",nil,3060],
 									["optic_SOS",nil,1700],
+									["optic_NVS",nil,7500],
 									["optic_Arco",nil,1700],
 									["optic_Yorris",nil,1700],
 									["optic_Aco_smg",nil,2000],

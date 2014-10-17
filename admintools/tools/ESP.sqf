@@ -43,7 +43,7 @@ while {marker_mapesp} do
         };
     };    
     //bit of sleep
-    sleep 1;
+    sleep 0.02;
 };
 
 k = 0;

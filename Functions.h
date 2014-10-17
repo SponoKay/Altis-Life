@@ -192,6 +192,7 @@ class Life_Client_Core
 		class keyHandler {};
 		class dropItems {};
 		class handleDamage {};
+		class handleFlashbang {};
 		class numberText {};
 		class handleItem {};
 		class accType {};

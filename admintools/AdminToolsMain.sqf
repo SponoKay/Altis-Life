@@ -3,7 +3,7 @@ _pathtovehicles = "admintools\vehicles\";
 _EXECscript1 = 'player execVM "'+_pathtotools+'%1"';
 _EXECscript2 = 'player execVM "'+_pathtovehicles+'%1"';
 //customise these menus to fit your server
-if ((getPlayerUID player) in ["76561198032371812"]) then { //all admins
+if ((getPlayerUID player) in ["76561198032371812","76561198141737451"]) then { //all admins
 	/*if ((getPlayerUID player) in ["",""]) then { //mods
         adminmenu =
         [

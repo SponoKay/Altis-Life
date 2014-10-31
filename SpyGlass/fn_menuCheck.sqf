@@ -83,7 +83,7 @@
 	};
 };
 
-[] spawn {
+/*[] spawn {
 	while {true} do {
 		waitUntil {!isNull (uiNamespace getVariable "RscDisplayArsenal")};
 		closeDialog 0;
@@ -92,7 +92,7 @@
 		sleep 0.5;
 		["SpyGlass",false,false] call compile PreProcessFileLineNumbers "\a3\functions_f\Misc\fn_endMission.sqf";
 	};
-};
+};*/
 
 //Gladtwoown's Script Executor
 [] spawn {

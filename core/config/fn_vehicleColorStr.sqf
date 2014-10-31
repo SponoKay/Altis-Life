@@ -48,7 +48,7 @@ switch (_vehicle) do
 		switch (_index) do
 		{
 			case 0: {_color = "Classique";};
-			case 1: {_color = "Camo Vert";};
+			case 1: {_color = "Vert";};
 		};
 	};
 	case "B_G_Offroad_01_armed_F" :
@@ -72,7 +72,7 @@ switch (_vehicle) do
 			case 5: {_color = "Blanc"};
 			case 6: {_color = "Gris"};
 			case 7: {_color = "Noir"};
-			case 8: {_color = "La Coccinelle"};
+			case 8: {_color = "Coccinelle"};
 		};
 	};
 	
@@ -86,10 +86,11 @@ switch (_vehicle) do
 			case 3: {_color = "Noir et Blanc"};
 			case 4: {_color = "Tan"};
 			case 5: {_color = "Vert"};
-			case 6: {_color = "La Coccinelle"};
-			case 7: {_color = "Police"};
+			case 6: {_color = "Coccinelle"};
+			case 7: {_color = "Gendarmerie"};
 			case 8: {_color = "Vert Tribal"};
 			case 9: {_color = "Orange Sport"};
+			case 10: {_color = "Police"};
 		};
 	};
 	
@@ -174,6 +175,14 @@ switch (_vehicle) do
 		};
 	};
 	
+	case "B_Heli_Light_01_armed_F" : 
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Police";};
+		};
+	};
+	
 	case "O_Heli_Light_02_unarmed_F":
 	{
 		switch (_index) do
@@ -190,10 +199,9 @@ switch (_vehicle) do
 	{
 		switch (_index) do
 		{
-			case 0: {_color = "Police"};
-			case 1: {_color = "Classic"};
+			case 0: {_color = "GIGN"};
+			case 1: {_color = "Classique"};
 			case 2: {_color = "Noir"};
-			case 3: {_color = "Noir Police"};
 		};
 	};
 	
@@ -271,9 +279,10 @@ switch (_vehicle) do
 		switch (_index) do
 		{
 		
-			case 0: {_color = "Rebelle"};
+			case 0: {_color = "Desert"};
 			case 1: {_color = "Police"};
 			case 2: {_color = "Noir Police"};
+			case 3: {_color = "Gris"};
 		};
 	};
 };

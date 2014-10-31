@@ -221,6 +221,8 @@ class Life_Client_Core
 		class saveGear {};
 		class loadGear {};
 		class stripDownPlayer {};
+		class lockCarSound {};
+		class unlockCarSound {};
 	};
 	
 	class Network

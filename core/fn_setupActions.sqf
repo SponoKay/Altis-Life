@@ -52,7 +52,7 @@ switch (playerSide) do
 		&& !(cursorTarget getVariable["robbed",FALSE])']];
 		
 		//Saisir la carte
-		life_actions = life_actions + [player addAction["<t color='#00ffff'>Saisir Carte</t>",life_fnc_takemaplucel,cursorTarget,9999999,false,false,"",'
+		life_actions = life_actions + [player addAction["<t color='#00FFFF'>Saisir Carte</t>",life_fnc_takemaplucel,cursorTarget,9999999,false,false,"",'
 		!isNull cursorTarget 
 		&& cursorTarget isKindOf "Man"
 		&& (isPlayer cursorTarget)
@@ -75,7 +75,7 @@ switch (playerSide) do
 
 		//Crochetage
 		life_actions = life_actions + [player addAction["<t color='#FF0000'>Crochetage</t>",life_fnc_lockpick,cursorTarget,9999999,false,false,"",' !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && player distance cursorTarget < 3.5 
-		&& !(cursorTarget getVariable "CopRestrain") && (cursorTarget getVariable "restrained") && !(cursorTarget getVariable "Escorting") && speed cursorTarget < 1 && life_inv_lockpick > 0']];
+		&& !(cursorTarget getVariable "CopRestrain") && (cursorTarget getVariable "restrained") && !(cursorTarget getVariable "Escorting") && life_inv_lockpick > 0']];
 		
 		//Drop fishing net
 		life_actions = [player addAction["<t color='#AAF200'>Jeter du filet pour pecher</t>",life_fnc_dropFishingNet,"",0,false,false,"",'

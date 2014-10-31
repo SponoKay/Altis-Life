@@ -33,10 +33,11 @@ switch (_vehicle) do
 			[_path + "hatchback_01_ext_sport04_co.paa","civ"],
 			[_path + "hatchback_01_ext_sport05_co.paa","civ"],
 			[_path + "hatchback_01_ext_sport06_co.paa","civ"],
-			["texture\Hayon_Ocho.jpg","civ"],
-			["texture\Hayon-sport_police.jpg","cop"],
-			["texture\hatchback_green_tribal.jpg","civ"],
-			["texture\hatchback_orange_stripes.jpg","civ"]
+			["textures\vehicules\civil\C_Hatchback_01_F Coccinelle.jpg","civ"],
+			["textures\vehicules\police\C_Hatchback_01_sport_F Gendarmerie.jpg","cop"],
+			["textures\vehicules\civil\C_Hatchback_01_sport_F Vert Tribal.jpg","civ"],
+			["textures\vehicules\civil\C_Hatchback_01_sport_F Orange Sport.jpg","civ"],
+			["textures\vehicules\police\C_Hatchback_01_sport_F Police.jpg","cop"]
 		];
 	};
 		
@@ -51,9 +52,9 @@ switch (_vehicle) do
 			["\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE04_CO.paa","civ"],
 			["\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE05_CO.paa","civ"],
 			["#(ai,64,64,1)Fresnel(0.3,3)","fed"],
-			["texture\Pickup_Police.jpg","cop"],
-			["texture\Pickup_taxi.jpg","civ"],
-			["texture\Depanneuse.jpg","civ"]
+			["textures\vehicules\police\C_Offroad_01_F Police.paa","cop"],
+			["textures\vehicules\civil\C_Offroad_01_F Taxi.jpg","civ"],
+			["textures\vehicules\civil\C_Offroad_01_F Depanneuse.jpg","civ"]
 		];
 	};
 		
@@ -62,7 +63,7 @@ switch (_vehicle) do
 		_ret = 
 		[
 			["\A3\soft_f_gamma\Offroad_01\Data\offroad_01_ext_ig01_co.paa","civ"], 
-			["texture\Pickup_Police.jpg","cop"] 
+			["textures\vehicules\police\C_Offroad_01_F Police.paa","cop"]
 		];
 	};
 		
@@ -70,7 +71,7 @@ switch (_vehicle) do
 	{
 		_ret = 
 		[
-			["texture\Strider_police.jpg","cop"]
+			["textures\vehicules\police\I_MRAP_03_F Police.jpg","cop"]
 		];
 	};
 		case "O_MRAP_02_F":
@@ -78,7 +79,7 @@ switch (_vehicle) do
         _ret = 
         [	
 			["\A3\soft_f\MRAP_02\Data\mrap_02_ext_01_co.paa","reb","\A3\soft_f\MRAP_02\Data\mrap_02_ext_02_co.paa"], 
-			["texture\tex0ifrit.jpg","reb","texture\tex1ifrit.jpg"]
+			["textures\vehicules\rebelle\O_MRAP_02_F Vert.jpg","reb","textures\vehicules\rebelle\O_MRAP_02_F Vert 2.jpg"]
         ];
     };
 	
@@ -94,7 +95,7 @@ switch (_vehicle) do
 			["\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base07_co.paa","civ"],
 			["\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base08_co.paa","civ"],
 			["\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base09_co.paa","civ"],
-			["texture\Hayon_Ocho.jpg","civ"]
+			["textures\vehicules\civil\C_Hatchback_01_F Coccinelle.jpg","civ"]
 		];
 	};
 	
@@ -106,10 +107,10 @@ switch (_vehicle) do
 			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_02_co.paa","cop"],
 			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_03_co.paa","civ"],
 			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa","civ"],
-			["texture\SUV_police.jpg","cop"],
-			["texture\SUV_Taxi.jpg","civ"],
-			["texture\SUV_rebelle.jpg","reb"],
-			["texture\SUV_secours.jpg","reb"]
+			["textures\vehicules\police\C_SUV_01_F Police.jpg","cop"],
+			["textures\vehicules\civil\C_SUV_01_F Taxi.jpg","civ"],
+			["textures\vehicules\rebelle\C_SUV_01_F Rebelle.jpg","reb"],
+			["textures\vehicules\civil\C_SUV_01_F Secouriste.jpg","civ"]
 		];
 	};
 	
@@ -144,7 +145,7 @@ switch (_vehicle) do
 			["\A3\Soft_F_beta\Quadbike_01\Data\quadbike_01_indp_co.paa","civ"],
 			["\a3\soft_f_gamma\Quadbike_01\data\quadbike_01_indp_hunter_co.paa","civ"],
 			["\a3\soft_f_gamma\Quadbike_01\data\quadbike_01_indp_hunter_co.paa","reb"],
-			["texture\Quad_Police.jpg","cop"]
+			["textures\vehicules\police\B_Quadbike_01_F Gendarmerie.jpg","cop"]
 		];
 	};
 	
@@ -152,7 +153,7 @@ switch (_vehicle) do
 	{
 		_ret = 
 		[
-			["texture\heli_police_light.jpg","cop"],
+			["textures\vehicules\police\B_Heli_Light_01_F Police.jpg","cop"],
 			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_ion_co.paa","fed"],
 			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_blue_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_co.paa","civ"],
@@ -166,7 +167,16 @@ switch (_vehicle) do
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_vrana_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_wave_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_digital_co.paa","reb"],
-			["texture\hummingbird_secours.jpg","civ"]
+			["textures\vehicules\civil\B_Heli_Light_01_F Secouriste.jpg","civ"]
+			
+		];
+	};
+	
+	case "B_Heli_Light_01_armed_F":
+	{
+		_ret = 
+		[
+			["textures\vehicules\police\B_Heli_Light_01_F Police.jpg","cop"]
 			
 		];
 	};
@@ -179,7 +189,7 @@ switch (_vehicle) do
 			["\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_civilian_co.paa","civ"],
 			["\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_indp_co.paa","donate"],
 			["\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_opfor_co.paa","reb"],
-			["texture\Orca_secours.jpg","civ"]
+			["textures\vehicules\civil\O_Heli_Light_02_unarmed_F Secouriste.jpg","civ"]
 		];
 	};
 	
@@ -187,10 +197,9 @@ switch (_vehicle) do
 	{
 		_ret = 
 		[
-			["texture\Hunter_police.jpg","cop","texture\Hunter_cape_police.jpg"],
+			["textures\vehicules\police\B_MRAP_01_F GIGN.jpg","cop","textures\vehicules\police\B_MRAP_01_F GIGN Noir 2.jpg"],
 			["\A3\Soft_F\MRAP_01\Data\mrap_01_base_co.paa","cop"],
-			["#(argb,8,8,3)color(0.05,0.05,0.05,1)","fed"],
-			["texture\mrap_01_adds_co_cop02b.jpg","cop","texture\mrap_01_adds_co_cop02.jpg"]
+			["textures\vehicules\police\B_MRAP_01_F Noir.jpg","cop","textures\vehicules\police\B_MRAP_01_F GIGN Noir 2.jpg"]
 		];
 	};
 	
@@ -216,7 +225,7 @@ switch (_vehicle) do
 	{
 		_ret = 
 		[
-			["texture\Pegasus\truck_Pegasus.jpg","civ","texture\Pegasus\truck_Pegasus2.jpg"]
+			["textures\vehicules\civil\I_Truck_02_box_F Pegasus.jpg","cop","textures\vehicules\civil\I_Truck_02_box_F Pegasus 2.jpg"]
 		];
 	};	
 	
@@ -242,9 +251,10 @@ switch (_vehicle) do
 		_ret = 
 		[
 
-			["texture\Hellcat_rebelle_desert.jpg","civ"],
-			["texture\heli_light_03_base_co_cop.jpg","cop"],
-			["texture\heli_light_03_base_co_cop2.jpg","cop"]
+			["textures\vehicules\rebelle\I_Heli_light_03_unarmed_F Desert.jpg","cop"],
+			["textures\vehicules\police\I_Heli_light_03_unarmed_F Police.jpg","cop"],
+			["textures\vehicules\police\I_Heli_light_03_unarmed_F Noir Police.jpg","cop"],
+			["textures\vehicules\police\I_Heli_light_03_unarmed_F Gris.jpg","cop"]
 		];
 	};
 };

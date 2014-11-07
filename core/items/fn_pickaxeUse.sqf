@@ -17,11 +17,13 @@ switch (true) do
 	case (player distance (getMarkerPos "oil_1") < 40) : {_mine = "oilu"; _val = 1;};
 	case (player distance (getMarkerPos "oil_2") < 40) : {_mine = "oilu"; _val = 1;};
 	case (player distance (getMarkerPos "rock_1") < 50): {_mine = "rock"; _val = 2;};
+	case (player distance (getMarkerPos "meth_1") < 50): {_mine = "phosphore"; _val = 2;};
 	default {_mine = "";};
 };
 //Mine check
-if(_mine == "") exitWith {hint localize "STR_ISTR_Pick_NotNear"};
-if(vehicle player != player) exitWith {hint localize "STR_ISTR_Pick_MineVeh";};
+if(_mine == "") exitWith {/*hint localize "STR_ISTR_Pick_NotNear"*/};
+if(vehicle player != player) exitWith {/*hint localize "STR_ISTR_Pick_MineVeh";*/};
+if(life_inv_pickaxe < 1) exitWith {hint "Vous devez avoir une pioche pour miner!";};
 
 _diff = [_mine,_val,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
 if(_diff == 0) exitWith {hint localize "STR_NOTF_InvFull"};

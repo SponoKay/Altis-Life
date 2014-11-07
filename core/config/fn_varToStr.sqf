@@ -63,6 +63,9 @@ switch (_var) do
 	case "life_inv_defusekit": {(localize "STR_Item_DefuseKit")};
 	case "life_inv_storagesmall": {(localize "STR_Item_StorageBS")};
 	case "life_inv_storagebig": {(localize "STR_Item_StorageBL")};
+	case "life_inv_phosphore": {"Phosphore"};
+	case "life_inv_soude": {"Soude"};
+	case "life_inv_meth": {"Crystal de Meth"};
 	
 	//License Block
 	case "license_civ_driver": {(localize "STR_License_Driver")};
@@ -87,4 +90,6 @@ switch (_var) do
 	case "license_civ_cement": {(localize "STR_License_Cement")};
 	case "license_med_air": {(localize "STR_License_Pilot")};
 	case "license_civ_home": {(localize "STR_License_Home")};
+	case "license_civ_medecin": {"Doctorat de Médecine"};
+	case "license_civ_meth": {"License de Méthamphétamine"};
 };

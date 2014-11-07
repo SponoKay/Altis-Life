@@ -41424,7 +41424,7 @@ class Mission
 		{
 			position[]={4187.0205,36.297176,13106.365};
 			name="apple_1";
-			text="Champ de Pomme";
+			text="Champ de Pommes";
 			type="loc_Tree";
 			colorName="Color3_FD_F";
 		};
@@ -41432,7 +41432,7 @@ class Mission
 		{
 			position[]={25975.111,15.837334,20894.24};
 			name="apple_2";
-			text="Champ de Pomme";
+			text="Champ de Pommes";
 			type="loc_Tree";
 			colorName="Color3_FD_F";
 		};
@@ -41440,7 +41440,7 @@ class Mission
 		{
 			position[]={4345.1636,33.150127,13982.917};
 			name="peaches_2";
-			text="Champ de Peches";
+			text="Champ de Pêches";
 			type="loc_Tree";
 			colorName="Color3_FD_F";
 		};
@@ -41448,7 +41448,7 @@ class Mission
 		{
 			position[]={12561.745,29.53705,14571.123};
 			name="peaches_1";
-			text="Champ de Peches";
+			text="Champ de Pêches";
 			type="loc_Tree";
 			colorName="Color3_FD_F";
 		};
@@ -41464,7 +41464,7 @@ class Mission
 		{
 			position[]={12389.717,2.2060022,14013.633};
 			name="apple_3";
-			text="Champ de Pomme";
+			text="Champ de Pommes";
 			type="loc_Tree";
 			colorName="Color3_FD_F";
 		};
@@ -41472,7 +41472,7 @@ class Mission
 		{
 			position[]={14118.641,26.805069,19128.307};
 			name="apple_4";
-			text="Apple Field";
+			text="Champ de Pommes";
 			type="loc_Tree";
 			colorName="Color3_FD_F";
 		};
@@ -41480,7 +41480,7 @@ class Mission
 		{
 			position[]={14397.381,28.75882,18627.928};
 			name="peaches_3";
-			text="Champ de Peches";
+			text="Champ de Pêches";
 			type="loc_Tree";
 			colorName="Color3_FD_F";
 		};
@@ -42299,14 +42299,14 @@ class Mission
 		{
 			position[]={2107.7202,0,12551.64};
 			name="turtle_1_name";
-			text="Peche a la Tortue";
+			text="Pêche a la Tortue";
 			type="mil_dot";
 		};
 		class Item149
 		{
 			position[]={3247.7009,0,11265.659};
 			name="turtle_2";
-			text="Peche a la tortue";
+			text="Pêche a la tortue";
 			markerType="ELLIPSE";
 			type="Empty";
 			colorName="ColorRed";
@@ -42317,7 +42317,7 @@ class Mission
 		{
 			position[]={3233.1101,0,11265.288};
 			name="turtle_1_name_1";
-			text="Peche a la tortue";
+			text="Pêche a la tortue";
 			type="mil_dot";
 		};
 		class Item151
@@ -42334,7 +42334,7 @@ class Mission
 		{
 			position[]={2598.4609,0,13741.712};
 			name="turtle_1_name_2";
-			text="Peche a la tortue";
+			text="Pêche a la tortue";
 			type="mil_dot";
 		};
 		class Item153
@@ -42913,7 +42913,7 @@ class Mission
 		{
 			position[]={13370.208,0,14011.628};
 			name="turtle_1_name_3";
-			text="Peche a la Tortue";
+			text="Pêche a la Tortue";
 			type="mil_dot";
 		};
 		class Item224
@@ -43516,14 +43516,14 @@ class Mission
 		{
 			position[]={2107.7202,0,12551.64};
 			name="turtle_1_name_4";
-			text="Peche a la Tortue";
+			text="Pêche a la Tortue";
 			type="mil_dot";
 		};
 		class Item299
 		{
 			position[]={3247.7009,0,11265.659};
 			name="turtle_2_1";
-			text="Peche a la tortue";
+			text="Pêche a la tortue";
 			markerType="ELLIPSE";
 			type="Empty";
 			colorName="ColorRed";
@@ -43534,7 +43534,7 @@ class Mission
 		{
 			position[]={3233.1101,0,11265.288};
 			name="turtle_1_name_1_1";
-			text="Peche a la tortue";
+			text="Pêche a la tortue";
 			type="mil_dot";
 		};
 		class Item301
@@ -43551,7 +43551,7 @@ class Mission
 		{
 			position[]={2598.4609,0,13741.712};
 			name="turtle_1_name_2_1";
-			text="Peche a la tortue";
+			text="Pêche a la tortue";
 			type="mil_dot";
 		};
 		class Item303

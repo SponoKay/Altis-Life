@@ -20,6 +20,7 @@ _DetectedMenus = [3030];
 /* End Configuration */
 
 if(!_Enabled) exitWith {};
+if (getPlayerUID player in _Admins) exitWith {};
 
 _toCompilableString = {
 	_code = _this select 0;
@@ -73,12 +74,7 @@ if(isDedicated) then {
 	waitUntil{alive player};
 	Receive_Notify = compileFinal "
 		hint format['%1 was kicked for %2. Notify an admin!',_this select 0,_this select 2];
-	";
-
-	if(getplayeruid player in _Admins) exitWith {
-		hint "WELCOME ADMIN";
-		[[format["The Admin %1 has Joined",name player]],"Notify_Load",false,false] call AH_fnc_MP; 
-	};		
+	";	
 
 	Kick = compileFinal "
 		endMission 'FAIL';

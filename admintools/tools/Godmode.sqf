@@ -9,7 +9,7 @@ if (demiGOD == 0) then
     cutText ["Godmode activated(cheateur bou !). (No Recoil, No Grass, No reload)", "PLAIN"];
 	player addEventHandler ["handleDamage", {false}];
 	player allowDamage false;
-	player setUnitRecoilCoefficient 0;
+	//player setUnitRecoilCoefficient 0;
 	player addEventHandler ["Fired", { (_this select 0) setVehicleAmmo 1 }];
 }
 
@@ -20,5 +20,5 @@ else
 	player allowDamage true;
 	player removeAllEventHandlers "handleDamage";
 	player removeAllEventHandlers "Fired";
-	player setUnitRecoilCoefficient 1;
+	//player setUnitRecoilCoefficient 1;
 };

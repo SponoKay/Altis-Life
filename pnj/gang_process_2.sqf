@@ -11,4 +11,5 @@ _this addAction["<t color='#AAF200'>Traitement de la coca</t>",life_fnc_processA
 life_inv_coke > 0 && !life_is_processing && !isNil {_b getVariable "gangOwner"} && {(_b getVariable "gangOwner") == (group player)} && playerSide == civilian ']; 
 _this addAction["<t color='#AAF200'>Traitement du pavot</t>",life_fnc_processAction,"heroin",0,false,false,"",' _b = nearestBuilding (getPosATL player);
 life_inv_heroinu > 0 && !life_is_processing && !isNil {_b getVariable "gangOwner"} && {(_b getVariable "gangOwner") == (group player)} && playerSide == civilian ']; 
-_this addAction["<t color='#FF9900'>Préparation Méthamphétamine</t>",life_fnc_processAction,"meth",0,false,false,"",' life_inv_phos > 0 && life_inv_soude > 0 && !life_is_processing'];
+_this addAction["<t color='#FF9900'>Préparation Méthamphétamine</t>",life_fnc_processAction,"meth",0,false,false,"",' _b = nearestBuilding (getPosATL player);
+life_inv_phosphore > 0 && life_inv_soude > 0 && !life_is_processing && !isNil {_b getVariable "gangOwner"} && {(_b getVariable "gangOwner") == (group player)} && playerSide == civilian ']; 

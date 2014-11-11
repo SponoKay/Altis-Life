@@ -24,6 +24,7 @@ _itemInfo = switch (_type) do
 	case "cocaine": {["cocaine","cocainep",1500,(localize "STR_Process_Cocaine")];};
 	case "marijuana": {["cannabis","marijuana",500,(localize "STR_Process_Marijuana")];};
 	case "cement": {["rock","cement",350,(localize "STR_Process_Cement")];};
+	case "meth": {["phosphore","meth",3000,"Préparation Méthamphétamine","soude"]};
 	default {[];};
 };
 
@@ -35,6 +36,12 @@ _oldItem = _itemInfo select 0;
 _newItem = _itemInfo select 1;
 _cost = _itemInfo select 2;
 _upp = _itemInfo select 3;
+
+if(count _itemInfo == 5) then {
+	_oldItem2 = _itemInfo select 4;
+	_oldVal2 = missionNamespace getVariable ([_oldItem2,0] call life_fnc_varHandle);
+	if(_oldVal != _oldVal2) exitWith {hint "Vous devez respecter les proportions des deux réactifs!"};
+};
 
 if(_vendor in [mari_processor,coke_processor,heroin_processor]) then {
 	_hasLicense = true;
@@ -75,6 +82,9 @@ if(_hasLicense) then
 	
 	if(player distance _vendor > 10) exitWith {hint localize "STR_Process_Stay"; 5 cutText ["","PLAIN"]; life_is_processing = false;};
 	if(!([false,_oldItem,_oldVal] call life_fnc_handleInv)) exitWith {5 cutText ["","PLAIN"]; life_is_processing = false;};
+	if(count _itemInfo == 5) then {
+		if(!([false,_oldItem2,_oldVal2] call life_fnc_handleInv)) exitWith {5 cutText ["","PLAIN"]; life_is_processing = false;};
+	};
 	if(!([true,_newItem,_oldVal] call life_fnc_handleInv)) exitWith {5 cutText ["","PLAIN"]; [true,_oldItem,_oldVal] call life_fnc_handleInv; life_is_processing = false;};
 	5 cutText ["","PLAIN"];
 	titleText[format[localize "STR_Process_Processed",_oldVal,_itemName],"PLAIN"];
@@ -97,6 +107,9 @@ if(_hasLicense) then
 	if(player distance _vendor > 10) exitWith {hint localize "STR_Process_Stay"; 5 cutText ["","PLAIN"]; life_is_processing = false;};
 	if(life_cash < _cost) exitWith {hint format[localize "STR_Process_License",[_cost] call life_fnc_numberText]; 5 cutText ["","PLAIN"]; life_is_processing = false;};
 	if(!([false,_oldItem,_oldVal] call life_fnc_handleInv)) exitWith {5 cutText ["","PLAIN"]; life_is_processing = false;};
+	if(count _itemInfo == 5) then {
+		if(!([false,_oldItem2,_oldVal2] call life_fnc_handleInv)) exitWith {5 cutText ["","PLAIN"]; life_is_processing = false;};
+	};
 	if(!([true,_newItem,_oldVal] call life_fnc_handleInv)) exitWith {5 cutText ["","PLAIN"]; [true,_oldItem,_oldVal] call life_fnc_handleInv; life_is_processing = false;};
 	5 cutText ["","PLAIN"];
 	titleText[format[localize "STR_Process_Processed2",_oldVal,_itemName,[_cost] call life_fnc_numberText],"PLAIN"];

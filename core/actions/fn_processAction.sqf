@@ -37,12 +37,6 @@ _newItem = _itemInfo select 1;
 _cost = _itemInfo select 2;
 _upp = _itemInfo select 3;
 
-if(count _itemInfo == 5) then {
-	_oldItem2 = _itemInfo select 4;
-	_oldVal2 = missionNamespace getVariable ([_oldItem2,0] call life_fnc_varHandle);
-	if(_oldVal != _oldVal2) exitWith {hint "Vous devez respecter les proportions des deux réactifs!"};
-};
-
 if(_vendor in [mari_processor,coke_processor,heroin_processor]) then {
 	_hasLicense = true;
 } else {
@@ -51,6 +45,12 @@ if(_vendor in [mari_processor,coke_processor,heroin_processor]) then {
 
 _itemName = [([_newItem,0] call life_fnc_varHandle)] call life_fnc_varToStr;
 _oldVal = missionNamespace getVariable ([_oldItem,0] call life_fnc_varHandle);
+
+if(count _itemInfo == 5) then {
+	_oldItem2 = _itemInfo select 4;
+	_oldVal2 = missionNamespace getVariable ([_oldItem2,0] call life_fnc_varHandle);
+	if(_oldVal != _oldVal2) exitWith {hint "Vous devez respecter les proportions des deux réactifs!"};
+};
 
 _cost = _cost * _oldVal;
 //Some more checks

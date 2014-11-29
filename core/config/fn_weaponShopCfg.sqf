@@ -739,7 +739,7 @@ switch(_shop) do
 		{
 			case (__GETC__(life_donator) == 0):
 			{
-				["Altis General Store",
+				["Magasin général",
 					[
 					["Binocular",nil,150],
 					["ItemMap",nil,50],
@@ -758,7 +758,7 @@ switch(_shop) do
 
 			case (__GETC__(life_donator) == 1):
 			{
-				["Altis General Store",
+				["Magasin général",
 					[
 					["Binocular",nil,125],
 					["ItemMap",nil,40],
@@ -777,7 +777,7 @@ switch(_shop) do
 
 			case (__GETC__(life_donator) > 1):
 			{
-				["Altis General Store",
+				["Magasin général",
 					[
 					["Binocular",nil,100],
 					["ItemMap",nil,35],

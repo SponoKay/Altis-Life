@@ -17,4 +17,4 @@ waitUntil {isNull life_barriere};
 
 if(isNull _barriere) exitWith {life_barriere = ObjNull;};
 _barriere setPos [(getPos _barriere select 0),(getPos _barriere select 1),0];
-_barriere setDamage 1;
+_barriere setDamage 2;

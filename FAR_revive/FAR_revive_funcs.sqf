@@ -100,7 +100,7 @@ FAR_Player_Unconscious =
 		{
 			//life_is_arrested = false;
 			//life_alive = true;
-			_unit setDamage 1;
+			_unit setDamage 2;
 			hint "Vous etes mort.";
 		}
 		else
@@ -148,7 +148,7 @@ FAR_Player_Unconscious =
 		// AI bled out
 		if (FAR_BleedOut > 0 && {time > _bleedOut} && {_unit getVariable ["FAR_isStabilized",0] == 0}) then
 		{
-			_unit setDamage 1;
+			_unit setDamage 2;
 			_unit setVariable ["FAR_isUnconscious", 0, true];
 			_unit setVariable ["FAR_isDragged", 0, true];
 		}
@@ -204,7 +204,7 @@ FAR_Kill =
 	[[getPlayerUID player,name player,"187"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
 	player playMove "AinvPknlMstpSlayWrflDnon_medic";
 	sleep 3;
-	_target setDamage 1;
+	_target setDamage 2;
 	player playActionNow "stop";
 	hint "Vous avez pris une vie!";
 };

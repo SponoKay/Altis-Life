@@ -2,12 +2,12 @@
 	private["_fnc_food","_fnc_water"];
 	_fnc_food = 
 	{
-		if(life_hunger < 2) then {player setDamage 1; hint localize "STR_NOTF_EatMSG_Death";}
+		if(life_hunger < 2) then {player setDamage 2; hint localize "STR_NOTF_EatMSG_Death";}
 		else
 		{
 		life_hunger = life_hunger - 10;
 		[] call life_fnc_hudUpdate;
-		if(life_hunger < 2) then {player setDamage 1; hint localize "STR_NOTF_EatMSG_Death";};
+		if(life_hunger < 2) then {player setDamage 2; hint localize "STR_NOTF_EatMSG_Death";};
 		switch(life_hunger) do {
 			case 30: {hint localize "STR_NOTF_EatMSG_1";};
 			case 20: {hint localize "STR_NOTF_EatMSG_2";};
@@ -18,12 +18,12 @@
 	
 	_fnc_water = 
 	{
-		if(life_thirst < 2) then {player setDamage 1; hint localize "STR_NOTF_DrinkMSG_Death";}
+		if(life_thirst < 2) then {player setDamage 2; hint localize "STR_NOTF_DrinkMSG_Death";}
 		else
 		{
 			life_thirst = life_thirst - 10;
 			[] call life_fnc_hudUpdate;
-			if(life_thirst < 2) then {player setDamage 1; hint localize "STR_NOTF_DrinkMSG_Death";};
+			if(life_thirst < 2) then {player setDamage 2; hint localize "STR_NOTF_DrinkMSG_Death";};
 			switch(life_thirst) do 
 			{
 				case 30: {hint localize "STR_NOTF_DrinkMSG_1";};

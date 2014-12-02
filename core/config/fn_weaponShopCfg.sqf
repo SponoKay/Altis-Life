@@ -796,4 +796,68 @@ switch(_shop) do
 		
 		};
 	};
+	
+	case "medstore":
+	{
+		switch(true) do
+		{
+			case (__GETC__(life_donator) == 0):
+			{
+				["Magasin médecin",
+					[
+					["Binocular",nil,150],
+					["ItemMap",nil,50],
+					["ItemGPS",nil,1250],
+					["ToolKit",nil,250],
+					["FirstAidKit",nil,1500],
+					["Medikit",nil,15000],
+					["NVGoggles",nil,10000],
+					["Chemlight_red",nil,300],
+					["Chemlight_yellow",nil,300],
+					["Chemlight_green",nil,300],
+					["Chemlight_blue",nil,300]
+					]
+				];
+			};		
+
+			case (__GETC__(life_donator) == 1):
+			{
+				["Magasin médecin",
+					[
+					["Binocular",nil,125],
+					["ItemMap",nil,40],
+					["ItemGPS",nil,1250],
+					["ToolKit",nil,210],
+					["FirstAidKit",nil,1275],
+					["Medikit",nil,12750],
+					["NVGoggles",nil,8500],
+					["Chemlight_red",nil,250],
+					["Chemlight_yellow",nil,250],
+					["Chemlight_green",nil,250],
+					["Chemlight_blue",nil,250]
+					]
+				];
+			};			
+
+			case (__GETC__(life_donator) > 1):
+			{
+				["Magasin médecin",
+					[
+					["Binocular",nil,100],
+					["ItemMap",nil,35],
+					["ItemGPS",nil,1250],
+					["ToolKit",nil,175],
+					["FirstAidKit",nil,1050],
+					["Medikit",nil,10500],
+					["NVGoggles",nil,7000],
+					["Chemlight_red",nil,200],
+					["Chemlight_yellow",nil,200],
+					["Chemlight_green",nil,200],
+					["Chemlight_blue",nil,200]
+					]
+				];
+			};			
+		
+		};
+	};
 };

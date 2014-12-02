@@ -90,9 +90,4 @@ if(_handgun != "") then {_handle = [_handgun,true,false,false,false] spawn life_
     };
 } foreach (_hItems);
 
-if(playerSide == independent && {uniform player == "U_C_Scientist"}) then {
-	[[player,0,"texture\skins\medic_uniform.jpg"],"life_fnc_setTexture",true,false] spawn life_fnc_MP;
-};
-if(playerSide == west && {uniform player == "U_Rangemaster"}) then {
-	[[player,0,"texture\skins\police_shirt.paa"],"life_fnc_setTexture",true,false] spawn life_fnc_MP;
-};
+[] call life_fnc_updateClothing;

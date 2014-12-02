@@ -223,6 +223,7 @@ class Life_Client_Core
 		class stripDownPlayer {};
 		class lockCarSound {};
 		class unlockCarSound {};
+		class updateClothing {};
 	};
 	
 	class Network

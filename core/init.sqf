@@ -109,5 +109,3 @@ __CONST__(life_paycheck,life_paycheck); //Make the paycheck static.
 if(life_in_rea) then {
 	[player,player] call FAR_Player_Unconscious;
 };
-
-player enableFatigue false;

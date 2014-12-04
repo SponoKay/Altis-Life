@@ -83,7 +83,7 @@ if(_hasLicense) then
 	
 	if(player distance _vendor > 10) exitWith {hint localize "STR_Process_Stay"; 5 cutText ["","PLAIN"]; life_is_processing = false;};
 	if(!([false,_oldItem,_oldVal] call life_fnc_handleInv)) exitWith {5 cutText ["","PLAIN"]; life_is_processing = false;};
-	if(count _itemInfo == 5 && !([false,_oldItem2,_oldVal2] call life_fnc_handleInv)) exitWith {5 cutText ["","PLAIN"]; life_is_processing = false;};
+	if((count _itemInfo == 5) && !([false,_oldItem2,_oldVal2] call life_fnc_handleInv)) exitWith {5 cutText ["","PLAIN"]; life_is_processing = false;};
 	if(!([true,_newItem,_oldVal] call life_fnc_handleInv)) exitWith {5 cutText ["","PLAIN"]; [true,_oldItem,_oldVal] call life_fnc_handleInv; life_is_processing = false;};
 	5 cutText ["","PLAIN"];
 	titleText[format[localize "STR_Process_Processed",_oldVal,_itemName],"PLAIN"];

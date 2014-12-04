@@ -5,7 +5,7 @@ removeallWeapons _this;
 _this enableSimulation false; 
 _this allowDamage false; 
 _this addAction["<t color='#00aeef'>Concessionnaire Police</t>",
-life_fnc_vehicleShopMenu,["cop_car",west,["cop_car_2"]
+life_fnc_vehicleShopMenu,["cop_car",west,["cop_car_3"]
 ,"cop","Concessionnaire Police"]];
 
 _this addAction["<t color='#FF9900'>Garage</t>",

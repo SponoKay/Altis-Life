@@ -1,16 +1,16 @@
-[] execVM "addons\admintools\loop.sqf";
+[] execVM "admintools\loop.sqf";
 
-[] execVM "addons\Anticheat.sqf";
+[] execVM "Anticheat.sqf";
 
-[] execVM "addons\IgiLoad\IgiLoadInit.sqf";
+[] execVM "IgiLoad\IgiLoadInit.sqf";
 
-[] execVM "addons\zlt_fastrope.sqf";
+[] execVM "zlt_fastrope.sqf";
 
-[] execVM "addons\weather\DynamicWeatherEffects.sqf";
+[] execVM "weather\DynamicWeatherEffects.sqf";
 
-[] execVM "addons\module_cleanup\init.sqf";
+[] execVM "module_cleanup\init.sqf";
 
-call compileFinal preprocessFileLineNumbers "addons\FAR_revive\FAR_revive_init.sqf";
+call compileFinal preprocessFileLineNumbers "FAR_revive\FAR_revive_init.sqf";
 
 [
 	60, // seconds to delete dead bodies (0 means don't delete) 
@@ -18,4 +18,4 @@ call compileFinal preprocessFileLineNumbers "addons\FAR_revive\FAR_revive_init.s
 	2*60, // seconds to delete dropped weapons (0 means don't delete)
 	10*60, // seconds to deleted planted explosives (0 means don't delete)
 	2*60 // seconds to delete dropped smokes/chemlights (0 means don't delete)
-] execVM "addons\repetitive_cleanup.sqf";
+] execVM "repetitive_cleanup.sqf";

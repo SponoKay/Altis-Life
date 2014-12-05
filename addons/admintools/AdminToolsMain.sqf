@@ -1,4 +1,4 @@
-_pathtotools = "admintools\tools\";
+_pathtotools = "addons\admintools\tools\";
 _EXECscript1 = 'player execVM "'+_pathtotools+'%1"';
 ToolsMenu =
 [

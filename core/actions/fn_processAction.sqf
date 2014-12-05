@@ -49,6 +49,10 @@ _oldVal = missionNamespace getVariable ([_oldItem,0] call life_fnc_varHandle);
 if(count _itemInfo == 5) then {
 	_oldItem2 = _itemInfo select 4;
 	_oldVal2 = missionNamespace getVariable ([_oldItem2,0] call life_fnc_varHandle);
+}
+else {
+	_oldItem2 = "";
+	_oldVal2 = 0;
 };
 
 if(count _itemInfo == 5 && _oldVal != _oldVal2) exitWith {hint "Vous devez respecter les proportions des deux réactifs!"; life_is_processing = false;};

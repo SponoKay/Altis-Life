@@ -95,6 +95,11 @@ switch (true) do
 	{
 		[] spawn life_fnc_pickAxeUse;
 	};
+
+	case (_item in ["marijuana","cocainep","heroinp","meth"]):
+	{
+		[_item] spawn life_fnc_effetDrogue
+	};
 	
 	default
 	{

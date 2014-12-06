@@ -71,6 +71,7 @@ class Mission
 		"A3_Boat_F_EPC_Submarine_01_F",
 		"A3_Structures_F_EPC_Walls",
 		"A3_Air_F_Heli_Light_01",
+		"A3_Soft_F_MRAP_01",
 		"A3_Static_F_Gamma",
 		"a3_static_f",
 		"A3_Structures_F_EPB_Civ_Camping",
@@ -4508,7 +4509,6 @@ class Mission
 					vehicle="B_RangeMaster_F";
 					leader=1;
 					skill=1;
-					init="_null=this execVM ""pnj\heli_shop_cop03.sqf"";";
 				};
 			};
 		};

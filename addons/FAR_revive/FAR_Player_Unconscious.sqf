@@ -93,7 +93,7 @@ _unit spawn
 
 	sleep 1;
 
-	_unlimitedStamina = ["A3W_unlimitedStamina"] call isConfigOn;
+	_unlimitedStamina = true;
 
 	while {UNCONSCIOUS(_unit)} do
 	{
@@ -149,7 +149,7 @@ _unit spawn
 					if (_pilot == _unit) then
 					{
 						_unit action ["UnlockVehicleControl", _veh];
-						[[_copilot, netId _veh], "A3W_fnc_copilotTakeControl", _copilot] call A3W_fnc_MP;
+						//[[_copilot, netId _veh], "A3W_fnc_copilotTakeControl", _copilot] call A3W_fnc_MP;
 					};
 
 					// Give control back to pilot if appropriate

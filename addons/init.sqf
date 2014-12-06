@@ -12,6 +12,8 @@
 
 [] execVM "addons\module_cleanup\init.sqf";
 
+[] execVM "addons\chien.sqf";
+
 call compileFinal preprocessFileLineNumbers "addons\FAR_revive\FAR_revive_init.sqf";
 
 [

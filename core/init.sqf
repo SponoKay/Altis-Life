@@ -106,6 +106,6 @@ life_fnc_garageRefund = compileFinal
 __CONST__(life_paycheck,life_paycheck); //Make the paycheck static.
 
 //Spawn inconscient
-if(life_in_rea) then {
+/*if(life_in_rea) then {
 	[player,player] call FAR_Player_Unconscious;
-};
+};*/

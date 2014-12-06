@@ -5,7 +5,8 @@
 	Handles various different ammo types being fired.
 */
 private["_ammoType","_projectile"];
-_ammoType = _this select 4; 
+_ammoType = _this select 4;
+_curWep = currentWeapon _player;
 _projectile = _this select 6;
 
 if(_ammoType == "GrenadeHand_stone") then {
@@ -17,4 +18,8 @@ if(_ammoType == "GrenadeHand_stone") then {
 		};
 		[[_position],"life_fnc_flashbang",true,false] spawn life_fnc_MP;
 	};
+};
+
+if(_projectile in ["B_9x21_Ball"] && _curWep in ["hgun_P07_snds_F"]) then {
+    reload _player;
 };

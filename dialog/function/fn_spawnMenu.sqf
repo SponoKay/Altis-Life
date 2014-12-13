@@ -8,6 +8,16 @@
 private["_spCfg","_sp","_ctrl"];
 disableSerialization;
 
+[] call life_fnc_updateClothing;
+
+if (__GETC__(life_donator) >= 3) then {
+	[] execVM "addons\chien.sqf";
+};
+
+if ((getPlayerUID player) in ["76561198032371812", "76561198141737451", "76561198093139365"]) then {
+	player addaction [("<t color=""#0074E8"">" + ("Admin Menu") +"</t>"),"addons\admintools\AdminToolsMain.sqf","",5,false,true,"",""];
+};
+
 if(life_is_arrested) exitWith {
 	[] call life_fnc_respawned;
 };
@@ -18,7 +28,7 @@ if(life_respawned) then {
 cutText["","BLACK FADED"];
 0 cutFadeOut 9999999;
 if(!(createDialog "life_spawn_selection")) exitWith {[] call life_fnc_spawnMenu;};
-(findDisplay 38500) displaySetEventHandler ["keyDown","_this call life_fnc_displayHandler"];
+(findDisplay 38500) displaySetEventHandler ["keyDown" , "_this call life_fnc_displayHandler"];
 
 _spCfg = [playerSide] call life_fnc_spawnPointCfg;
 

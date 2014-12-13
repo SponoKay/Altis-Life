@@ -52,7 +52,7 @@ switch (playerSide) do
 		&& !(cursorTarget getVariable["robbed",FALSE])']];
 		
 		//Saisir la carte
-		life_actions = life_actions + [player addAction["<t color='#00FFFF'>Saisir Carte</t>",life_fnc_takemaplucel,cursorTarget,9999999,false,false,"",'
+		/*life_actions = life_actions + [player addAction["<t color='#00FFFF'>Saisir Carte</t>",{cursorTarget removeItem "ItemMap";},"",9999999,false,false,"",'
 		!isNull cursorTarget 
 		&& cursorTarget isKindOf "Man"
 		&& (isPlayer cursorTarget)
@@ -62,19 +62,19 @@ switch (playerSide) do
 		&& (cursorTarget getVariable "restrained") 
 		&& !(cursorTarget getVariable "Escorting")
 		&& !(cursorTarget getVariable["robbedmap",FALSE])
-		']];
+		']];*/
 
 		
 		//Unrest Action
-		life_actions = life_actions + [player addAction["<t color='#AAF200'>Détacher</t>",life_fnc_unrestrain,cursorTarget,9999999,false,false,"",' !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && player distance cursorTarget < 3.5 
-		&& !(cursorTarget getVariable "CopRestrain") && !(player getVariable "restrained") && (cursorTarget getVariable "restrained") && !(cursorTarget getVariable "Escorting")']];
+		/*life_actions = life_actions + [player addAction["<t color='#AAF200'>Détacher</t>",{[cursorTarget] call life_fnc_unrestrain},"",9999999,false,false,"",' !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && player distance cursorTarget < 3.5 
+		&& !(cursorTarget getVariable "CopRestrain") && !(player getVariable "restrained") && (cursorTarget getVariable "restrained") && !(cursorTarget getVariable "Escorting")']];*/
 
 		//Escort
-		life_actions = life_actions + [player addAction["<t color='#FF9900'>Escorter</t>",life_fnc_escortAction,[cursorTarget],9999999,false,false,"",' !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "CopRestrain") && !(player getVariable "restrained") && (cursorTarget getVariable "restrained") && !(cursorTarget getVariable "Escorting")']];
-		life_actions = life_actions + [player addAction["<t color='#FF9900'>Arrêter éscorte</t>",life_fnc_stopEscorting,_unit,9999999,false,false,"",' !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && player distance cursorTarget < 3.5 && (cursorTarget getVariable "Escorting")']];
+		/*life_actions = life_actions + [player addAction["<t color='#FF9900'>Escorter</t>",[{cursorTarget] call life_fnc_escortAction},"",9999999,false,false,"",' !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "CopRestrain") && !(player getVariable "restrained") && (cursorTarget getVariable "restrained") && !(cursorTarget getVariable "Escorting")']];
+		life_actions = life_actions + [player addAction["<t color='#FF9900'>Arrêter éscorte</t>",{{cursorTarget] call life_fnc_stopEscorting},_unit,9999999,false,false,"",' !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && player distance cursorTarget < 3.5 && (cursorTarget getVariable "Escorting")']];*/
 
 		//Crochetage
-		life_actions = life_actions + [player addAction["<t color='#FF0000'>Crochetage</t>",life_fnc_lockpick,cursorTarget,9999999,false,false,"",' !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && player distance cursorTarget < 3.5 
+		life_actions = life_actions + [player addAction["<t color='#FF0000'>Crochetage</t>",life_fnc_lockpick,"",9999999,false,false,"",' !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && player distance cursorTarget < 3.5 
 		&& !(cursorTarget getVariable "CopRestrain") && (cursorTarget getVariable "restrained") && !(cursorTarget getVariable "Escorting") && life_inv_lockpick > 0']];
 		
 		//Drop fishing net
@@ -82,14 +82,14 @@ switch (playerSide) do
 		(surfaceisWater (getPos vehicle player)) && (vehicle player isKindOf "Ship") && life_carryWeight < life_maxWeight && speed (vehicle player) < 2 && speed (vehicle player) > -1 && !life_net_dropped ']];
 		
 		//Put in car	
-		life_actions = life_actions + [player addAction["<t color='#FF9900'>Mettre dans le vehicule</t>",life_fnc_putInCar,_unit,9999999,false,false,"",' !isNull cursorTarget 
+		/*life_actions = life_actions + [player addAction["<t color='#FF9900'>Mettre dans le vehicule</t>",life_fnc_putInCar,_unit,9999999,false,false,"",' !isNull cursorTarget 
 		&& (player distance cursorTarget) < 6  
 		&& speed cursorTarget < 2 
 		&& (cursorTarget isKindOf "Car" 
 		|| cursorTarget isKindOf "Air" 
 		|| cursorTarget isKindOf "Ship")
-		&& player getVariable "currentlyEscorting"
-		']];
+		&& player getVariable "Escorting"
+		']];*/
 		
 		//Pull out of car
 		life_actions = life_actions + [player addAction["<t color='#FF9900'>Sortir du vehicule</t>",life_fnc_pulloutAction,cursorTarget,9999999,false,false,"",'!isNull cursorTarget 

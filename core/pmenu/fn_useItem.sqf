@@ -97,8 +97,11 @@ switch (true) do
 	};
 
 	case (_item in ["marijuana","cocainep","heroinp","meth"]):
-	{
-		[_item] spawn life_fnc_effetDrogue
+	{	
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			[_item] spawn life_fnc_effetDrogue
+		};
 	};
 	
 	default

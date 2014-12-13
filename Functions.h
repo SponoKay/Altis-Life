@@ -107,6 +107,9 @@ class Life_Client_Core
 		class captureHideout {};
 		class gather {};
 		class surrender {};
+		class takeCagoule {};
+		class takeMap {};
+		class takePhone {};
 	};
 	
 	class Housing
@@ -154,6 +157,7 @@ class Life_Client_Core
 		class clothing_reb {};
 		class clothing_dive {};
 		class clothing_kart {};
+		class clothing_merco {};
 	};
 
 	class Player_Menu
@@ -255,6 +259,7 @@ class Life_Client_Core
 		class removeLicenses {};
 		class demoChargeTimer {};
 		class civLoadout {};
+		class civInteractionMenu {};
 	};
 	
 	class Vehicle
@@ -316,6 +321,7 @@ class Life_Client_Core
 		class gangInvite {};
 		class gangDisband {};
 		class gangDisbanded {};
+		class gangMarkers {};
 	};
 	
 	class Shops
@@ -356,6 +362,8 @@ class Life_Client_Core
 		class defuseKit {};
 		class storageBox {};
 		class effetDrogue {};
+		class tracker {};
+		class trackerMarkers {};
 	};
 	
 	class Dialog_Controls
@@ -381,5 +389,7 @@ class Life_Client_Core
 		class safeFix {};
 		class vehicleGarage {};
 		class gangDeposit {};
+		class callDialog {};
+		class sendChannel {};
 	};
 };

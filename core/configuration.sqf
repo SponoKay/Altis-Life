@@ -160,6 +160,7 @@ life_inv_items =
 	"life_inv_phosphore",
 	"life_inv_soude",
 	"life_inv_meth",
+	"life_inv_tracker",
 	"life_inv_storagesmall",
 	"life_inv_storagebig"
 ];
@@ -193,7 +194,10 @@ life_licenses =
 	["license_med_air","med"],
 	["license_civ_home","civ"],
 	["license_civ_meth","civ"],
-	["license_civ_medecin","civ"]
+	["license_civ_medecin","civ"],
+	["license_civ_depanneur","civ"],
+	["license_civ_taxi","civ"],
+	["license_civ_mercenaire","civ"]
 ];
 
 //Setup License Variables
@@ -245,7 +249,8 @@ sell_array =
 	["cement",1950],
 	["goldbar",100000],
 	["menotte",800],
-	["meth",8000]
+	["meth",8000],
+	["tracker",2000]
 ];
 __CONST__(sell_array,sell_array);
 
@@ -277,7 +282,8 @@ buy_array =
 	["defusekit",2500],
 	["storagesmall",75000],
 	["storagebig",150000],
-	["menotte",800]
+	["menotte",800],
+	["tracker",50000]
 ];
 __CONST__(buy_array,buy_array);
 

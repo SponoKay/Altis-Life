@@ -93,7 +93,7 @@ if(count (primaryWeaponMagazine player) > 0 && alive player) then
         };
         if(_bag && !_handled) then
         {
-            _bMags = _bMags + [_pMag];
+            _bMags = _bMags + [_pMag];!
             _handled = true;
         };
     };
@@ -206,7 +206,9 @@ if(count (handGunItems player) > 0) then
     ["life_inv_spikeStrip", life_inv_spikeStrip],
     ["life_inv_defusekit", life_inv_defusekit],
     ["life_inv_storagesmall", life_inv_storagesmall],
-    ["life_inv_storagebig", life_inv_storagebig]
+    ["life_inv_storagebig", life_inv_storagebig],
+    ["life_inv_barriere", life_inv_barriere],
+    ["life_inv_menotte", life_inv_menotte]
 ];
 
 _return pushBack _uItems;

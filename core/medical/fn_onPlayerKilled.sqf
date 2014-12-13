@@ -30,7 +30,7 @@ life_deathCamera camSetFOV .5;
 life_deathCamera camSetFocus [50,0];
 life_deathCamera camCommit 0;
 
-(findDisplay 7300) displaySetEventHandler ["KeyDown","if((_this select 1) == 1) then {true}"]; //Block the ESC menu
+(findDisplay 7300) displaySetEventHandler ["KeyDown" , "if((_this select 1) == 1) then {true}"]; //Block the ESC menu
 
 //Create a thread for something?
 _unit spawn

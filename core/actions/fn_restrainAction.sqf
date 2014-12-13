@@ -14,7 +14,7 @@ if((_unit getVariable "restrained")) exitWith {};
 if((_unit getVariable "Escorting")) exitWith {};
 if(player == _unit) exitWith {};
 
-if(side player == west) then {
+if(playerSide == west) then {
 _unit setVariable["CopRestrain",true,true];
 _unit setVariable["restrained",true,true];
 _unit setVariable["surrender",false,true];
@@ -24,10 +24,8 @@ if((player getVariable["surrender",FALSE])) then { player setVariable["surrender
 [[player], "life_fnc_restrain", _unit, false] spawn life_fnc_MP;
 };
 
-if (side player == civilian) then {
-	if(life_inv_menotte < 1) exitWith {hint"Vous devez avoir une paire de menottes."};
-	life_inv_menotte = life_inv_menotte - 1;
-	_unit setVariable["CopRestrain",false,true];
+if (playerSide == civilian) then {
+	if(!([false,"life_inv_menotte",1] call life_fnc_handleInv)) exitWith {hint "Vous devez avoir une paire de menottes."};
 	_unit setVariable["restrained",true,true];
 	_unit setVariable["surrender",false,true];
 	_unit setVariable["robbedmap",false,true];

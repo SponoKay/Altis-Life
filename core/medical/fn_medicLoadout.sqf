@@ -14,11 +14,13 @@ player addItem "FirstAidKit";
 player addItem "FirstAidKit";
 player addItem "ItemMap";
 player assignItem "ItemMap";
+player addItem "ItemRadio";
+player assignItem "ItemRadio";
 player addItem "ItemCompass";
 player assignItem "ItemCompass";
 player addItem "ItemWatch";
 player assignItem "ItemWatch";
 
-[[player,0,"texture\skins\Medecin.jpg"],"life_fnc_setTexture",true,false] spawn life_fnc_MP;
+[[player,0,"texture\skins\civil\U_C_Scientist Medecin.jpg"],"life_fnc_setTexture",true,false] spawn life_fnc_MP;
 
 [] call life_fnc_saveGear;

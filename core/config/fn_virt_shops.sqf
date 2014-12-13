@@ -10,19 +10,20 @@ _shop = _this select 0;
 
 switch (_shop) do
 {
-	case "market": {["Marche Altis",["water","rabbit","apple","redgull","tbacon","pickaxe","fuelF","peach","storagesmall","storagebig"]]};
+	case "market": {["Marché d'Altis",["water","rabbit","apple","redgull","tbacon","pickaxe","fuelF","peach","storagesmall","storagebig"]]};
 	case "wongs": {["Restaurant des Wongs",["turtlesoup","turtle"]]};
 	case "coffee": {["Café du Patron",["coffee","donuts"]]};
-	case "gang": {["Gang Market", ["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","blastingcharge","boltcutter"]]};
+	case "gang": {["Marché du gang", ["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","blastingcharge","boltcutter"]]};
 	case "heroin": {["Dealer de drogues",["cocainep","heroinp","marijuana","meth"]]};
-	case "oil": {["Trader de Petrole",["oilp","pickaxe","fuelF"]]};
-	case "fishmarket": {["Marche au Poisson",["salema","ornate","mackerel","mullet","tuna","catshark"]]};
-	case "glass": {["Oliver de Garglass",["glass"]]};
+	case "oil": {["Vendeur de pétrole",["oilp","pickaxe","fuelF"]]};
+	case "fishmarket": {["Poissonnier",["salema","ornate","mackerel","mullet","tuna","catshark"]]};
+	case "glass": {["Vendeur de verre",["glass"]]};
 	case "iron": {["Vendeur de fer",["iron_r","copper_r"]]};
 	case "diamond": {["Joaillier",["diamond","diamondc"]]};
 	case "salt": {["Vendeur de sel",["salt_r"]]};
 	case "cop": {["Boutique Policier",["donuts","coffee","spikeStrip","barriere","water","rabbit","apple","redgull","fuelF","mauer"]]};
 	case "cement": {["Vendeur de ciment",["cement"]]};
-	case "blackmarket": {["Marche noir",["cement","salt_r","diamondc","iron_r","copper_r","glass","oilp","apple","peach","lockpick","water","rabbit","redgull","tbacon","pickaxe","fuelF"]]};
-	case "rebmarket": {["Marche Rebelle",["menotte","spikeStrip","water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach"]]};
+	case "blackmarket": {["Marché noir",["cement","salt_r","diamondc","iron_r","copper_r","glass","oilp","apple","peach","lockpick","water","rabbit","redgull","tbacon","pickaxe","fuelF"]]};
+	case "rebmarket": {["Marché rebelle",["menotte","spikeStrip","water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach"]]};
+	case "mercomarket": {["Marché mercenaire",["menotte","spikeStrip","water","rabbit","apple","redgull","tbacon","pickaxe","fuelF","peach"]]};
 };

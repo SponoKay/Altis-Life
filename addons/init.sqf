@@ -1,5 +1,3 @@
-[] execVM "addons\admintools\loop.sqf";
-
 [] execVM "addons\Anticheat.sqf";
 
 [] execVM "addons\IgiLoad\IgiLoadInit.sqf";
@@ -11,8 +9,6 @@
 [] execVM "addons\weather\DynamicWeatherEffects.sqf";
 
 [] execVM "addons\module_cleanup\init.sqf";
-
-[] execVM "addons\chien.sqf";
 
 call compileFinal preprocessFileLineNumbers "addons\FAR_revive\FAR_revive_init.sqf";
 

@@ -53,6 +53,7 @@ life_action_inUse = false; //Unlock it since it's going to do it's own thing...
 while {true} do {
 	if(!alive _vehicle OR isNull _vehicle) exitWith {};
 	if(isEngineOn _vehicle) exitWith {titleText[localize "STR_NOTF_MiningStopped","PLAIN"];};
+	if(fuel _vehicle == 0) exitWith {titleText[localize "STR_NOTF_OutOfFuel","PLAIN"];};
 	titleText[localize "STR_NOTF_DeviceMining","PLAIN"];
 	_time = time + 27;
 	
@@ -78,8 +79,6 @@ while {true} do {
 		_val = _items select _itemIndex select 1;
 		_items set[_itemIndex,[_item,_val + _sum]];
 	};
-	
-	if(fuel _vehicle == 0) exitWith {titleText[localize "STR_NOTF_OutOfFuel","PLAIN"];};
 	
 	//Locality checks...
 	if(local _vehicle) then {

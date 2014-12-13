@@ -32,9 +32,6 @@ switch (_filter) do
 			_ret set[count _ret,["U_B_CombatUniform_mcam_worn",nil,550]];
 			_ret set[count _ret,["U_B_GhillieSuit",nil,550]];
 			_ret set[count _ret,["U_B_SpecopsUniform_sgg",nil,550]];
-			_ret set[count _ret,["U_B_CTRG_1",nil,550]];
-			_ret set[count _ret,["U_B_CTRG_2",nil,550]];
-			_ret set[count _ret,["U_B_CTRG_3",nil,550]];
 		};
 	};
 	
@@ -55,7 +52,7 @@ switch (_filter) do
 			_ret set[count _ret,["H_PilotHelmetHeli_B",nil,100]];
 			_ret set[count _ret,["H_HelmetB_plain_mcamo",nil,100]];
 			_ret set[count _ret,["H_HelmetIA_net",nil,100]];
-			_ret set[count _ret,["H_Beret_brn_SF",nil,100]];
+			_ret set[count _ret,["H_Beret_blk_POLICE",nil,100]];
 		};
 		if(__GETC__(life_coplevel) > 5) then
 		{

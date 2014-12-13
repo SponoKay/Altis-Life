@@ -27,6 +27,8 @@ player addItem "ItemMap";
 player assignItem "ItemMap";
 player addItem "ItemCompass";
 player assignItem "ItemCompass";
+player addItem "ItemRadio";
+player assignItem "ItemRadio";
 player addItem "ItemWatch";
 player assignItem "ItemWatch";
 player addItem "ItemGPS";

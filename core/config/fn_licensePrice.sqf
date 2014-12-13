@@ -36,5 +36,8 @@ switch (_type) do
 	case "mair": {15000};
 	case "home": {100000};
 	case "meth": {200000};
-	case "medecin": {0};
+	case "medecin": {300000};
+	case "depanneur": {100000};
+	case "taxi": {200000};
+	case "mercenaire": {0};
 };

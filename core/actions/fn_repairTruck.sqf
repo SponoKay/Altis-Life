@@ -5,8 +5,10 @@
 	Description:
 	Main functionality for toolkits, to be revised in later version.
 */
-private["_veh","_upp","_ui","_progress","_pgText","_cP","_displayName"];
+private["_veh","_upp","_ui","_progress","_pgText","_cP","_displayName","_cpRate","_sfx","_sfxplay"];
 _veh = cursorTarget;
+_sfx = true;
+_sfxplay = 0;
 life_interrupted = false;
 if(isNull _veh) exitwith {};
 if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Air")) then
@@ -15,7 +17,7 @@ if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Air")) the
 	{
 		life_action_inUse = true;
 		_displayName = getText(configFile >> "CfgVehicles" >> (typeOf _veh) >> "displayName");
-		_upp = format[localize "STR_NOTF_Repairing",_displayName];
+		_upp = format["Réparation %1",_displayName];
 		//Setup our progress bar.
 		disableSerialization;
 		5 cutRsc ["life_progress","PLAIN"];
@@ -26,14 +28,33 @@ if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Air")) the
 		_progress progressSetPosition 0.01;
 		_cP = 0.01;
 		
+		if(license_civ_depanneur)then{
+		_cpRate = 0.01
+		}else{
+		_cpRate = 0.002 // 2min18
+		};
+
+
 		while{true} do
 		{
-			if(animationState player != "AinvPknlMstpSnonWnonDnon_medic_1") then {
-				[[player,"AinvPknlMstpSnonWnonDnon_medic_1"],"life_fnc_animSync",true,false] spawn life_fnc_MP;
-				player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
+			if(animationState player != "InBaseMoves_repairVehicleKnl") then {
+				[[player,"InBaseMoves_repairVehicleKnl"],"life_fnc_animSync",true,false] spawn life_fnc_MP;
+				player playMoveNow "InBaseMoves_repairVehicleKnl";
 			};
-			sleep 0.27;
-			_cP = _cP + 0.01;
+			
+			if((_sfx)) then {
+				_vehicle say3D "repair";
+				_sfx = false;
+			};
+				
+			sleep 0.25;
+			_sfxplay = _sfxplay + 1;
+	
+			if(_sfxplay >= 138)then{
+				_sfx = true;
+				_sfxplay = 0;
+			};
+			_cP = _cP + _cpRate;
 			_progress progressSetPosition _cP;
 			_pgText ctrlSetText format["%3 (%1%2)...",round(_cP * 100),"%",_upp];
 			if(_cP >= 1) exitWith {};

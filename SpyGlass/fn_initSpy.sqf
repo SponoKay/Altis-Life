@@ -9,6 +9,7 @@
 */
 private["_binConfigPatches","_cfgPatches","_endM"];
 if(isServer && !hasInterface) exitWith {}; //Server doesn't need to know.
+if(serverCommandAvailable "#logout") exitWith {}; //Pas de SpyGlass pour tonton Cry si loggé en admin
 #define __CONST__(var1,var2) var1 = compileFinal (if(typeName var2 == "STRING") then {var2} else {str(var2)})
 #define __GETC__(var) (call var)
 

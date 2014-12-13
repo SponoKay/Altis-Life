@@ -49,10 +49,13 @@ if(_curTarget isKindOf "Man" && {!alive _curTarget} && {playerSide in [west,inde
 };
 
 
-//If target is a player then check if we can use the cop menu.
+//If target is a player then check if we can use the cop or civ menu.
 if(isPlayer _curTarget && _curTarget isKindOf "Man") then {
-	if((_curTarget getVariable["restrained",false]) && !dialog && playerSide == west) then {
-		[_curTarget] call life_fnc_copInteractionMenu;
+	if((_curTarget getVariable["restrained",false]) && !dialog) then {
+		switch (playerSide) do {
+			case west: {[_curTarget] call life_fnc_copInteractionMenu};
+			case civilian: {[_curTarget] call life_fnc_civInteractionMenu};
+		};
 	};
 } else {
 	//OK, it wasn't a player so what is it?

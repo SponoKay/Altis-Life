@@ -15,6 +15,8 @@ player addUniform (_clothings select (floor(random (count _clothings))));
 /* ITEMS */
 player addItem "ItemMap";
 player assignItem "ItemMap";
+player addItem "ItemRadio";
+player assignItem "ItemRadio";
 player addItem "ItemCompass";
 player assignItem "ItemCompass";
 player addItem "ItemWatch";

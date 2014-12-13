@@ -9,8 +9,6 @@ made by:
 
 _unit = player;
 
-if (!(getplayeruid _unit in ["76561198032371812"])) exitWith {};
-
 waitUntil{!isnull _unit};
 waitUntil{alive _unit};
 

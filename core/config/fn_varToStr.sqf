@@ -66,6 +66,7 @@ switch (_var) do
 	case "life_inv_phosphore": {"Phosphore"};
 	case "life_inv_soude": {"Soude"};
 	case "life_inv_meth": {"Crystal de Meth"};
+	case "life_inv_tracker": {"Traceur"};
 	
 	//License Block
 	case "license_civ_driver": {(localize "STR_License_Driver")};
@@ -90,6 +91,9 @@ switch (_var) do
 	case "license_civ_cement": {(localize "STR_License_Cement")};
 	case "license_med_air": {(localize "STR_License_Pilot")};
 	case "license_civ_home": {(localize "STR_License_Home")};
+	case "license_civ_meth": {"Licence de Méthamphétamine"};
 	case "license_civ_medecin": {"Doctorat de Médecine"};
-	case "license_civ_meth": {"License de Méthamphétamine"};
+	case "license_civ_depanneur": {"Diplôme de Dépanneur"};
+	case "license_civ_taxi": {"Licence de Taxi"};
+	case "license_civ_mercenaire": {"Combattant Mercenaire"};
 };

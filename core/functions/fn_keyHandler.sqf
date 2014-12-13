@@ -61,10 +61,14 @@ switch (_code) do
 	//Map Key
 	case _mapKey:
 	{
-		switch (playerSide) do 
-		{
-			case west: {if(!visibleMap) then {[] spawn life_fnc_copMarkers;}};
-			case independent: {if(!visibleMap) then {[] spawn life_fnc_medicMarkers;}};
+		if(!visibleMap) then {
+			switch (playerSide) do 
+			{
+				case west: {[] spawn life_fnc_copMarkers;};
+				case independent: {[] spawn life_fnc_medicMarkers;};
+				case civilian: {[] spawn life_fnc_gangMarkers;};
+			};
+			[] spawn life_fnc_trackerMarkers;
 		};
 	};
 	
@@ -108,25 +112,6 @@ switch (_code) do
 		};
 	};
 	
-	//Surrender (main sur la tête)
-	case 34:
-    {
-        if (_shift) then
-        {
-			_handled = true;
-            if (vehicle player == player && !(player getVariable ["restrained", false]) && (animationState player) != "Incapacitated" && !life_istazed) then
-            {
-                if (player getVariable ["surrender", false]) then
-                {
-                    player setVariable ["surrender", false, true];
-                } else
-                {
-                    [] spawn life_fnc_surrender;
-                };
-            };
-        };
-    };
-	
 	//Knock out, this is experimental and yeah...
 	case 34:
 	{
@@ -167,16 +152,19 @@ switch (_code) do
 	//L Key?
 	case 38: 
 	{
-		//If cop run checks for turning lights on.
-		if(_shift && playerSide in [west,independent]) then {
+		//If cop or medic run checks for turning lights on.
+		if(_shift) then {
 			if(vehicle player != player && (typeOf vehicle player) in ["C_Offroad_01_F","B_MRAP_01_F","C_SUV_01_F"]) then {
 				if(!isNil {vehicle player getVariable "lights"}) then {
 					if(playerSide == west) then {
 						[vehicle player] call life_fnc_sirenLights;
+						_handled = true;
 					} else {
-						[vehicle player] call life_fnc_medicSirenLights;
+						if(license_civ_medecin) then {
+							[vehicle player] call life_fnc_medicSirenLights;
+							_handled = true;
+						};
 					};
-					_handled = true;
 				};
 			};
 		};
@@ -195,7 +183,7 @@ switch (_code) do
 	//F Key
 	case 33:
 	{
-		if(playerSide in [west,independent] && vehicle player != player && !life_siren_active && ((driver vehicle player) == player)) then
+		if(vehicle player != player && !life_siren_active && ((driver vehicle player) == player)) then
 		{
 			[] spawn
 			{
@@ -210,15 +198,33 @@ switch (_code) do
 				titleText [localize "STR_MISC_SirensOFF","PLAIN"];
 				_veh setVariable["siren",false,true];
 			}
-				else
+			else
 			{
 				titleText [localize "STR_MISC_SirensON","PLAIN"];
 				_veh setVariable["siren",true,true];
 				if(playerSide == west) then {
 					[[_veh],"life_fnc_copSiren",nil,true] spawn life_fnc_MP;
 				} else {
-					//I do not have a custom sound for this and I really don't want to go digging for one, when you have a sound uncomment this and change medicSiren.sqf in the medical folder.
-					//[[_veh],"life_fnc_medicSiren",nil,true] spawn life_fnc_MP;
+					if(license_civ_medecin) then {
+						[[_veh],"life_fnc_medicSiren",nil,true] spawn life_fnc_MP;
+					};
+				};
+			};
+		}
+		else {
+			if (_shift) then
+			{
+				_handled = true;
+				if (vehicle player == player && !(player getVariable ["restrained", false]) && (animationState player) != "Incapacitated" && !life_istazed) then
+				{
+					if (player getVariable ["surrender", false]) then
+					{
+						player setVariable ["surrender", false, true];
+					}
+					else
+					{
+						[] spawn life_fnc_surrender;
+					};
 				};
 			};
 		};

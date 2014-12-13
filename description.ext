@@ -13,7 +13,7 @@ class Header
 {
 	gameType = RPG;
 	minPlayers = 1;
-	maxPlayers = 60;
+	maxPlayers = 100;
 };
 
 wreckLimit = 3;
@@ -40,10 +40,18 @@ class CfgFunctions
 class CfgSounds
 {
 	sounds[] = {};
-	class SirenLong
+	
+	class SirenPolice
 	{
-		name = "SirenLong";
-		sound[] = {"\sounds\Siren_Long.ogg", 1.0, 1};
+		name = "SirenPolice";
+		sound[] = {"\sounds\siren_police.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+	class SirenMedic
+	{
+		name = "SirenMedic";
+		sound[] = {"\sounds\siren_medic.ogg", 1.0, 1};
 		titles[] = {};
 	};
 	
@@ -82,6 +90,7 @@ class CfgSounds
 		titles[] = {};
 		
 	};
+	
 	class dog_growl
 	{
 		name = "dog_growl";
@@ -89,6 +98,7 @@ class CfgSounds
 		titles[] = {};
 		
 	};
+	
 	class dog_ruff
 	{
 		name = "dog_ruff";
@@ -111,6 +121,13 @@ class CfgSounds
 		sound[] = {"sounds\dog_one.ogg", 1, 1};
 		titles[] = {};
 		
+	};
+	
+	class repair
+	{
+		name = "repair";
+		sound[] = {"\sounds\repair.ogg", 1.0, 1};
+		titles[] = {};
 	};
 };
 
@@ -138,9 +155,9 @@ class CfgDebriefing
 	
 	class SpyGlass
 	{
-		title = "The SpyGlass sees you";
-		subTitle = "You were detected by the SpyGlass";
-		description = "You were detected for cheating and have been reported to the server. Enjoy your day.";
+		title = "Détecté par SpyGlass";
+		subTitle = "Vous avez été détecté par SpyGlass";
+		description = "Vous avez été détecté pour triche et signalé aux administrateurs. Bonne journée!";
 		pictureBackground = "";
 		picture = "";
 		pictureColor[] = {0,0.3,0.6,1};
@@ -187,7 +204,7 @@ class CfgNotifications
 	
 	class TextMessage
 	{
-		title = "Received A Text Message";
+		title = "Vous avez reçu un SMS";
 		iconPicture = "icons\messagenew.paa";
 		description = "%1";
 		duration = 10;
@@ -196,7 +213,7 @@ class CfgNotifications
 	
 	class PoliceDispatch
 	{
-		title = "911 Dispatch Center";
+		title = "Police Secours";
 		iconPicture = "icons\messagepolice.paa";
 		description = "%1";
 		duration = 10;
@@ -205,7 +222,7 @@ class CfgNotifications
 	
 	class AdminDispatch
 	{
-		title = "Admin Dispatch Center";
+		title = "Appel Administrateur";
 		iconPicture = "icons\messageadmin.paa";
 		description = "%1";
 		duration = 10;
@@ -214,7 +231,7 @@ class CfgNotifications
 	
 	class AdminMessage
 	{
-		title = "Admin Message";
+		title = "Message Administrateur";
 		iconPicture = "icons\messageadmin.paa";
 		description = "%1";
 		duration = 10;

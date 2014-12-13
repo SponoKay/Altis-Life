@@ -1,8 +1,11 @@
-Altis-Life
+Altis Life (www.altislife-france.com)
 ==========
 
 Mission Altis Life du serveur AltisLife-France.com
+
 Auteur de la mission Altis Life: Tonic
+==========
+
 Lien: https://github.com/TAWTonic/Altis-Life/
 ==========
 

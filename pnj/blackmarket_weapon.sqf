@@ -5,7 +5,7 @@
 removeallweapons _this;
 _this enableSimulation false; 
 _this allowDamage false; 
-_this addAction["<t color='#FF0000'>Armurerie illégal</t>",life_fnc_weaponShopMenu,"gunblack",0,false,false,"",'playerSide == civilian'];
+_this addAction["<t color='#FF0000'>Armurerie illégal</t>",life_fnc_weaponShopMenu,"gunblack",0,false,false,"",'playerSide == civilian && !license_civ_mercenaire'];
 
 /* 
 _this addAction[format["<t color='#00ffff'>%1</t>  <t color='#AAF200'>(%2�)</t>",

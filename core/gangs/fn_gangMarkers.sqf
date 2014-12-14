@@ -10,7 +10,7 @@ _units = [];
 sleep 0.5;
 if(visibleMap) then {
 	{
-		if((side _x == civilian) && (player != _x)) then {
+		if(side _x == civilian) then {
 			_units set[count _units,_x];
 		}
 	} forEach (units(group player)); //Fetch list of units

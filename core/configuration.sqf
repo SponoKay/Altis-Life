@@ -81,6 +81,7 @@ life_istazed = false;
 life_my_gang = ObjNull;
 
 life_vehicles = [];
+life_vehicles_tracked = [];
 bank_robber = [];
 switch (playerSide) do
 {

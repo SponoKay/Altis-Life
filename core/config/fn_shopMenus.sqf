@@ -26,6 +26,14 @@ switch (_shop) do
 		ctrlShow[2514,false];
 	};
 	
+	case "merco":
+	{
+		ctrlSetText[2505,"Altis Mercenary Shop"];
+		ctrlShow[2503,false];
+		ctrlShow[2513,false];
+		ctrlShow[2514,false];
+	};
+	
 	case "cop":
 	{
 		ctrlSetText[2505,"Altis Cop Shop"];

@@ -62,7 +62,7 @@ _Btn4 buttonSetAction "[] spawn life_fnc_lockpick;";
 _Btn5 ctrlSetText "Saisir carte/GPS";
 _Btn5 buttonSetAction "[] call life_fnc_takeMap;";
 
-if (!(["ItemGPS" in assignedItems life_pInact_curTarget) && !(["ItemMap" in assignedItems life_pInact_curTarget)) then {
+if (!("ItemGPS" in assignedItems life_pInact_curTarget) && !("ItemMap" in assignedItems life_pInact_curTarget)) then {
 	_Btn5 ctrlEnable false;
 };
 

@@ -93,7 +93,7 @@ if(count (primaryWeaponMagazine player) > 0 && alive player) then
         };
         if(_bag && !_handled) then
         {
-            _bMags = _bMags + [_pMag];!
+            _bMags = _bMags + [_pMag];
             _handled = true;
         };
     };

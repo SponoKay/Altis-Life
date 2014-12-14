@@ -1,3 +1,4 @@
+#include <macro.h>
 /*
 	File: fn_spawnMenu.sqf
 	Author: Bryan "Tonic" Boardwine
@@ -10,7 +11,7 @@ disableSerialization;
 
 [] call life_fnc_updateClothing;
 
-if (__GETC__(life_donator) >= 3) then {
+if (__GETC__(life_donator) > 2) then {
 	[] execVM "addons\chien.sqf";
 };
 

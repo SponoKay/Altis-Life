@@ -1,3 +1,4 @@
+#include <macro.h>
 /*
 	File: fn_respawned.sqf
 	Author: Bryan "Tonic" Boardwine
@@ -73,6 +74,6 @@ if(life_removeWanted) then {
 [] call life_fnc_hudUpdate; //Request update of hud.
 [] call life_fnc_updateClothing;
 
-if (__GETC__(life_donator) >= 3) then {
+if(__GETC__(life_donator) > 2) then {
 	[] execVM "addons\chien.sqf";
 };

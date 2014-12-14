@@ -30,7 +30,7 @@ class controls {
 		class Title : Life_RscTitle {
 			colorBackground[] = {0, 0, 0, 0};
 			idc = -1;
-			text = "Altis TV - Diffuser sa publicité";
+			text = "Altis TV - Diffuser sa publicitÃ©";
 			x = 0.1;
 			y = 0.2;
 			w = 0.6;
@@ -40,7 +40,7 @@ class controls {
 		class Channel7NewsEditText : Life_RscStructuredText
 		{
 			idc = -1;
-			text = "Message à tous:";
+			text = "Message:";
 			x = 0.12;
             y = 0.4;
 			w = 0.2;
@@ -61,11 +61,11 @@ class controls {
 		class Channel7Description : Life_RscStructuredText
 		{
 			idc = -1;
-			text = "Diffusez un message à tous les téléspectateurs de Altis TV pour la modique somme de 50000€!";
+			text = "Diffusez un message Ã  tous les tÃ©lÃ©spectateurs de Altis TV pour la modique somme de 50000â‚¬!";
 			x = 0.12;
             y = 0.5;
 			w = 0.5;
-			h = 0.1;
+			h = 0.2;
 		};
 
 		class CloseButtonKey : Life_RscButtonMenu {

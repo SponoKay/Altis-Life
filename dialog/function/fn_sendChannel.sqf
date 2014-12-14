@@ -19,4 +19,4 @@ life_cash = life_cash - 50000;
 _message = ctrlText 9001;
 
 
-[[2,format ["%1 a envoyé le message suivant à tous les téléspectateurs de Altis TV: %2",name player,_message]],"life_fnc_broadcast",true,false] call life_fnc_MP;
+[[1,parseText format["<t size='2' color='#00FF00'>Message publicitaire</t><br /><br /><t align='left'><t color='#009000'>De la part de:</t> %1<br /><br /><t color='#009000'>Message:</t> <br />%2</t>", name player,_message]],"life_fnc_broadcast",true,false] call life_fnc_MP;

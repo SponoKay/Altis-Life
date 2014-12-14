@@ -38,6 +38,7 @@ _clothes = switch (life_clothing_store) do
 	case "reb": {[_selection] call life_fnc_clothing_reb;};
 	case "dive": {[_selection] call life_fnc_clothing_dive;};
 	case "kart": {[_selection] call life_fnc_clothing_kart;};
+	case "merco": {[_selection] call life_fnc_clothing_merco;};
 };
 
 if(count _clothes == 0) exitWith {};

@@ -39291,7 +39291,7 @@ class Mission
 		class Item85
 		{
 			position[]={18430.469,50.094254,15575.354};
-			name="weed_process";
+			name="weed_process_1";
 			text="Traitement du Cannabis";
 			type="mil_dot";
 			colorName="Color1_FD_F";

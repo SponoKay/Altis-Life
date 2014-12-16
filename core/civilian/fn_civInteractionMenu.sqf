@@ -25,7 +25,7 @@ if(isNull _curTarget) exitWith {closeDialog 0;}; //Bad target
 		
 if(!isPlayer _curTarget) exitWith {closeDialog 0;}; //Bad side check?
 
-if((_curTarget getVariable "restrained")) exitWith {
+if(!(_curTarget getVariable "restrained")) exitWith {
 	closeDialog 0;
 };
 

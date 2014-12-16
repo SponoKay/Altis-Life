@@ -25,7 +25,8 @@ if((player getVariable["surrender",FALSE])) then { player setVariable["surrender
 };
 
 if (playerSide == civilian) then {
-	if(!([false,"life_inv_menotte",1] call life_fnc_handleInv)) exitWith {hint "Vous devez avoir une paire de menottes."};
+	if(!([false,"menotte",1] call life_fnc_handleInv)) exitWith {hint "Vous devez avoir une paire de menottes."};
+	hint "Joueur menotté!";
 	_unit setVariable["restrained",true,true];
 	_unit setVariable["surrender",false,true];
 	_unit setVariable["robbedmap",false,true];

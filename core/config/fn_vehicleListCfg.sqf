@@ -362,7 +362,7 @@ switch (_shop) do
 			[
 				["B_Quadbike_01_F",5000],
 				["C_SUV_01_F",35003],
-				["O_MRAP_02_F",350000],
+				["I_MRAP_03_F",350000],
 				["B_G_Offroad_01_F",35000],
 				["B_G_Offroad_01_armed_F",750000]
 			];
@@ -375,7 +375,7 @@ switch (_shop) do
 			[
 				["B_Quadbike_01_F",4250],
 				["C_SUV_01_F",29753],
-				["O_MRAP_02_F",297500],
+				["I_MRAP_03_F",297500],
 				["B_G_Offroad_01_F",29750],
 				["B_G_Offroad_01_armed_F",637500]
 			];
@@ -388,7 +388,7 @@ switch (_shop) do
 			[
 				["B_Quadbike_01_F",3500],
 				["C_SUV_01_F",24503],
-				["O_MRAP_02_F",245000],
+				["I_MRAP_03_F",245000],
 				["B_G_Offroad_01_F",24500],
 				["B_G_Offroad_01_armed_F",525000]
 			];

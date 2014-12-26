@@ -29,9 +29,9 @@ if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Air")) the
 		_cP = 0.01;
 		
 		if(license_civ_depanneur)then{
-		_cpRate = 0.01
+		_cpRate = 0.01 // 25 secondes
 		}else{
-		_cpRate = 0.002 // 2min18
+		_cpRate = 0.005 // 50 secondes
 		};
 
 

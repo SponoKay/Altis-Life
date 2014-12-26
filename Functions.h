@@ -229,6 +229,7 @@ class Life_Client_Core
 		class lockCarSound {};
 		class unlockCarSound {};
 		class updateClothing {};
+		class onPlayerDisconnect {};
 	};
 	
 	class Network

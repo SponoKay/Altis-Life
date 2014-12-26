@@ -43,7 +43,6 @@ switch (_className) do
 	case "I_MRAP_03_F": {60}; // Strider
 	
 	case "B_Heli_Light_01_F": {30}; //MH-9 Hummingbird
-	case "B_Heli_Attack_01_F": {40}; //Blackfoot
 	case "O_Heli_Light_02_unarmed_F": {70}; // Po-30 Orca
 	case "I_Heli_Transport_02_F": {125}; // Mohawk
 	case "I_Heli_light_03_unarmed_F": {40}; //Hellcat

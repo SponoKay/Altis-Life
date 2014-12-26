@@ -204,7 +204,6 @@ switch(_shop) do
 							["optic_NVS",nil,2000],
 							["optic_SOS",nil,2000],
 							["optic_LRPS",nil,2000],
-							["optic_Nightstalker",nil,3000],
 							["acc_pointer_IR",nil,2000],
 							["acc_flashlight",nil,1000]
 						]

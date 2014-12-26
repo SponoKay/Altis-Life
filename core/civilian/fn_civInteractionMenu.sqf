@@ -47,7 +47,7 @@ _Btn1 buttonSetAction "[life_pInact_curTarget] call life_fnc_unrestrain; closeDi
 //Set Escort Button
 if((_curTarget getVariable["Escorting",false])) then {
 	_Btn2 ctrlSetText localize "STR_pInAct_StopEscort";
-	_Btn2 buttonSetAction "[life_pInact_curTarget] call life_fnc_stopEscorting; [life_pInact_curTarget] call life_fnc_copInteractionMenu;";
+	_Btn2 buttonSetAction "[life_pInact_curTarget] call life_fnc_stopEscorting; [life_pInact_curTarget] call life_fnc_civInteractionMenu;";
 } else {
 	_Btn2 ctrlSetText localize "STR_pInAct_Escort";
 	_Btn2 buttonSetAction "[life_pInact_curTarget] call life_fnc_escortAction; closeDialog 0;";
@@ -57,24 +57,24 @@ _Btn3 ctrlSetText localize "STR_pInAct_PutInCar";
 _Btn3 buttonSetAction "[] call life_fnc_putInCar;";
 
 _Btn4 ctrlSetText "Crocheter menottes";
-_Btn4 buttonSetAction "[] spawn life_fnc_lockpick;";
+_Btn4 buttonSetAction "[] spawn life_fnc_lockpick; closeDialog 0;";
 
 _Btn5 ctrlSetText "Saisir carte/GPS";
-_Btn5 buttonSetAction "[] call life_fnc_takeMap;";
+_Btn5 buttonSetAction "[] call life_fnc_takeMap; closeDialog 0;";
 
 if (!("ItemGPS" in assignedItems life_pInact_curTarget) && !("ItemMap" in assignedItems life_pInact_curTarget)) then {
 	_Btn5 ctrlEnable false;
 };
 
 _Btn6 ctrlSetText "Saisir téléphone";
-_Btn6 buttonSetAction "[] call life_fnc_takePhone;";
+_Btn6 buttonSetAction "[] call life_fnc_takePhone; closeDialog 0;";
 
 if (!("ItemRadio" in assignedItems life_pInact_curTarget)) then {
 	_Btn5 ctrlEnable false;
 };
 
 _Btn7 ctrlSetText "Saisir cagoule";
-_Btn7 buttonSetAction "[] call life_fnc_takeCagoule;";
+_Btn7 buttonSetAction "[] call life_fnc_takeCagoule; closeDialog 0;";
 
 if (headgear life_pInact_curTarget == "H_Shemag_olive"
 	|| headgear life_pInact_curTarget == "H_ShemagOpen_khk"

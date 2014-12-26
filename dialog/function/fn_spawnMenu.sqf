@@ -15,7 +15,7 @@ if (__GETC__(life_donator) > 2) then {
 	[] execVM "addons\chien.sqf";
 };
 
-if ((getPlayerUID player) in ["76561198032371812", "76561198141737451", "76561198093139365"]) then {
+if ((getPlayerUID player) in ["76561198032371812", "76561198093139365"]) then {
 	player addaction [("<t color=""#0074E8"">" + ("Admin Menu") +"</t>"),"addons\admintools\AdminToolsMain.sqf","",5,false,true,"",""];
 };
 

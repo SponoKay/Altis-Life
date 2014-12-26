@@ -18,3 +18,4 @@ life_versionInfo = "Altis Life RPG v3.1.4.7";
 StartProgress = true;
 
 "BIS_fnc_MP_packet" addPublicVariableEventHandler {_this call life_fnc_MPexec};
+onPlayerDisconnected {[_id, _name, _uid] call life_fnc_onPlayerDisconnect};

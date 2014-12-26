@@ -267,21 +267,9 @@ _dogGrowl =
 	
 _playSound =
 	{
-	
-		_soundPath 	= [(str missionConfigFile), 0, -15] call BIS_fnc_trimString;
-		sound 		= _this select 0;
-		dog1 		= _this select 1;
-		_volume 	= _this select 2;
-		_soundToPlay = _soundPath + "sounds\" + _sound + ".ogg";
-		
-		publicvariable "sound";
-		publicvariable "dog1";
-		[{dog1 say3d sound},"bis_fnc_spawn",true] spawn bis_fnc_mp;
-		//_null = [[_sountToPlay,_dog],"sound_fnc",true,true] spawn BIS_fnc_MP;
-		
-	
-	//_sound = ["hey",_unit getvariable "dog"] call _playSound;
-	
+		_sound 		= _this select 0;
+		_dog 		= _this select 1;
+		_dog say3D _sound;
 	};
 	
 _dogReturnIdle =

@@ -1,54 +1,43 @@
-//<MAP ESP>
+/*
+	File: ESP.sqf
+	Description: Voir joueurs sur la map
+*/
+private["_markers"];
 
+if (esp_enabled) exitWith {esp_enabled = false;};
 
-marker_mapesp = true;
-//Alle Vehicle
-list_vec = (allMissionObjects "Plane")+(allMissionObjects "LandVehicle")+(allMissionObjects "Helicopter")+(allMissionObjects "Ship");
-//<-----GLOBAL-VARIABLE----->
+esp_enabled = true;
 
-//hint "Adding Markers on the map";
+cutText ["ESP activé", "PLAIN"];
 
-while {marker_mapesp} do
-{    
-    //<-----PLAYER-MARKER----->
-    //<----------------------->
-    //<-----PLAYER-MARKER----->
-    unitList_player = allUnits; //getting all units
-    totalunits = count unitList_player;
-    //hint format["%1", totalunits];
-    
-    o = 0;
-    yo = 0;
-
-    for "o" from 0 to totalunits do
-    {
-        actualunit = unitList_player select o; //Player1
-        //hint format["%1", actualunit];
-        
-        if ( isplayer actualunit && alive actualunit ) then 
-        {
-            deleteMarkerLocal ("Player" + (str o));
-            yo = o + 1;
-            deleteMarkerLocal ("Player" + (str yo));
-                
-            namePlayer = "";
-            namePlayer = name actualunit;
-        
-            mark_player = "Player" + (str o); //Player0, Player1, Player2
-            mark_player = createMarkerLocal [mark_player,getPos actualunit];
-            mark_player setMarkerTypeLocal "waypoint";
-            mark_player setMarkerPosLocal (getPos actualunit);
-            mark_player setMarkerColorLocal "ColorBlue";
-            mark_player setMarkerTextLocal format ["%1",namePlayer];
-        };
-    };    
-    //bit of sleep
-    sleep 0.02;
-};
-
-k = 0;
-for "k" from 0 to 2000 do
+while {esp_enabled} do
 {
-    deleteMarkerLocal ("Player"+ (str k));
-    deleteMarkerLocal ("Vehicle"+ (str k));
+	_markers = [];
+	
+	{
+		deleteMarkerLocal format["%1_espmarker",_x];
+		
+		_marker = createMarkerLocal [format["%1_espmarker",_x],visiblePosition _x];
+		
+		if (side _x == west) then {
+			_marker setMarkerColorLocal "ColorBLUFOR";
+		}
+		else {
+			_marker setMarkerColorLocal "ColorCivilian";
+		};
+		_marker setMarkerTypeLocal "Mil_dot";
+		_marker setMarkerTextLocal format["%1", name _x];
+
+		_markers pushBack [_marker,_x];
+	} foreach playableUnits;
+	
+	sleep 0.02;
+	
+	{
+		if (!alive (_x select 1)) then {
+			deleteMarkerLocal (_x select 0);
+		};
+	} foreach _markers;
 };
+
+cutText ["ESP désactivé", "PLAIN"];

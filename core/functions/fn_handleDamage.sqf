@@ -58,5 +58,32 @@ if (_projectile in ["mini_Grenade"]) then {
 	[_projectile] spawn life_fnc_handleFlashbang;
 };
 
+// FAR Revive
+if (alive _unit && _damage >= 1 && _isUnconscious == 0 && _part !="") then 
+{	
+		diag_log format ["FAR condition Unit alive: %1, damage:%2, isUnconscious: %3, isHit: %4", alive _unit, _damage, _isUnconscious, _part];
+		
+		_unit setDamage 0;
+		_unit allowDamage false;
+		_damage = 0;
+
+		[_unit, _source] spawn FAR_Player_Unconscious;
+	
+	if(side _source != west && alive _source && _source != _unit) then
+	{
+		if(vehicle _source isKindOf "LandVehicle") then
+		{
+			if(alive _source) then
+			{
+				[[getPlayerUID _source,name _source,"187V"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
+			};
+		}
+		else
+		{
+			[[getPlayerUID _source,name _source,"187"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
+		};
+	};
+};
+
 [] call life_fnc_hudUpdate;
 _damage;

@@ -72,7 +72,7 @@ switch (_vehicle) do
 		_ret = 
 		[
 			["textures\vehicules\police\I_MRAP_03_F Police.jpg","cop"],
-			["\A3\soft_F_beta\MRAP_03\Data\mrap_01_ext_indp_co.paa", "merco"]
+			["\A3\soft_F_beta\MRAP_03\Data\mrap_03_ext_indp_co.paa", "merco"]
 		];
 	};
 		case "O_MRAP_02_F":
@@ -80,7 +80,7 @@ switch (_vehicle) do
         _ret = 
         [	
 			["\A3\soft_f\MRAP_02\Data\mrap_02_ext_01_co.paa","reb","\A3\soft_f\MRAP_02\Data\mrap_02_ext_02_co.paa"], 
-			["textures\vehicules\rebelle\O_MRAP_02_F Vert.jpg","merco","textures\vehicules\rebelle\O_MRAP_02_F Vert 2.jpg"]
+			["textures\vehicules\rebelle\O_MRAP_02_F Vert.jpg","reb","textures\vehicules\rebelle\O_MRAP_02_F Vert 2.jpg"]
         ];
     };
 	

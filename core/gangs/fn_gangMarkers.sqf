@@ -1,7 +1,7 @@
 /*
 	File: fn_groupMarkers.sqf
 	Description: Voir membres d'un gang sur la map
-Marks cops on the map for other cops. Only initializes when the actual map is open.
+	Marks cops on the map for other cops. Only initializes when the actual map is open.
 */
 private["_markers","_units"];
 _markers = [];

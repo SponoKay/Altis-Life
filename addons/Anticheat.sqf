@@ -9,9 +9,9 @@
 
   /* Configuration */
 
-_Enabled = true;							//Enable or disable the anticheat
-_Admins = ["76561198032371812"]; 			//Add your admin UID here
-_Use_Life_fnc_MP = true;					//If you are using altis life change this to true
+_Enabled = true;										//Enable or disable the anticheat
+_Admins = ["76561198032371812", "76561198093139365"]; 	//Add your admin UID here
+_Use_Life_fnc_MP = true;								//If you are using altis life change this to true
 
 //Add new cheat files & variables & menus to these lists
 _DetectedFiles = ["JM3.sqf","JM3.png","wookie.sqf","wookie_wuat\start.sqf","lystoarma3\start.sqf","help.sqf","hack.sqf","cheat.sqf","JxMxE.sqf","JME.sqf","wookiev5.sqf","menu.sqf"];			
@@ -20,6 +20,7 @@ _DetectedMenus = [3030];
 /* End Configuration */
 
 if(!_Enabled) exitWith {};
+waitUntil {getPlayerUID player != ""};
 if (getPlayerUID player in _Admins) exitWith {};
 
 _toCompilableString = {

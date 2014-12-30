@@ -46,7 +46,7 @@ FAR_Player_Unconscious =
 		
 		sleep 2;
 	};
-	_unit setDamage 0;
+	_unit setDamage (0);
 	//life_is_arrested = true; //Verif pour les jojos qui leave en rea
 	//life_alive = false;
 	life_in_rea = true;
@@ -119,7 +119,7 @@ FAR_Player_Unconscious =
 			};
 			_unit enableSimulation true;
 			_unit allowDamage true;
-			_unit setDamage 0;
+			_unit setDamage (0);
 			_unit setCaptive false;
 			life_alive = true;
 			life_in_rea = false;

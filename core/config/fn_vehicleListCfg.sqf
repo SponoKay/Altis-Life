@@ -211,6 +211,7 @@ switch (_shop) do
 			_return =
 			[
 				["B_Heli_Light_01_F",750000],
+				["C_Heli_Light_01_civil_F",650000],
 				["O_Heli_Light_02_unarmed_F",1000000]
 			];	
 			if(license_civ_medecin) then
@@ -224,6 +225,7 @@ switch (_shop) do
 			_return =
 			[
 				["B_Heli_Light_01_F",637500],
+				["C_Heli_Light_01_civil_F",537500],
 				["O_Heli_Light_02_unarmed_F",850000],
 				["I_Heli_Transport_02_F",1500000]				
 			];	
@@ -238,6 +240,7 @@ switch (_shop) do
 			_return =
 			[
 				["B_Heli_Light_01_F",525000],
+				["C_Heli_Light_01_civil_F",425000],
 				["O_Heli_Light_02_unarmed_F",700000],
 				["I_Heli_Transport_02_F",1275000]				
 			];
@@ -305,7 +308,8 @@ switch (_shop) do
 				["B_G_Offroad_01_armed_F",750000],
 				["B_Heli_Light_01_F",750000],
 				["O_Heli_Light_02_unarmed_F",1000000],
-				["I_Heli_light_03_unarmed_F",1500000]
+				["I_Heli_light_03_unarmed_F",1500000],
+				["O_Heli_Transport_04_covered_F",1000000]
 			];
 
 		};	
@@ -323,7 +327,8 @@ switch (_shop) do
 				["O_Heli_Light_02_unarmed_F",850000],
 				["I_Heli_Transport_02_F",1500000],
 				["I_Heli_light_03_unarmed_F",1275000],
-				["O_Heli_Light_02_F",2000000]
+				["O_Heli_Light_02_F",2000000],
+				["O_Heli_Transport_04_covered_F",875000]
 			];
 
 		};			
@@ -341,7 +346,8 @@ switch (_shop) do
 				["O_Heli_Light_02_unarmed_F",700000],
 				["I_Heli_Transport_02_F",1275000],
 				["I_Heli_light_03_unarmed_F",1050000],
-				["O_Heli_Light_02_F",1750000]
+				["O_Heli_Light_02_F",1750000],
+				["O_Heli_Transport_04_covered_F",825000]
 			];
 					
 		};		
@@ -519,10 +525,15 @@ switch (_shop) do
 			_return set[count _return,["B_Heli_Light_01_armed_F",1000000]];
 		};
 
-		if(__GETC__(life_coplevel) > 4) then //lvl 5 - Lieutenant
+		if(__GETC__(life_coplevel) > 4) then //lvl 5
 		{
 			_return set[count _return,["B_Heli_Transport_01_F",1500000]];	
-		};					
+		};
+		
+		if(__GETC__(life_coplevel) > 5) then //lvl 6
+		{
+			_return set[count _return,["B_Heli_Transport_03_unarmed_F",1250000]];
+		};
 	};
 
 // ********************

@@ -96,7 +96,16 @@ if(playerSide == west) then {
 		_Btn3 ctrlShow false;
 	};
 	
-	_Btn4 ctrlShow false;
-	_Btn5 ctrlShow false;
+	if(typeOf (_curTarget) in ["C_Heli_Light_01_civil_F"]) then {
+		_Btn4 ctrlSetText "Monter conducteur";
+		_Btn4 buttonSetAction "player moveInDriver life_vInact_curTarget; closeDialog 0;";
+		
+		_Btn5 ctrlShow false;
+	}
+	else {
+		_Btn4 ctrlShow false;
+		_Btn5 ctrlShow false;
+	};
+	
 	_Btn6 ctrlShow false;
 };

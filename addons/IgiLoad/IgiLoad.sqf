@@ -965,7 +965,7 @@ if (isnil "IL_Procedures") then
 		
 		if (IL_CDamage == 0) then
 		{
-			_cargo setDamage 0;
+			_cargo setDamage (0);
 		};
 		
 		if (IL_CDamage == 1) then
@@ -1283,7 +1283,7 @@ if (isnil "IL_Procedures") then
 						
 						if (IL_CDamage == 0) then
 						{
-							_x setDamage 0;
+							_x setDamage (0);
 						};
 						
 						if (IL_CDamage == 1) then
@@ -1541,7 +1541,7 @@ if (isnil "IL_Procedures") then
 
 						if (IL_CDamage == 0) then
 						{
-							_x setDamage 0;
+							_x setDamage (0);
 						};
 						
 						if (IL_CDamage == 1) then

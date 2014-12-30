@@ -41,7 +41,8 @@ switch (_filter) do
 			["H_HelmetO_ocamo",nil,2500],
 			["H_MilCap_oucamo",nil,1200],
 			["H_Shemag_tan",nil,1200],
-			["H_Bandanna_camo",nil,650]			
+			["H_Bandanna_camo",nil,650],
+			["H_Booniehat_dgtl",nil,1200]
 		];
 	};
 	
@@ -79,7 +80,8 @@ switch (_filter) do
 			["V_TacVest_khk",nil,12500],
 			["V_BandollierB_cbr",nil,4500],
 			["V_TacVest_oli",nil,12500],
-			["V_HarnessO_brn",nil,7500]
+			["V_HarnessO_brn",nil,7500],
+			["V_PlateCarrier1_rgr",nil,17500]
 		];
 	};
 	

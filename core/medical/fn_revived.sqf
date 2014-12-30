@@ -1,3 +1,4 @@
+#include <macro.h>
 /*
 	File: fn_revived.sqf
 	Author: Bryan "Tonic" Boardwine
@@ -45,5 +46,5 @@ if (__GETC__(life_donator) > 2) then {
 };
 
 if ((getPlayerUID player) in ["76561198032371812", "76561198093139365"]) then {
-	player addaction [("<t color=""#0074E8"">" + ("Admin Menu") +"</t>"),"addons\admintools\AdminToolsMain.sqf","",5,false,true,"",""];
+	player addaction [("<t color=""#0074E8"">" + ("Menu d'Administration") +"</t>"),"addons\admintools\AdminToolsMain.sqf","",5,false,true,"",""];
 };

@@ -6,7 +6,8 @@ altislife.fr
 
 private["_unit","_headgear","_goggles"];
 _headgear = ["H_Shemag_olive","H_ShemagOpen_tan","H_ShemagOpen_khk","H_Shemag_tan"];
-_goggles = ["G_Balaclava_blk","G_Balaclava_combat","G_Balaclava_lowprofile","G_Balaclava_oli","G_Bandanna_aviator","G_Bandanna_sport","G_Bandanna_shades"];
+_goggles = ["G_Bandanna_tan","G_Balaclava_blk","G_Balaclava_combat","G_Balaclava_lowprofile",
+	"G_Balaclava_oli","G_Bandanna_aviator","G_Bandanna_sport","G_Bandanna_shades","G_Bandanna_beast","G_Bandanna_oli"];
 _unit = cursorTarget;
 _headgeartobackpack = headgear _unit;
 _gogglestobackpack = Goggles _unit;

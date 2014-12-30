@@ -146,12 +146,12 @@ if(isDedicated) then {
 		while{true} do {
 			waitUntil{!isNull (findDisplay 49)};
 			((findDisplay 49) displayCtrl 2) ctrlEnable false;
-			((findDisplay 49) displayCtrl 2) ctrlSetText "Server Protection By:";
+			((findDisplay 49) displayCtrl 2) ctrlSetText "Adresse du serveur:";
 			((findDisplay 49) displayCtrl 103) ctrlEnable false;
-			((findDisplay 49) displayCtrl 103) ctrlSetText "Team-Atomic";
+			((findDisplay 49) displayCtrl 103) ctrlSetText "altislife-france.com";
 			((findDisplay 49) displayCtrl 122) ctrlEnable false;
 			((findDisplay 49) displayCtrl 122) ctrlShow false;
-			((findDisplay 49) displayCtrl 523) ctrlSetText "Public v1.5";
+			//((findDisplay 49) displayCtrl 523) ctrlSetText "Public v1.5";
 			waitUntil{isNull (findDisplay 49)}
 		};
 	};

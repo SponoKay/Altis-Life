@@ -40,7 +40,7 @@ if(!local (_search select 0)) then
 {
 	(_search select 0) setFuel 1;
 };
-(_search select 0) setDamage 0;
+(_search select 0) setDamage (0);
 
 5 cutText ["","PLAIN"];
 titleText [localize "STR_Service_Chopper_Done","PLAIN"];

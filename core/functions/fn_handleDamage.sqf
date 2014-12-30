@@ -63,7 +63,7 @@ if (alive _unit && _damage >= 1 && _isUnconscious == 0 && _part !="") then
 {	
 		diag_log format ["FAR condition Unit alive: %1, damage:%2, isUnconscious: %3, isHit: %4", alive _unit, _damage, _isUnconscious, _part];
 		
-		_unit setDamage 0;
+		_unit setDamage (0);
 		_unit allowDamage false;
 		_damage = 0;
 

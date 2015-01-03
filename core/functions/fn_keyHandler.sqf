@@ -66,7 +66,7 @@ switch (_code) do
 			{
 				case west: {[] spawn life_fnc_copMarkers;};
 				case independent: {[] spawn life_fnc_medicMarkers;};
-				case civilian: {[] spawn life_fnc_gangMarkers;};
+				default {[] spawn life_fnc_gangMarkers;};
 			};
 			[] spawn life_fnc_trackerMarkers;
 		};

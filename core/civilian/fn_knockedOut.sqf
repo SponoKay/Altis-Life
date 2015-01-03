@@ -17,7 +17,7 @@ player playMoveNow "Incapacitated";
 _obj = "Land_ClutterCutter_small_F" createVehicle (getPosATL player);
 _obj setPosATL (getPosATL player);
 player attachTo [_obj,[0,0,0]];
-sleep 15;
+sleep 30;
 player playMoveNow "amovppnemstpsraswrfldnon";
 detach player;
 deleteVehicle _obj;

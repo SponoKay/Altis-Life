@@ -54,7 +54,7 @@ if((_curTarget getVariable["Escorting",false])) then {
 };
 
 _Btn3 ctrlSetText localize "STR_pInAct_PutInCar";
-_Btn3 buttonSetAction "[] call life_fnc_putInCar;";
+_Btn3 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar;";
 
 _Btn4 ctrlSetText "Crocheter menottes";
 _Btn4 buttonSetAction "[] spawn life_fnc_lockpick; closeDialog 0;";

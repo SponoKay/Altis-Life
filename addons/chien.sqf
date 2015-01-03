@@ -55,7 +55,10 @@ _dogWhistle =
 		_idle 		= (_this select 3) select 3;
 		_vehicle 	= (_this select 3) select 4;
 		_sound = ["whistle",_unit, 20] spawn play;
-        hint "Jessie, here girl!";
+        hint "Jessie, par ici!";
+
+        _unit setvariable ["order","idle"];
+		
         sleep 1;
         _unit setvariable ["follow",'false'];
         _tempPos = [(getpos _unit) select 0,((getpos _unit) select 1) + 1,0];
@@ -64,8 +67,6 @@ _dogWhistle =
         _group1 = createGroup _side;
         
         _dog = "Alsatian_Sandblack_F" createUnit [_tempPos,_group1,"dog = this", 1.0, "private"];
-
-        _unit setvariable ["order","idle"];
         _unit setvariable ["step","go"];
         _unit setvariable ["dog", dog];
         (_unit getvariable "dog") setvariable ["player",_unit];

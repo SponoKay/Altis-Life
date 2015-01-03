@@ -327,7 +327,7 @@ switch (_shop) do
 				["O_Heli_Light_02_unarmed_F",850000],
 				["I_Heli_Transport_02_F",1500000],
 				["I_Heli_light_03_unarmed_F",1275000],
-				["O_Heli_Light_02_F",2000000],
+				["B_Heli_Light_01_armed_F",2000000],
 				["O_Heli_Transport_04_covered_F",875000]
 			];
 
@@ -346,7 +346,7 @@ switch (_shop) do
 				["O_Heli_Light_02_unarmed_F",700000],
 				["I_Heli_Transport_02_F",1275000],
 				["I_Heli_light_03_unarmed_F",1050000],
-				["O_Heli_Light_02_F",1750000],
+				["B_Heli_Light_01_armed_F",1750000],
 				["O_Heli_Transport_04_covered_F",825000]
 			];
 					

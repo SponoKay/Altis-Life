@@ -13,4 +13,4 @@ sleep 1;
 titleText[format["Vous avez pris la carte de cette personne"],"PLAIN"];
 _unit unassignItem "ItemMap";
 _unit removeItem "ItemMap";
-player addItemToBackpack "ItemMap";
+player addItem "ItemMap";

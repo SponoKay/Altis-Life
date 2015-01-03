@@ -24,7 +24,7 @@ if(visibleMap) then {
 
 	{
 		_i = _i + 1;
-		_marker = createMarkerLocal [format["%1_marker",_x],visiblePosition _x];
+		_marker = createMarkerLocal [format["%1_tracker",_x],visiblePosition _x];
 		_marker setMarkerColorLocal "ColorYellow";
 		_marker setMarkerTypeLocal "n_armor";
 		_marker setMarkerTextLocal format["Traceur - %1",_i];

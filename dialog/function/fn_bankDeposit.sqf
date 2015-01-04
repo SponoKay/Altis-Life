@@ -12,10 +12,10 @@ _value = parseNumber(ctrlText 2702);
 if(_value > 999999) exitWith {hint localize "STR_ATM_GreaterThan";};
 if(_value < 0) exitWith {};
 if(!([str(_value)] call life_fnc_isnumeric)) exitWith {hint localize "STR_ATM_notnumeric"};
-if(_value > life_cash) exitWith {hint localize "STR_ATM_NotEnoughCash"};
+if(_value > hBf0MznDHQm7X5DFFSmy) exitWith {hint localize "STR_ATM_NotEnoughCash"};
 
-life_cash = life_cash - _value;
-life_atmcash = life_atmcash + _value;
+hBf0MznDHQm7X5DFFSmy = hBf0MznDHQm7X5DFFSmy - _value;
+R6cuXKTCWDZFxfbfdATm = R6cuXKTCWDZFxfbfdATm + _value;
 
 hint format[localize "STR_ATM_DepositMSG",[_value] call life_fnc_numberText];
 [] call life_fnc_atmMenu;

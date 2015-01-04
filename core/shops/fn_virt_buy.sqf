@@ -17,7 +17,7 @@ _amount = parseNumber(_amount);
 if(_diff <= 0) exitWith {hint localize "STR_NOTF_NoSpace"};
 _amount = _diff;
 _hideout = (nearestObjects[getPosATL player,["Land_u_Barracks_V2_F","Land_i_Barracks_V2_F"],25]) select 0;
-if((_price * _amount) > life_cash && {!isNil "_hideout" && {!isNil {grpPlayer getVariable "gang_bank"}} && {(grpPlayer getVariable "gang_bank") <= _price * _amount}}) exitWith {hint localize "STR_NOTF_NotEnoughMoney"};
+if((_price * _amount) > hBf0MznDHQm7X5DFFSmy && {!isNil "_hideout" && {!isNil {grpPlayer getVariable "gang_bank"}} && {(grpPlayer getVariable "gang_bank") <= _price * _amount}}) exitWith {hint localize "STR_NOTF_NotEnoughMoney"};
 
 _name = [([_type,0] call life_fnc_varHandle)] call life_fnc_varToStr;
 
@@ -27,7 +27,7 @@ if(([true,_type,_amount] call life_fnc_handleInv)) then
 		_action = [
 			format[(localize "STR_Shop_Virt_Gang_FundsMSG")+ "<br/><br/>" +(localize "STR_Shop_Virt_Gang_Funds")+ " <t color='#8cff9b'>$%1</t><br/>" +(localize "STR_Shop_Virt_YourFunds")+ " <t color='#8cff9b'>$%2</t>",
 				[(grpPlayer getVariable "gang_bank")] call life_fnc_numberText,
-				[life_cash] call life_fnc_numberText
+				[hBf0MznDHQm7X5DFFSmy] call life_fnc_numberText
 			],
 			localize "STR_Shop_Virt_YourorGang",
 			localize "STR_Shop_Virt_UI_GangFunds",
@@ -40,14 +40,14 @@ if(([true,_type,_amount] call life_fnc_handleInv)) then
 			grpPlayer setVariable["gang_bank",_funds,true];
 			[[1,grpPlayer],"TON_fnc_updateGang",false,false] spawn life_fnc_MP;
 		} else {
-			if((_price * _amount) > life_cash) exitWith {[false,_type,_amount] call life_fnc_handleInv; hint localize "STR_NOTF_NotEnoughMoney";};
+			if((_price * _amount) > hBf0MznDHQm7X5DFFSmy) exitWith {[false,_type,_amount] call life_fnc_handleInv; hint localize "STR_NOTF_NotEnoughMoney";};
 			hint format[localize "STR_Shop_Virt_BoughtItem",_amount,_name,[(_price * _amount)] call life_fnc_numberText];
-			__SUB__(life_cash,_price);
+			__SUB__(hBf0MznDHQm7X5DFFSmy,_price);
 		};
 	} else {
-		if((_price * _amount) > life_cash) exitWith {hint localize "STR_NOTF_NotEnoughMoney"; [false,_type,_amount] call life_fnc_handleInv;};
+		if((_price * _amount) > hBf0MznDHQm7X5DFFSmy) exitWith {hint localize "STR_NOTF_NotEnoughMoney"; [false,_type,_amount] call life_fnc_handleInv;};
 		hint format[localize "STR_Shop_Virt_BoughtItem",_amount,_name,[(_price * _amount)] call life_fnc_numberText];
-		__SUB__(life_cash,(_price * _amount));
+		__SUB__(hBf0MznDHQm7X5DFFSmy,(_price * _amount));
 	};
 	[] call life_fnc_virt_update;
 };

@@ -23,7 +23,7 @@ _robber = false;
 
 if(!life_use_atm) then 
 {
-	life_cash = 0;
+	hBf0MznDHQm7X5DFFSmy = 0;
 	_robber = true;
 };
 

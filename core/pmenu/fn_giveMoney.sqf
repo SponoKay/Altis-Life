@@ -19,7 +19,7 @@ if(isNull _unit) exitWith {ctrlShow[2001,true];};
 if(!life_use_atm) exitWith {hint "Vous avez récemment braquer la banque, merci d'attendre.";ctrlShow[2001,true];};
 if(!([_amount] call TON_fnc_isnumber)) exitWith {hint "Merci d'entrer un nombre.";ctrlShow[2001,true];};
 if(parseNumber(_amount) <= 0) exitWith {hint "Merci d'entrer un montant supérieur à 0.";ctrlShow[2001,true];};
-if(parseNumber(_amount) > life_cash) exitWith {hint "Vous n'avez pas assez d'argent!";ctrlShow[2001,true];};
+if(parseNumber(_amount) > hBf0MznDHQm7X5DFFSmy) exitWith {hint "Vous n'avez pas assez d'argent!";ctrlShow[2001,true];};
 if(isNull _unit) exitWith {ctrlShow[2001,true];};
 if(isNil "_unit") exitWith {ctrlShow[2001,true]; hint "Le joueur sélectionné est trop loin.";};
 if(headgear _unit != "H_ShemagOpen_tan" 
@@ -40,7 +40,7 @@ if(headgear _unit != "H_ShemagOpen_tan"
 else {
 	hint format["Vous avez donné %1€ à un inconnu",[(parseNumber(_amount))] call life_fnc_numberText];
 };
-life_cash = life_cash - (parseNumber(_amount));
+hBf0MznDHQm7X5DFFSmy = hBf0MznDHQm7X5DFFSmy - (parseNumber(_amount));
 [] call SOCK_fnc_updateRequest;
 [[_unit,_amount,player],"life_fnc_receiveMoney",_unit,false] spawn life_fnc_MP;
 [] call life_fnc_p_updateMenu;

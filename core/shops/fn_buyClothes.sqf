@@ -16,8 +16,8 @@ _price = 0;
 	};
 } foreach life_clothing_purchase;
 
-if(_price > life_cash) exitWith {titleText[localize "STR_Shop_NotEnoughClothes","PLAIN"];};
-life_cash = life_cash - _price;
+if(_price > hBf0MznDHQm7X5DFFSmy) exitWith {titleText[localize "STR_Shop_NotEnoughClothes","PLAIN"];};
+hBf0MznDHQm7X5DFFSmy = hBf0MznDHQm7X5DFFSmy - _price;
 
 life_clothesPurchased = true;
 closeDialog 0;

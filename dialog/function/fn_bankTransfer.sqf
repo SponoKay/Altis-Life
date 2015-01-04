@@ -14,11 +14,11 @@ if(isNil "_unit") exitWith {hint localize "STR_ATM_DoesntExist"};
 if(_val > 999999) exitWith {hint localize "STR_ATM_TransferMax";};
 if(_val < 0) exitwith {};
 if(!([str(_val)] call life_fnc_isnumeric)) exitWith {hint localize "STR_ATM_notnumeric"};
-if(_val > life_atmcash) exitWith {hint localize "STR_ATM_NotEnough"};
+if(_val > R6cuXKTCWDZFxfbfdATm) exitWith {hint localize "STR_ATM_NotEnough"};
 _tax = [_val] call life_fnc_taxRate;
-if((_val + _tax) > life_atmcash) exitWith {hint format[localize "STR_ATM_SentMoneyFail",_val,_tax]};
+if((_val + _tax) > R6cuXKTCWDZFxfbfdATm) exitWith {hint format[localize "STR_ATM_SentMoneyFail",_val,_tax]};
 
-life_atmcash = life_atmcash - (_val + _tax);
+R6cuXKTCWDZFxfbfdATm = R6cuXKTCWDZFxfbfdATm - (_val + _tax);
 
 [[_val,profileName],"TON_fnc_clientWireTransfer",_unit,false] spawn life_fnc_MP;
 [] call life_fnc_atmMenu;

@@ -98,12 +98,12 @@ life_fnc_garageRefund = compileFinal
 	_price = _this select 0;
 	_unit = _this select 1;
 	if(_unit != player) exitWith {};
-	life_atmcash = life_atmcash + _price;
+	R6cuXKTCWDZFxfbfdATm = R6cuXKTCWDZFxfbfdATm + _price;
 ";
 
 [] execVM "core\init_survival.sqf";
 
-__CONST__(life_paycheck,life_paycheck); //Make the paycheck static.
+__CONST__(f2wqRL3J46UYrNb4pchK,f2wqRL3J46UYrNb4pchK); //Make the paycheck static.
 
 //Spawn inconscient
 /*if(life_in_rea) then {

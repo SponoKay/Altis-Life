@@ -27,14 +27,14 @@ _action = [
 ] call BIS_fnc_guiMessage;
 
 if(_action) then {
-	if(life_atmcash < (_houseCfg select 0)) exitWith {hint format [localize "STR_House_NotEnough"]};
+	if(R6cuXKTCWDZFxfbfdATm < (_houseCfg select 0)) exitWith {hint format [localize "STR_House_NotEnough"]};
 	[[_uid,_house],"TON_fnc_addHouse",false,false] spawn life_fnc_MP;
 	_house setVariable["house_owner",[_uid,profileName],true];
 	_house setVariable["locked",true,true];
 	_house setVariable["Trunk",[[],0],true];
 	_house setVariable["containers",[],true];
 	_house setVariable["uid",round(random 99999),true];
-	life_atmcash = life_atmcash - (_houseCfg select 0);
+	R6cuXKTCWDZFxfbfdATm = R6cuXKTCWDZFxfbfdATm - (_houseCfg select 0);
 	life_vehicles pushBack _house;
 	life_houses pushBack [str(getPosATL _house),[]];
 	_marker = createMarkerLocal [format["house_%1",(_house getVariable "uid")],getPosATL _house];

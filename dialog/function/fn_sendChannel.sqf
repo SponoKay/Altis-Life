@@ -12,9 +12,9 @@ disableSerialization;
 
 waitUntil {!isnull (findDisplay 9000)};
 
-if (life_cash <= 50000 ) exitWith { systemChat "Vous avez besoin de 50000€ pour faire passer votre message!"; };
+if (hBf0MznDHQm7X5DFFSmy <= 50000 ) exitWith { systemChat "Vous avez besoin de 50000€ pour faire passer votre message!"; };
 if (playerSide != civilian ) exitWith { systemChat "Vous devez être un civil!"; };
-life_cash = life_cash - 50000;
+hBf0MznDHQm7X5DFFSmy = hBf0MznDHQm7X5DFFSmy - 50000;
 
 _message = ctrlText 9001;
 

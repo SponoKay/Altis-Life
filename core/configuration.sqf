@@ -72,8 +72,8 @@ life_delivery_in_progress = false;
 life_action_in_use = false;
 life_thirst = 100;
 life_hunger = 100;
-__CONST__(life_paycheck_period,5); //Five minutes
-life_cash = 0;
+__CONST__(f2wqRL3J46UYrNb4pchK_period,5); //Five minutes
+hBf0MznDHQm7X5DFFSmy = 0;
 __CONST__(life_impound_car,350);
 __CONST__(life_impound_boat,250);
 __CONST__(life_impound_air,850);
@@ -87,18 +87,18 @@ switch (playerSide) do
 {
 	case west: 
 	{
-		life_atmcash = 10000; //Starting Bank Money
-		life_paycheck = 5000; //Paycheck Amount
+		R6cuXKTCWDZFxfbfdATm = 10000; //Starting Bank Money
+		f2wqRL3J46UYrNb4pchK = 5000; //Paycheck Amount
 	};
 	case civilian: 
 	{
-		life_atmcash = 30000; //Starting Bank Money
-		life_paycheck = 2000; //Paycheck Amount
+		R6cuXKTCWDZFxfbfdATm = 30000; //Starting Bank Money
+		f2wqRL3J46UYrNb4pchK = 2000; //Paycheck Amount
 	};
 	
 	case independent: {
-		life_atmcash = 6500;
-		life_paycheck = 4000;
+		R6cuXKTCWDZFxfbfdATm = 6500;
+		f2wqRL3J46UYrNb4pchK = 4000;
 	};
 };
 

@@ -28,7 +28,7 @@ if(_bad != "") exitWith {hint _bad};
 if((uiNamespace getVariable["Weapon_Shop_Filter",0]) == 1) then
 {
 	hint parseText "Vente désactivée.";
-	/*life_cash = life_cash + _price;
+	/*hBf0MznDHQm7X5DFFSmy = hBf0MznDHQm7X5DFFSmy + _price;
 	[_item,false] call life_fnc_handleItem;
 	hint parseText format[localize "STR_Shop_Weapon_Sold",_itemInfo select 1,[_price] call life_fnc_numberText];
 	[nil,(uiNamespace getVariable["Weapon_Shop_Filter",0])] call life_fnc_weaponShopFilter; //Update the menu.*/
@@ -41,7 +41,7 @@ if((uiNamespace getVariable["Weapon_Shop_Filter",0]) == 1) then
 		_action = [
 			format[(localize "STR_Shop_Virt_Gang_FundsMSG")+ "<br/><br/>" +(localize "STR_Shop_Virt_Gang_Funds")+ " <t color='#8cff9b'>$%1</t><br/>" +(localize "STR_Shop_Virt_YourFunds")+ " <t color='#8cff9b'>$%2</t>",
 				[(grpPlayer getVariable "gang_bank")] call life_fnc_numberText,
-				[life_cash] call life_fnc_numberText
+				[hBf0MznDHQm7X5DFFSmy] call life_fnc_numberText
 			],
 			localize "STR_Shop_Virt_YourorGang",
 			localize "STR_Shop_Virt_UI_GangFunds",
@@ -55,15 +55,15 @@ if((uiNamespace getVariable["Weapon_Shop_Filter",0]) == 1) then
 			[_item,true] spawn life_fnc_handleItem;
 			[[1,grpPlayer],"TON_fnc_updateGang",false,false] spawn life_fnc_MP;
 		} else {
-			if(_price > life_cash) exitWith {hint localize "STR_NOTF_NotEnoughMoney"};
+			if(_price > hBf0MznDHQm7X5DFFSmy) exitWith {hint localize "STR_NOTF_NotEnoughMoney"};
 			hint parseText format[localize "STR_Shop_Weapon_BoughtItem",_itemInfo select 1,[_price] call life_fnc_numberText];
-			__SUB__(life_cash,_price);
+			__SUB__(hBf0MznDHQm7X5DFFSmy,_price);
 			[_item,true] spawn life_fnc_handleItem;
 		};
 	} else {
-		if(_price > life_cash) exitWith {hint localize "STR_NOTF_NotEnoughMoney"};
+		if(_price > hBf0MznDHQm7X5DFFSmy) exitWith {hint localize "STR_NOTF_NotEnoughMoney"};
 		hint parseText format[localize "STR_Shop_Weapon_BoughtItem",_itemInfo select 1,[_price] call life_fnc_numberText];
-		life_cash = life_cash - _price;
+		hBf0MznDHQm7X5DFFSmy = hBf0MznDHQm7X5DFFSmy - _price;
 		[_item,true] spawn life_fnc_handleItem;
 	};
 };

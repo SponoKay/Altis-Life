@@ -20,10 +20,10 @@ life_deathCamera cameraEffect ["TERMINATE","BACK"];
 camDestroy life_deathCamera;
 
 //Take fee for services.
-if(life_atmcash > (call life_revive_fee)) then {
-	life_atmcash = life_atmcash - (call life_revive_fee);
+if(R6cuXKTCWDZFxfbfdATm > (call life_revive_fee)) then {
+	R6cuXKTCWDZFxfbfdATm = R6cuXKTCWDZFxfbfdATm - (call life_revive_fee);
 } else {
-	life_atmcash = 0;
+	R6cuXKTCWDZFxfbfdATm = 0;
 };
 
 //Bring me back to life.

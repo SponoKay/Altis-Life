@@ -1868,7 +1868,7 @@ class Mission
 					vehicle="O_Soldier_F";
 					skill=0.60000002;
 					text="reb_1";
-					init="_null=this execVM ""pnj\weapon_shop_reb.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\weapon_shop_reb.sqf"";";
 				};
 				class Item2
 				{
@@ -1881,7 +1881,7 @@ class Mission
 					vehicle="C_man_1";
 					skill=0.60000002;
 					text="license_shop_1";
-					init="_null=this execVM ""pnj\licenses_shop.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\licenses_shop.sqf"";";
 				};
 				class Item3
 				{
@@ -1938,7 +1938,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_p_shorts_1_F_afro";
 					skill=0.60000002;
-					init="_null=this execVM ""pnj\truck_shop_kavala.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\truck_shop_kavala.sqf"";";
 				};
 				class Item8
 				{
@@ -1949,7 +1949,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_polo_3_F";
 					skill=0.60000002;
-					init="_null=this execVM ""pnj\weed_process.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\weed_process.sqf"";";
 				};
 				class Item9
 				{
@@ -1960,7 +1960,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_w_worker_F";
 					skill=0.60000002;
-					init="_null=this execVM ""pnj\heli_shop_civ03.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\heli_shop_civ03.sqf"";";
 				};
 				class Item10
 				{
@@ -1994,7 +1994,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_w_worker_F";
 					skill=0.60000002;
-					init="_null=this execVM ""pnj\heli_shop_civ02.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\heli_shop_civ02.sqf"";";
 				};
 				class Item13
 				{
@@ -2017,7 +2017,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_p_beggar_F_afro";
 					skill=0.60000002;
-					init="_null=this execVM ""pnj\car_shop_pyrgos.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\car_shop_pyrgos.sqf"";";
 				};
 				class Item15
 				{
@@ -2053,7 +2053,7 @@ class Mission
 					vehicle="C_man_1";
 					skill=0.60000002;
 					text="license_shop";
-					init="_null=this execVM ""pnj\licenses_shop.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\licenses_shop.sqf"";";
 				};
 				class Item18
 				{
@@ -2087,7 +2087,7 @@ class Mission
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
-					init="_null=this execVM ""pnj\boat_shop_cop01.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\boat_shop_cop01.sqf"";";
 				};
 				class Item21
 				{
@@ -2098,7 +2098,7 @@ class Mission
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
-					init="_null=this execVM ""pnj\heli_shop_cop01.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\heli_shop_cop01.sqf"";";
 				};
 				class Item22
 				{
@@ -2109,7 +2109,7 @@ class Mission
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
-					init="_null=this execVM ""pnj\car_shop_cop01.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\car_shop_cop01.sqf"";";
 				};
 				class Item23
 				{
@@ -2120,7 +2120,7 @@ class Mission
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
-					init="_null=this execVM ""pnj\weapon_shop_cop01.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\weapon_shop_cop01.sqf"";";
 				};
 				class Item24
 				{
@@ -2131,7 +2131,7 @@ class Mission
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
-					init="_null=this execVM ""pnj\heli_shop_cop04.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\heli_shop_cop04.sqf"";";
 				};
 				class Item25
 				{
@@ -2142,7 +2142,7 @@ class Mission
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
-					init="_null=this execVM ""pnj\car_shop_cop03.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\car_shop_cop03.sqf"";";
 				};
 				class Item26
 				{
@@ -2153,7 +2153,7 @@ class Mission
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
-					init="_null=this execVM ""pnj\car_shop_cop02.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\car_shop_cop02.sqf"";";
 				};
 				class Item27
 				{
@@ -2177,7 +2177,7 @@ class Mission
 					vehicle="C_man_1";
 					skill=0.60000002;
 					text="license_shop_3";
-					init="_null=this execVM ""pnj\licenses_shop.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\licenses_shop.sqf"";";
 				};
 				class Item29
 				{
@@ -2290,7 +2290,7 @@ class Mission
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
-					init="_null=this execVM ""pnj\weapon_shop_cop01.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\weapon_shop_cop01.sqf"";";
 				};
 				class Item39
 				{
@@ -2302,7 +2302,7 @@ class Mission
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
 					text="Policeshop_Athira";
-					init="_null=this execVM ""pnj\weapon_shop_cop01.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\weapon_shop_cop01.sqf"";";
 				};
 				class Item40
 				{
@@ -2347,7 +2347,7 @@ class Mission
 					vehicle="O_Soldier_F";
 					skill=0.60000002;
 					text="reb_1_2";
-					init="_null=this execVM ""pnj\weapon_shop_reb.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\weapon_shop_reb.sqf"";";
 				};
 				class Item44
 				{
@@ -2383,7 +2383,7 @@ class Mission
 					vehicle="C_man_1";
 					skill=0.60000002;
 					text="pnj_garage_kavala_1";
-					init="_null=this execVM ""pnj\garage_kavala.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\garage_kavala.sqf"";";
 				};
 				class Item47
 				{
@@ -2394,7 +2394,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="_null=this execVM ""pnj\heli_shop_civ01.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\heli_shop_civ01.sqf"";";
 				};
 				class Item48
 				{
@@ -2416,7 +2416,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_shorts_3_F_euro";
 					skill=0.60000002;
-					init="_null=this execVM ""pnj\boat_shop_pyrgos.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\boat_shop_pyrgos.sqf"";";
 				};
 				class Item50
 				{
@@ -2473,7 +2473,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_p_shorts_1_F_afro";
 					skill=0.60000002;
-					init="_null=this execVM ""pnj\truck_shop_athira.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\truck_shop_athira.sqf"";";
 				};
 				class Item55
 				{
@@ -2484,7 +2484,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="_null=this execVM ""pnj\blackmarket_sell02.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\blackmarket_sell02.sqf"";";
 				};
 				class Item56
 				{
@@ -2495,7 +2495,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="_null=this execVM ""pnj\blackmarket_sell03.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\blackmarket_sell03.sqf"";";
 				};
 				class Item57
 				{
@@ -2506,7 +2506,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="_null=this execVM ""pnj\blackmarket_sell01.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\blackmarket_sell01.sqf"";";
 				};
 				class Item58
 				{
@@ -2517,7 +2517,7 @@ class Mission
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
-					init="_null=this execVM ""pnj\boat_shop_cop02.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\boat_shop_cop02.sqf"";";
 				};
 				class Item59
 				{
@@ -2529,7 +2529,7 @@ class Mission
 					vehicle="O_Soldier_F";
 					skill=0.60000002;
 					text="reb_1_3";
-					init="_null=this execVM ""pnj\car_shop_reb01.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\car_shop_reb01.sqf"";";
 				};
 				class Item60
 				{
@@ -2540,7 +2540,7 @@ class Mission
 					side="EAST";
 					vehicle="O_Soldier_F";
 					skill=0.60000002;
-					init="_null=this execVM ""pnj\car_shop_reb03.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\car_shop_reb03.sqf"";";
 				};
 				class Item61
 				{
@@ -2552,7 +2552,7 @@ class Mission
 					vehicle="O_Soldier_F";
 					skill=0.60000002;
 					text="reb_1_1";
-					init="_null=this execVM ""pnj\weapon_shop_reb.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\weapon_shop_reb.sqf"";";
 				};
 				class Item62
 				{
@@ -2563,7 +2563,7 @@ class Mission
 					side="EAST";
 					vehicle="O_Soldier_F";
 					skill=0.60000002;
-					init="_null=this execVM ""pnj\car_shop_reb02.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\car_shop_reb02.sqf"";";
 				};
 				class Item63
 				{
@@ -2714,7 +2714,7 @@ class Mission
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
-					init="_null=this execVM ""pnj\heli_shop_cop02.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\heli_shop_cop02.sqf"";";
 				};
 				class Item76
 				{
@@ -2725,7 +2725,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="_null=this execVM ""pnj\blackmarket_ressources.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\blackmarket_ressources.sqf"";";
 				};
 				class Item77
 				{
@@ -2736,7 +2736,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="_null=this execVM ""pnj\blackmarket_ressources.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\blackmarket_ressources.sqf"";";
 				};
 				class Item78
 				{
@@ -2747,7 +2747,7 @@ class Mission
 					side="EAST";
 					vehicle="O_officer_F";
 					skill=0.60000002;
-					init="_null=this execVM ""pnj\blackmarket_weapon.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\blackmarket_weapon.sqf"";";
 				};
 				class Item79
 				{
@@ -2758,7 +2758,7 @@ class Mission
 					side="EAST";
 					vehicle="O_officer_F";
 					skill=0.60000002;
-					init="_null=this execVM ""pnj\blackmarket_weapon.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\blackmarket_weapon.sqf"";";
 				};
 				class Item80
 				{
@@ -2769,7 +2769,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="_null=this execVM ""pnj\blackmarket_ressources.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\blackmarket_ressources.sqf"";";
 				};
 				class Item81
 				{
@@ -2780,7 +2780,7 @@ class Mission
 					side="EAST";
 					vehicle="O_officer_F";
 					skill=0.60000002;
-					init="_null=this execVM ""pnj\blackmarket_weapon.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\blackmarket_weapon.sqf"";";
 				};
 				class Item82
 				{
@@ -2813,7 +2813,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init=" _null=this execVM ""pnj\garage_prison.sqf"";";
+					init=" _null=this enableSimulation false; this allowDamage false; this execVM ""pnj\garage_prison.sqf"";";
 				};
 				class Item85
 				{
@@ -2838,7 +2838,7 @@ class Mission
 					vehicle="O_Soldier_F";
 					skill=0.60000002;
 					text="reb_helishop_1";
-					init="_null=this execVM ""pnj\heli_shop_reb02.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\heli_shop_reb02.sqf"";";
 				};
 				class Item87
 				{
@@ -2849,7 +2849,7 @@ class Mission
 					side="EAST";
 					vehicle="O_Soldier_F";
 					skill=0.60000002;
-					init="_null=this execVM ""pnj\heli_shop_reb01.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\heli_shop_reb01.sqf"";";
 				};
 				class Item88
 				{
@@ -2861,7 +2861,7 @@ class Mission
 					vehicle="O_Soldier_F";
 					skill=0.60000002;
 					text="reb_helishop_3";
-					init="_null=this execVM ""pnj\heli_shop_reb03.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\heli_shop_reb03.sqf"";";
 				};
 				class Item89
 				{
@@ -2899,7 +2899,7 @@ class Mission
 					side="EAST";
 					vehicle="O_Soldier_F";
 					skill=0.60000002;
-					init="_null=this execVM ""pnj\car_shop_reb04.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\car_shop_reb04.sqf"";";
 				};
 				class Item92
 				{
@@ -2910,7 +2910,7 @@ class Mission
 					side="EAST";
 					vehicle="O_Soldier_F";
 					skill=0.60000002;
-					init="_null=this execVM ""pnj\heli_shop_reb04.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\heli_shop_reb04.sqf"";";
 				};
 				class Item93
 				{
@@ -2922,7 +2922,7 @@ class Mission
 					vehicle="O_Soldier_F";
 					skill=0.60000002;
 					text="reb_4_2_1";
-					init="_null=this execVM ""pnj\weapon_shop_reb.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\weapon_shop_reb.sqf"";";
 				};
 				class Item94
 				{
@@ -2971,7 +2971,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_p_beggar_F_afro";
 					skill=0.60000002;
-					init="_null=this execVM ""pnj\car_shop_neochori.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\car_shop_neochori.sqf"";";
 				};
 				class Item98
 				{
@@ -2994,7 +2994,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_shorts_3_F_euro";
 					skill=0.60000002;
-					init="_null=this execVM ""pnj\boat_shop_neochori.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\boat_shop_neochori.sqf"";";
 				};
 				class Item100
 				{
@@ -3031,7 +3031,7 @@ class Mission
 					vehicle="C_man_1";
 					skill=0.60000002;
 					text="license_shop_4";
-					init="_null=this execVM ""pnj\licenses_shop.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\licenses_shop.sqf"";";
 				};
 				class Item103
 				{
@@ -3088,7 +3088,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_shorts_3_F_euro";
 					skill=0.60000002;
-					init="_null=this execVM ""pnj\boat_shop_kavala.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\boat_shop_kavala.sqf"";";
 				};
 				class Item108
 				{
@@ -3121,7 +3121,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="_null=this execVM ""pnj\garage_pyrgos.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\garage_pyrgos.sqf"";";
 				};
 				class Item111
 				{
@@ -3132,7 +3132,7 @@ class Mission
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
-					init="_null=this execVM ""pnj\car_shop_cop04.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\car_shop_cop04.sqf"";";
 				};
 				class Item112
 				{
@@ -3157,7 +3157,7 @@ class Mission
 					vehicle="C_man_polo_1_F_euro";
 					skill=0.60000002;
 					text="garage_Molos_1";
-					init="_null=this execVM ""pnj\garage_molos.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\garage_molos.sqf"";";
 				};
 				class Item114
 				{
@@ -3168,7 +3168,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_polo_1_F_afro";
 					skill=0.60000002;
-					init="_null=this execVM ""pnj\garage_kalochori.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\garage_kalochori.sqf"";";
 				};
 				class Item115
 				{
@@ -3190,7 +3190,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_polo_1_F_afro";
 					skill=0.60000002;
-					init="_null=this execVM ""pnj\garage_dorida.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\garage_dorida.sqf"";";
 				};
 				class Item117
 				{
@@ -3213,7 +3213,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_p_fugitive_F_euro";
 					skill=0.60000002;
-					init="_null=this execVM ""pnj\garage_zaros.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\garage_zaros.sqf"";";
 				};
 				class Item119
 				{
@@ -3235,7 +3235,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="_null=this execVM ""pnj\garage_galati.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\garage_galati.sqf"";";
 				};
 				class Item121
 				{
@@ -3257,7 +3257,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="_null=this execVM ""pnj\garage_negades.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\garage_negades.sqf"";";
 				};
 				class Item123
 				{
@@ -3398,7 +3398,7 @@ class Mission
 					vehicle="C_Nikos_aged";
 					skill=0.60000002;
 					text="Pegasus_airport";
-					init="_null=this execVM ""pnj\pegasus.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\pegasus.sqf"";";
 				};
 				class Item135
 				{
@@ -3410,7 +3410,7 @@ class Mission
 					vehicle="C_man_p_beggar_F_afro";
 					skill=0.60000002;
 					text="kart_seller_1";
-					init="_null=this execVM ""pnj\kart_shop.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\kart_shop.sqf"";";
 				};
 				class Item136
 				{
@@ -3432,7 +3432,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_polo_1_F";
 					skill=0.60000002;
-					init="_null=this execVM ""pnj\licenses_sell.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\licenses_sell.sqf"";";
 				};
 				class Item138
 				{
@@ -3444,7 +3444,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_polo_1_F";
 					skill=0.60000002;
-					init="_null=this execVM ""pnj\licenses_sell.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\licenses_sell.sqf"";";
 				};
 				class Item139
 				{
@@ -3456,7 +3456,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_polo_1_F";
 					skill=0.60000002;
-					init="_null=this execVM ""pnj\licenses_sell.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\licenses_sell.sqf"";";
 				};
 				class Item140
 				{
@@ -3479,7 +3479,7 @@ class Mission
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
-					init="_null=this execVM ""pnj\heli_shop_cop05.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\heli_shop_cop05.sqf"";";
 				};
 				class Item142
 				{
@@ -3490,7 +3490,7 @@ class Mission
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
-					init="_null=this execVM ""pnj\car_shop_cop05.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\car_shop_cop05.sqf"";";
 				};
 				class Item143
 				{
@@ -3549,7 +3549,7 @@ class Mission
 					vehicle="O_Soldier_F";
 					skill=0.60000002;
 					text="reb_helishop_5";
-					init="_null=this execVM ""pnj\heli_shop_reb05.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\heli_shop_reb05.sqf"";";
 				};
 				class Item148
 				{
@@ -3560,7 +3560,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_p_beggar_F_afro";
 					skill=0.60000002;
-					init="_null=this execVM ""pnj\car_shop_athira.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\car_shop_athira.sqf"";";
 				};
 				class Item149
 				{
@@ -3571,7 +3571,7 @@ class Mission
 					side="EAST";
 					vehicle="O_Soldier_F";
 					skill=0.60000002;
-					init="_null=this execVM ""pnj\car_shop_reb05.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\car_shop_reb05.sqf"";";
 				};
 				class Item150
 				{
@@ -3583,7 +3583,7 @@ class Mission
 					vehicle="O_Soldier_F";
 					skill=0.60000002;
 					text="reb_4_3";
-					init="_null=this execVM ""pnj\weapon_shop_reb.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\weapon_shop_reb.sqf"";";
 				};
 				class Item151
 				{
@@ -3594,7 +3594,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_polo_3_F";
 					skill=0.60000002;
-					init="_null=this execVM ""pnj\weed_process.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\weed_process.sqf"";";
 				};
 				class Item152
 				{
@@ -3616,7 +3616,7 @@ class Mission
 					vehicle="C_man_1";
 					skill=0.60000002;
 					text="pnj_pub_01_1";
-					init="_null=this execVM ""pnj\pub.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\pub.sqf"";";
 				};
 				class Item154
 				{
@@ -3628,7 +3628,7 @@ class Mission
 					vehicle="C_man_1";
 					skill=0.60000002;
 					text="pnj_pub_01";
-					init="_null=this execVM ""pnj\pub.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\pub.sqf"";";
 				};
 				class Item155
 				{
@@ -3639,7 +3639,7 @@ class Mission
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
-					init="_null=this execVM ""pnj\epargne.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\epargne.sqf"";";
 				};
 				class Item156
 				{
@@ -3649,7 +3649,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_w_worker_F";
 					skill=0.60000002;
-					init="_null=this execVM ""pnj\garage_hopital.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\garage_hopital.sqf"";";
 				};
 				class Item157
 				{
@@ -3670,7 +3670,7 @@ class Mission
 					side="WEST";
 					vehicle="B_Story_SF_Captain_F";
 					skill=0.60000002;
-					init="_null=this execVM ""pnj\heli_shop_merco01.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\heli_shop_merco01.sqf"";";
 				};
 				class Item159
 				{
@@ -3681,7 +3681,7 @@ class Mission
 					side="WEST";
 					vehicle="B_CTRG_soldier_GL_LAT_F";
 					skill=0.60000002;
-					init="_null=this execVM ""pnj\weapon_shop_merco.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\weapon_shop_merco.sqf"";";
 				};
 				class Item160
 				{
@@ -3692,7 +3692,7 @@ class Mission
 					side="WEST";
 					vehicle="B_CTRG_soldier_AR_A_F";
 					skill=0.60000002;
-					init="_null=this execVM ""pnj\car_shop_merco01.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\car_shop_merco01.sqf"";";
 				};
 			};
 		};
@@ -4134,7 +4134,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="carshop_truck_3";
-					init="_null=this execVM ""pnj\truck_shop_pyrgos.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\truck_shop_pyrgos.sqf"";";
 				};
 			};
 		};
@@ -4197,7 +4197,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="carshop_kavala_1";
-					init="_null=this execVM ""pnj\car_shop_kavala.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\car_shop_kavala.sqf"";";
 				};
 			};
 		};
@@ -4217,7 +4217,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="pnj_pub_01_1_1";
-					init="_null=this execVM ""pnj\pub.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\pub.sqf"";";
 				};
 			};
 		};
@@ -4237,7 +4237,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="pnj_pub_01_1_1_1";
-					init="_null=this execVM ""pnj\pub.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\pub.sqf"";";
 				};
 			};
 		};
@@ -4258,7 +4258,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="Walter_White";
-					init="_null=this execVM ""pnj\meth_process.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\meth_process.sqf"";";
 					description="Walter White";
 				};
 			};
@@ -4409,7 +4409,7 @@ class Mission
 					vehicle="B_RangeMaster_F";
 					leader=1;
 					skill=1;
-					init="_null=this execVM ""pnj\weapon_shop_cop01.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\weapon_shop_cop01.sqf"";";
 				};
 			};
 		};
@@ -4429,7 +4429,7 @@ class Mission
 					vehicle="B_RangeMaster_F";
 					leader=1;
 					skill=1;
-					init="_null=this execVM ""pnj\heli_shop_cop03.sqf"";";
+					init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\heli_shop_cop03.sqf"";";
 				};
 			};
 		};
@@ -23486,7 +23486,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Atm_01_F";
 			skill=0.60000002;
-			init="_null=this execVM ""pnj\DAB.sqf"";";
+			init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\DAB.sqf"";";
 		};
 		class Item2061
 		{
@@ -23497,7 +23497,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Pallet_MilBoxes_F";
 			skill=0.60000002;
-			init="_null=this execVM ""pnj\gang_weapon_1.sqf"";";
+			init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\gang_weapon_1.sqf"";";
 		};
 		class Item2062
 		{
@@ -23519,7 +23519,7 @@ class Mission
 			vehicle="Land_Sink_F";
 			skill=0.60000002;
 			text="mari_processor";
-			init="_null=this execVM ""pnj\gang_process_1.sqf"";";
+			init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\gang_process_1.sqf"";";
 		};
 		class Item2064
 		{
@@ -23770,7 +23770,7 @@ class Mission
 			vehicle="FlagPole_F";
 			skill=0.60000002;
 			text="gang_flag_1";
-			init="_null=this execVM ""pnj\gang_capture_1.sqf"";";
+			init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\gang_capture_1.sqf"";";
 		};
 		class Item2089
 		{
@@ -23781,7 +23781,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_InfoStand_V1_F";
 			skill=0.60000002;
-			init="_null=this execVM ""pnj\gang_market.sqf"";";
+			init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\gang_market.sqf"";";
 		};
 		class Item2090
 		{
@@ -23792,7 +23792,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Atm_01_F";
 			skill=0.60000002;
-			init="_null=this execVM ""pnj\DAB.sqf"";";
+			init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\DAB.sqf"";";
 		};
 		class Item2091
 		{
@@ -23803,7 +23803,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Pallet_MilBoxes_F";
 			skill=0.60000002;
-			init="_null=this execVM ""pnj\gang_weapon_1.sqf"";";
+			init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\gang_weapon_1.sqf"";";
 		};
 		class Item2092
 		{
@@ -23825,7 +23825,7 @@ class Mission
 			vehicle="Land_Sink_F";
 			skill=0.60000002;
 			text="coke_processor";
-			init="_null=this execVM ""pnj\gang_process_2.sqf"";";
+			init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\gang_process_2.sqf"";";
 		};
 		class Item2094
 		{
@@ -24077,7 +24077,7 @@ class Mission
 			vehicle="FlagPole_F";
 			skill=0.60000002;
 			text="gang_flag_2";
-			init="_null=this execVM ""pnj\gang_capture_1.sqf"";";
+			init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\gang_capture_1.sqf"";";
 		};
 		class Item2119
 		{
@@ -24088,7 +24088,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_InfoStand_V1_F";
 			skill=0.60000002;
-			init="_null=this execVM ""pnj\gang_market.sqf"";";
+			init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\gang_market.sqf"";";
 		};
 		class Item2120
 		{
@@ -24099,7 +24099,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Atm_01_F";
 			skill=0.60000002;
-			init="_null=this execVM ""pnj\DAB.sqf"";";
+			init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\DAB.sqf"";";
 		};
 		class Item2121
 		{
@@ -24110,7 +24110,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Pallet_MilBoxes_F";
 			skill=0.60000002;
-			init="_null=this execVM ""pnj\gang_weapon_1.sqf"";";
+			init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\gang_weapon_1.sqf"";";
 		};
 		class Item2122
 		{
@@ -24132,7 +24132,7 @@ class Mission
 			vehicle="Land_Sink_F";
 			skill=0.60000002;
 			text="heroin_processor";
-			init="_null=this execVM ""pnj\gang_process_3.sqf"";";
+			init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\gang_process_3.sqf"";";
 		};
 		class Item2124
 		{
@@ -24384,7 +24384,7 @@ class Mission
 			vehicle="FlagPole_F";
 			skill=0.60000002;
 			text="gang_flag_3";
-			init="_null=this execVM ""pnj\gang_capture_1.sqf"";";
+			init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\gang_capture_1.sqf"";";
 		};
 		class Item2149
 		{
@@ -24395,7 +24395,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_InfoStand_V1_F";
 			skill=0.60000002;
-			init="_null=this execVM ""pnj\gang_weapon_1.sqf"";";
+			init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\gang_weapon_1.sqf"";";
 		};
 		class Item2150
 		{
@@ -25671,7 +25671,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_InfoStand_V1_F";
 			skill=0.60000002;
-			init="_null=this execVM ""pnj\rescue.sqf"";";
+			init="_null=this enableSimulation false; this allowDamage false; this execVM ""pnj\rescue.sqf"";";
 		};
 		class Item2287
 		{

@@ -21,6 +21,7 @@ switch (_filter) do
 			["U_B_CTRG_1",nil,550],
 			["U_B_CTRG_2",nil,550],
 			["U_B_CTRG_3",nil,550],
+			["U_B_survival_uniform",nil,550],
 			["U_I_GhillieSuit",nil,50000]
 		];
 	};
@@ -29,9 +30,10 @@ switch (_filter) do
 	case 1:
 	{
 		[
-			["H_Beret_red",nil,850],
+			["H_HelmetB",nil,850],
+			["H_Watchcap_blk",nil,850],
 			["H_Beret_grn",nil,850],
-			["H_Beret_ocamo",nil,800]	
+			["H_Beret_Colonel",nil,800]	
 		];
 	};
 	
@@ -55,12 +57,8 @@ switch (_filter) do
 	case 3:
 	{
 		[
-			["V_TacVest_khk",nil,12500],
-			["V_TacVest_oli",nil,12500],
-			["V_TacVest_blk",nil,12500],
-			["V_TacVest_brn",nil,12500],
-			["V_BandollierB_cbr",nil,4500],
-			["V_HarnessO_brn",nil,7500]
+			["V_I_G_resistanceLeader_F",nil,12500],
+			["V_RebreatherIA",nil,7500]
 		];
 	};
 	

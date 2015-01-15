@@ -31,7 +31,7 @@ if(_action) then {
 	deleteMarkerLocal format["house_%1",_house getVariable "uid"];
 	_house setVariable["uid",nil,true];
 	
-	R6cuXKTCWDZFxfbfdATm = R6cuXKTCWDZFxfbfdATm + (round((_houseCfg select 0)/2));
+	//R6cuXKTCWDZFxfbfdATm = R6cuXKTCWDZFxfbfdATm + (round((_houseCfg select 0)/2));
 	_index = life_vehicles find _house;
 	if(_index != -1) then {
 		life_vehicles set[_index,-1];

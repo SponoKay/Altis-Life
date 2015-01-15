@@ -41,10 +41,10 @@ player setVariable["Reviving",nil,TRUE];
 
 [] call life_fnc_updateClothing;
 
-if (__GETC__(life_donator) > 2) then {
+/*if (__GETC__(life_donator) > 2) then {
 	[] execVM "addons\chien.sqf";
-};
+};*/
 
-if ((getPlayerUID player) in ["76561198032371812", "76561198093139365"]) then {
+if ((getPlayerUID player) in ["76561198032371812", "76561198062775622", "76561198144354778"]) then {
 	player addaction [("<t color=""#0074E8"">" + ("Menu d'Administration") +"</t>"),"addons\admintools\AdminToolsMain.sqf","",5,false,true,"",""];
 };

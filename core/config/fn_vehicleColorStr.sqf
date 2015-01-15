@@ -181,7 +181,9 @@ switch (_vehicle) do
 	{
 		switch (_index) do
 		{
-			case 0: {_color = "Police";};
+			case 0: {_color = "Police Blanc";};
+			case 1: {_color = "Rebel Digital"};
+			case 2: {_color = "Police Bleu";};
 		};
 	};
 	

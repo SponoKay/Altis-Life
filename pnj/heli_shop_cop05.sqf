@@ -14,5 +14,5 @@ life_garage_type = "Air";
 createDialog "Life_impound_menu";
 disableSerialization;
 ctrlSetText[2802,"Recherches des véhicules...."];
-life_garage_sp = "cop_air_4";  },"",0,false,false,"",'playerSide == WEST'];
+life_garage_sp = "cop_air_5";  },"",0,false,false,"",'playerSide == WEST'];
 _this addAction["<t color='#FF9900'>Rentrer au garage</t>",life_fnc_storeVehicle,"",0,false,false,"",'!life_garage_store && playerSide == WEST'];

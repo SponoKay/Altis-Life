@@ -254,9 +254,9 @@ FAR_Drag =
 	publicVariable "FAR_isDragging_EH";
 	
 	// Add release action and save its id so it can be removed
-	_id = player addAction ["<t color=""#FF9900"">" + "Lacher corp" + "</t>", "FAR_revive\FAR_handleAction.sqf", ["action_release"], 10, true, true, "", "true"];
+	_id = player addAction ["<t color=""#FF9900"">" + "Lâcher corps" + "</t>", "addons\FAR_revive\FAR_handleAction.sqf", ["action_release"], 10, true, true, "", "true"];
 	
-	hint "Appuyez sur la touche 'C' si vous etes bloque";
+	hint "Appuyez sur la touche 'C' si vous etes bloqué";
 	
 	// Wait until release action is used
 	waitUntil 

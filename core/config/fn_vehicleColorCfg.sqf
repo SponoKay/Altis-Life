@@ -177,8 +177,9 @@ switch (_vehicle) do
 	{
 		_ret = 
 		[
-			["textures\vehicules\police\B_Heli_Light_01_F Police.jpg","cop"]
-			
+			["textures\vehicules\police\B_Heli_Light_01_F Police Blanc.jpg","cop"],
+			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_digital_co.paa","reb"],
+			["textures\vehicules\police\B_Heli_Light_01_F Police Bleu.jpg","cop"]
 		];
 	};
 	

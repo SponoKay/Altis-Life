@@ -8,6 +8,7 @@ FAR_Player_Actions =
 		// addAction args: title, filename, (arguments, priority, showWindow, hideOnUse, shortcut, condition, positionInModel, radius, radiusView, showIn3D, available, textDefault, textToolTip)
 		player addAction ["<t color=""#AAF200"">" + "Massage cardiaque" + "</t>", "addons\FAR_revive\FAR_handleAction.sqf", ["action_revive"], 10, true, true, "", "call FAR_Check_Revive"];
 		player addAction ["<t color=""#AAF200"">" + "Morphine" + "</t>", "addons\FAR_revive\FAR_handleAction.sqf", ["action_stabilize"], 10, true, true, "", "call FAR_Check_Stabilize"];
+		player addAction ["<t color=""#FF0000"">" + "Achever" + "</t>", "addons\FAR_revive\FAR_handleAction.sqf", ["action_kill"], 9, false, true, "", "call FAR_Check_Kill"];
 		player addAction ["<t color=""#FF0000"">" + "Se suicider" + "</t>", "addons\FAR_revive\FAR_handleAction.sqf", ["action_suicide"], 9, false, true, "", "call FAR_Check_Suicide"];
 		player addAction ["<t color=""#FF9900"">" + "Déplacer corps" + "</t>", "addons\FAR_revive\FAR_handleAction.sqf", ["action_drag"], 9, false, true, "", "call FAR_Check_Dragging"];
 	};
@@ -195,18 +196,12 @@ FAR_HandleRevive =
 };
 
 ////////////////////////////////////////////////
-// Achever
+// Se suicider
 ////////////////////////////////////////////////
-FAR_Kill =
+FAR_Suicide =
 {
-	private ["_target"];
-	_target = _this select 0;
-	[[getPlayerUID player,name player,"187"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
-	player playMove "AinvPknlMstpSlayWrflDnon_medic";
-	sleep 3;
-	_target setDamage 2;
-	player playActionNow "stop";
-	hint "Vous avez pris une vie!";
+	player setDamage 2;
+	hint "Vous vous êtes suicidé";
 };
 
 ////////////////////////////////////////////////
@@ -222,7 +217,7 @@ FAR_Kill =
 	_target setDamage 2;
 	player playActionNow "stop";
 	hint "Vous avez pris une vie!";
-};
+};	
 
 ////////////////////////////////////////////////
 // Stabilize Player
@@ -417,6 +412,9 @@ FAR_Check_Suicide =
 	_return
 };
 
+////////////////////////////////////////////////
+// Kill Action Check
+////////////////////////////////////////////////
 FAR_Check_Kill =
 {
 	_return = false;

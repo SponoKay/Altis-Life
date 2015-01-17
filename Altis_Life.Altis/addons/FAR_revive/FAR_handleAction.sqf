@@ -19,8 +19,12 @@ if (_action == "action_stabilize") then
 
 if (_action == "action_suicide") then
 {
-	[cursorTarget] spawn FAR_Kill;
+	[] spawn FAR_Suicide;
+};
 
+if (_action == "action_kill") then
+{
+	[cursorTarget] spawn FAR_Kill;
 };
 
 if (_action == "action_drag") then

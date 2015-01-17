@@ -210,6 +210,21 @@ FAR_Kill =
 };
 
 ////////////////////////////////////////////////
+// Achever
+////////////////////////////////////////////////
+FAR_Kill =
+{
+	private ["_target"];
+	_target = _this select 0;
+	[[getPlayerUID player,name player,"187"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
+	player playMove "AinvPknlMstpSlayWrflDnon_medic";
+	sleep 3;
+	_target setDamage 2;
+	player playActionNow "stop";
+	hint "Vous avez pris une vie!";
+};
+
+////////////////////////////////////////////////
 // Stabilize Player
 ////////////////////////////////////////////////
 FAR_HandleStabilize =
@@ -401,7 +416,8 @@ FAR_Check_Suicide =
 	
 	_return
 };
-/*FAR_Check_Suicide =
+
+FAR_Check_Kill =
 {
 	_return = false;
 	_target = cursorTarget;
@@ -418,7 +434,7 @@ FAR_Check_Suicide =
 	};
 	
 	_return
-};*/
+};
 
 ////////////////////////////////////////////////
 // Dragging Action Check

@@ -60,5 +60,6 @@ switch (_item) do
 	case "phosphore": {4};
 	case "soude": {4};
 	case "meth": {6};
+	case "bouchons": {1};
 	default {1};
 };

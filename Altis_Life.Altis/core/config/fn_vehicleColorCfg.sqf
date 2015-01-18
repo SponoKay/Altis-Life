@@ -52,7 +52,7 @@ switch (_vehicle) do
 			["\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE04_CO.paa","civ"],
 			["\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE05_CO.paa","civ"],
 			["#(ai,64,64,1)Fresnel(0.3,3)","fed"],
-			["textures\vehicules\police\C_Offroad_01_F Police.paa","cop"],
+			["textures\vehicules\police\C_Offroad_01_F Police.jpg","cop"],
 			["textures\vehicules\civil\C_Offroad_01_F Taxi.jpg","civ"],
 			["textures\vehicules\civil\C_Offroad_01_F Depanneuse.jpg","civ"]
 		];
@@ -111,7 +111,8 @@ switch (_vehicle) do
 			["textures\vehicules\police\C_SUV_01_F Police.jpg","cop"],
 			["textures\vehicules\civil\C_SUV_01_F Taxi.jpg","civ"],
 			["textures\vehicules\rebelle\C_SUV_01_F Rebelle.jpg","reb"],
-			["textures\vehicules\civil\C_SUV_01_F Secouriste.jpg","civ"]
+			["textures\vehicules\civil\C_SUV_01_F Secouriste.jpg","civ"],
+			["textures\vehicules\police\C_SUV_01_F Gendarmerie.jpg","cop"]
 		];
 	};
 	
@@ -120,7 +121,9 @@ switch (_vehicle) do
 		_ret = 
 		[
 			["\a3\soft_f_gamma\Van_01\Data\van_01_ext_co.paa","civ"],
-			["\a3\soft_f_gamma\Van_01\Data\van_01_ext_red_co.paa","civ"]
+			["\a3\soft_f_gamma\Van_01\Data\van_01_ext_red_co.paa","civ"],
+			["textures\vehicules\civil\C_Van_01_box_F Secouriste.jpg","civ"],
+			["textures\vehicules\civil\C_Van_01_box_F Secouriste 2.jpg","civ"]
 		];
 	};
 	

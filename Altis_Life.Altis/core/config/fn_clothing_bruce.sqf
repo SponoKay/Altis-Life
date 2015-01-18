@@ -35,8 +35,7 @@ switch (_filter) do
 		["U_OrestesBody","Le surfer",1100],
 		["U_NikosBody","Chemise",2100],
 		["U_C_Journalist","Costume de journaliste",3100],
-		["U_NikosAgedBody","Costume Cravate",5100],
-		["U_C_Scientist","Medecin",3000]
+		["U_NikosAgedBody","Costume Cravate",5100]
 		];
 	};
 	

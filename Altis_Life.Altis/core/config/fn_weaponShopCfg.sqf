@@ -195,6 +195,7 @@ switch(_shop) do
 							["muzzle_snds_M","Silencieux 5.56 mm",350],
 							["muzzle_snds_H","Silencieux 6.5 mm",380],
 							["muzzle_snds_B","Silencieux 7.62 mm",400],
+							["muzzle_snds_H_MG","Silencieux 6.5 mm pour Mk200",400],
 							["optic_Aco_smg",nil,2000],
 							["optic_Arco",nil,2000],
 							["optic_ACO_grn",nil,2000],

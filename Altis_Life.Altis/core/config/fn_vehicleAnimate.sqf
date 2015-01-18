@@ -50,7 +50,7 @@ if(!_preset) then
 		
 		case "med_offroad":
 		{
-			if(typeOf _vehicle in ["C_Offroad_01_F","C_SUV_01_F"]) then {
+			if(typeOf _vehicle == "C_Offroad_01_F") then {
 				waitUntil {!isNil {_vehicle getVariable "Life_VEH_color"}};
 			};
 			_vehicle animate ["HidePolice", 0];

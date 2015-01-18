@@ -122,8 +122,7 @@ switch (_vehicle) do
 		[
 			["\a3\soft_f_gamma\Van_01\Data\van_01_ext_co.paa","civ"],
 			["\a3\soft_f_gamma\Van_01\Data\van_01_ext_red_co.paa","civ"],
-			["textures\vehicules\civil\C_Van_01_box_F Secouriste.jpg","civ"],
-			["textures\vehicules\civil\C_Van_01_box_F Secouriste 2.jpg","civ"]
+			["textures\vehicules\civil\C_Van_01_box_F Secouriste.jpg","civ","textures\vehicules\civil\C_Van_01_box_F Secouriste 2.jpg"]
 		];
 	};
 	

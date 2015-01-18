@@ -107,6 +107,7 @@ switch (_vehicle) do
 			case 5: {_color = "Taxi";};
 			case 6: {_color = "Rebelle";};
 			case 7: {_color = "Secouriste";};
+			case 8: {_color = "Gendarmerie";};
 		};
 	};
 	
@@ -116,6 +117,7 @@ switch (_vehicle) do
 		{
 			case 0: {_color = "Blanc"};
 			case 1: {_color = "Rouge"};
+			case 2: {_color = "Secouriste";};
 		};
 	};
 	

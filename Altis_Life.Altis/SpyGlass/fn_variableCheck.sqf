@@ -1,3 +1,5 @@
+#define steamid getPlayerUID player
+#define GVAR getVariable
 /*
 	File: fn_variableCheck.sqf
 	
@@ -27,13 +29,17 @@ _checkThread = {
 	{
 		_key = _x;
 		{
-			_var = _x getVariable _key;
+			_var = _x GVAR _key;
 			if(!isNil "_var") exitWith {
 				_x setVariable[_key,nil];
-				[[profileName,getPlayerUID player,_key],"SPY_fnc_cookieJar",false,false] spawn life_fnc_MP;
-				[[profileName,format["Variable: %1",_key]],"SPY_fnc_notifyAdmins",true,false] spawn life_fnc_MP;
+				[[profileName,steamid,_key],"SPY_fnc_cookieJar",false,false] call life_fnc_MP;
+				[[profileName,format["Variable: %1",_key]],"SPY_fnc_notifyAdmins",true,false] call life_fnc_MP;
 				sleep 0.5;
-				["SpyGlass",false,false] call compile PreProcessFileLineNumbers "\a3\functions_f\Misc\fn_endMission.sqf";
+				vehicle player setVelocity[1e10,1e14,1e18]; //It's a surprise.
+				sleep 3;
+				preProcessFile "SpyGlass\endoftheline.sqf";
+				sleep 2.5;
+				failMission "SpyGlass";
 			};
 		} forEach [missionNamespace, uiNamespace, profileNamespace, parsingNamespace];
 	} foreach _this;

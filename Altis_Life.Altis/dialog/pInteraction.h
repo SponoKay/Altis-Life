@@ -176,7 +176,7 @@ class pInteraction_Menu
 			h = 0.038;
 		};
 
-        class ButtonEleven : life_RscButtonMenu
+		class ButtonEleven : life_RscButtonMenu
 		{
 			idc = 37460;
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};

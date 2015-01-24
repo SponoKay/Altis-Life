@@ -79,10 +79,6 @@ switch (_shop) do
 				_return set[count _return, ["C_SUV_01_F",35002]]; // taxi		
 				_return set[count _return, ["C_Offroad_01_F",25001]]; // taxi pickup
 				};
-			if(license_civ_medecin) then
-				{
-				_return set[count _return, ["C_SUV_01_F",35001]]; // suvmedic	
-				};
 		};	
 		
 		if(__GETC__(life_donator) == 1) then	
@@ -105,10 +101,6 @@ switch (_shop) do
 				{
 				_return set[count _return, ["C_SUV_01_F",29752]]; // taxi		
 				_return set[count _return, ["C_Offroad_01_F",21251]]; // taxi pickup
-				};
-			if(license_civ_medecin) then
-				{
-				_return set[count _return, ["C_SUV_01_F",29751]]; // suvmedic	
 				};
 		};	
 		
@@ -133,10 +125,6 @@ switch (_shop) do
 				{
 				_return set[count _return, ["C_SUV_01_F",24502]]; // taxi		
 				_return set[count _return, ["C_Offroad_01_F",17501]]; // taxi pickup
-				};
-				if(license_civ_medecin) then
-				{
-				_return set[count _return, ["C_SUV_01_F",24501]]; // suvmedic		
 				};
 		};				
 	};	
@@ -214,10 +202,6 @@ switch (_shop) do
 				["C_Heli_Light_01_civil_F",650000],
 				["O_Heli_Light_02_unarmed_F",1000000]
 			];	
-			if(license_civ_medecin) then
-			{
-			_return set[count _return, ["B_Heli_Light_01_F",750001]]; // suv medic		
-			};
 		};
 
 		if(__GETC__(life_donator) == 1) then
@@ -229,10 +213,6 @@ switch (_shop) do
 				["O_Heli_Light_02_unarmed_F",850000],
 				["I_Heli_Transport_02_F",1500000]				
 			];	
-			if(license_civ_medecin) then
-			{
-			_return set[count _return, ["B_Heli_Light_01_F",637501]]; // suv medic		
-			};
 		};
 		
 		if(__GETC__(life_donator) >1) then
@@ -244,10 +224,6 @@ switch (_shop) do
 				["O_Heli_Light_02_unarmed_F",700000],
 				["I_Heli_Transport_02_F",1275000]				
 			];
-			if(license_civ_medecin) then
-			{
-			_return set[count _return, ["B_Heli_Light_01_F",525001]]; // suv medic		
-			};
 		};
 
 	};
@@ -558,6 +534,24 @@ switch (_shop) do
 				};
 
 	};
+	
+// *********************	
+// ********Medecin******
+// *********************
+
+	case "medecin_car":
+	{
+		_return set[count _return,["C_SUV_01_F",25000]];
+		_return set[count _return, ["C_Van_01_box_F",100000]];
+		
+		/*if(license_civ_air) then
+			{
+				_return set[count _return,["",]]
+			};*/
+	};
+
+
+
 /*	
 **************************
 **********Donator*********
@@ -614,11 +608,6 @@ switch (_shop) do
 									{
 									_return set[count _return, ["C_SUV_01_F",24502]]; // taxi		
 									_return set[count _return, ["C_Offroad_01_F",17501]]; // taxi pickup
-									};
-							if(license_civ_medecin) then
-									{
-									_return set[count _return, ["C_SUV_01_F",24501]]; // suv medic	
-									_return set[count _return, ["B_Heli_Light_01_F",525001]]; // suv medic										
 									};
 		};					
 

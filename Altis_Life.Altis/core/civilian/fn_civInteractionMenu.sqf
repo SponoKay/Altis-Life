@@ -70,7 +70,7 @@ _Btn6 ctrlSetText "Saisir téléphone";
 _Btn6 buttonSetAction "[] call life_fnc_takePhone; closeDialog 0;";
 
 if (!("ItemRadio" in assignedItems life_pInact_curTarget)) then {
-	_Btn5 ctrlEnable false;
+	_Btn6 ctrlEnable false;
 };
 
 _Btn7 ctrlSetText "Saisir cagoule";

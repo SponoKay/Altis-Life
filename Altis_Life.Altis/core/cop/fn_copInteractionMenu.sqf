@@ -13,6 +13,9 @@
 #define Btn6 37455
 #define Btn7 37456
 #define Btn8 37457
+#define Btn9 37458
+#define Btn10 37459
+#define Btn11 37460
 #define Title 37401
 
 private["_display","_curTarget","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6","_Btn7"];
@@ -34,6 +37,9 @@ if(_curTarget isKindOf "House_F") exitWith {
 		_Btn6 = _display displayCtrl Btn6;
 		_Btn7 = _display displayCtrl Btn7;
 		_Btn8 = _display displayCtrl Btn8;
+		_Btn9 = _display displayCtrl Btn9;
+		_Btn10 = _display displayCtrl Btn10;
+		_Btn11 = _display displayCtrl Btn11;
 		life_pInact_curTarget = _curTarget;
 		
 		_Btn1 ctrlSetText localize "STR_pInAct_Repair";
@@ -47,6 +53,9 @@ if(_curTarget isKindOf "House_F") exitWith {
 		_Btn6 ctrlShow false;
 		_Btn7 ctrlShow false;
 		_Btn8 ctrlShow false;
+		_Btn9 ctrlShow false;
+		_Btn10 ctrlShow false;
+		_Btn11 ctrlShow false;
 	} else {
 		closeDialog 0;
 	};
@@ -62,6 +71,9 @@ _Btn5 = _display displayCtrl Btn5;
 _Btn6 = _display displayCtrl Btn6;
 _Btn7 = _display displayCtrl Btn7;
 _Btn8 = _display displayCtrl Btn8;
+_Btn9 = _display displayCtrl Btn9;
+_Btn10 = _display displayCtrl Btn10;
+_Btn11 = _display displayCtrl Btn11;
 life_pInact_curTarget = _curTarget;
 
 //Set Unrestrain Button
@@ -98,9 +110,33 @@ _Btn7 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar;";
 _Btn8 ctrlSetText "Saisir armes";
 _Btn8 buttonSetAction "{life_pInact_curTarget removeWeaponGlobal _x} forEach weapons life_pInact_curTarget;";
 
-//Check that you are near a place to jail them.
-if(!((player distance (getMarkerPos "police_hq_1") < 30) OR  (player distance (getMarkerPos "police_hq_2") < 30) OR (player distance (getMarkerPos "cop_spawn_3") < 30) OR (player distance (getMarkerPos "cop_spawn_5") < 30))) then 
+if (!("ItemGPS" in assignedItems life_pInact_curTarget) && !("ItemMap" in assignedItems life_pInact_curTarget)) then {
+	_Btn9 ctrlEnable false;
+};
+
+_Btn9 ctrlSetText "Saisir cagoule";
+_Btn9 buttonSetAction "[] call life_fnc_takePhone; closeDialog 0;";
+
+if (!("ItemRadio" in assignedItems life_pInact_curTarget)) then {
+	_Btn10 ctrlEnable false;
+};
+
+_Btn10 ctrlSetText "Saisir Radio";
+_Btn10 buttonSetAction "[] call life_fnc_takeRadio; closeDialog 0;";
+
+_uni = ["U_IG_Guerilla1_1","U_I_G_Story_Protagonist_F","U_I_G_resistanceLeader_F","U_O_SpecopsUniform_ocamo","U_B_PilotCoveralls","U_O_PilotCoveralls","U_I_pilotCoveralls ","U_IG_leader","U_I_CombatUniform""U_O_CombatUniform_oucamo","U_O_GhillieSuit"];
+_vest = ["V_TacVest_khk","V_BandollierB_cbr","V_TacVest_oli","V_HarnessO_brn","V_PlateCarrier1_rgr"];
+
+if((!(uniform life_pInact_curTarget in _uni)) OR (!(vest life_pInact_curTarget in _vest))) then {
+	_Btn11 ctrlEnable false;
+};
+
+_Btn11 ctrlSetText "Saisir vêtements";
+_Btn11 buttonSetAction "[] call life_fnc_takeUniform; closeDialog 0;";
+
+
+//Check that you are near jail to jail them.
+if(!((player distance (getMarkerPos "jail_send") < 30) )) then 
 {
 	_Btn6 ctrlEnable false;
 };
-		

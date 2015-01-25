@@ -498,11 +498,12 @@ switch (_shop) do
 
 		if(__GETC__(life_coplevel) > 3) then //lvl 4
 		{
-			_return set[count _return,["B_Heli_Light_01_armed_F",1000000]];
+			
 		};
 
 		if(__GETC__(life_coplevel) > 4) then //lvl 5
 		{
+			_return set[count _return,["B_Heli_Light_01_armed_F",1000000]];
 			_return set[count _return,["B_Heli_Transport_01_F",1500000]];	
 		};
 		

@@ -3,6 +3,7 @@
 */
 _this enableSimulation false; 
 _this allowDamage false; 
+
 _this addAction["<t color='#FF9900'>Rentrer au garage</t>",life_fnc_storeVehicle,"",0,false,false,"",'!life_garage_store'];
 
 _this addAction["<t color='#FF9900'>Garage</t>",

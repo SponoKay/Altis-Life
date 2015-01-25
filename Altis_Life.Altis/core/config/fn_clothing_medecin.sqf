@@ -24,9 +24,7 @@ switch (_filter) do
 	
 	//Hats
 	case 1:
-	{
-		[];
-	};
+	{};
 	
 	//Glasses
 	case 2:

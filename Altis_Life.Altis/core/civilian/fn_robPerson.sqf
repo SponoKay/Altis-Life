@@ -15,7 +15,7 @@ if(hBf0MznDHQm7X5DFFSmy > 0) then
 	[[1,format[localize "STR_NOTF_Robbed",_robber getVariable["realname",name _robber],profileName,[hBf0MznDHQm7X5DFFSmy] call life_fnc_numberText]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
 	_money = hBf0MznDHQm7X5DFFSmy;
 	hBf0MznDHQm7X5DFFSmy = 0;
-	[] call SOCK_fnc_updateRequest;
+	[0] call SOCK_fnc_updatePartial;
 	sleep 3;
 	[[_money],"life_fnc_robReceive",_robber,false] spawn life_fnc_MP;
 }

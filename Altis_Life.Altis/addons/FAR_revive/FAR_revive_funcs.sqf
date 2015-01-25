@@ -47,11 +47,11 @@ FAR_Player_Unconscious =
 		
 		sleep 2;
 	};
-	_unit setDamage (0);
+	//_unit setDamage (0);
 	//life_is_arrested = true; //Verif pour les jojos qui leave en rea
 	//life_alive = false;
-	life_in_rea = true;
-	[] call SOCK_fnc_updateRequest;
+	//life_in_rea = true;
+	//[] call SOCK_fnc_updateRequest;
     _unit setVelocity [0,0,0];
     _unit allowDamage false;
 	_unit setCaptive true;
@@ -122,9 +122,9 @@ FAR_Player_Unconscious =
 			_unit allowDamage true;
 			_unit setDamage (0);
 			_unit setCaptive false;
-			life_alive = true;
-			life_in_rea = false;
-			[] call SOCK_fnc_updateRequest;
+			//life_alive = true;
+			//life_in_rea = false;
+			//[] call SOCK_fnc_updateRequest;
 			_unit playMove "amovppnemstpsraswrfldnon";
 			_unit playMove "";
 		};

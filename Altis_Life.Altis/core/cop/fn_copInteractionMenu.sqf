@@ -99,7 +99,7 @@ _Btn8 ctrlSetText "Saisir armes";
 _Btn8 buttonSetAction "{life_pInact_curTarget removeWeaponGlobal _x} forEach weapons life_pInact_curTarget;";
 
 //Check that you are near a place to jail them.
-if(!((player distance (getMarkerPos "police_hq_1") < 30) OR  (player distance (getMarkerPos "police_hq_2") < 30) OR (player distance (getMarkerPos "cop_spawn_3") < 30) OR (player distance (getMarkerPos "cop_spawn_5") < 30))) then 
+if(!(player distance (getMarkerPos "jail_release") < 30)) then 
 {
 	_Btn6 ctrlEnable false;
 };

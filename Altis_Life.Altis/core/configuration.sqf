@@ -29,6 +29,7 @@ life_knockout = false;
 life_interrupted = false;
 life_respawned = false;
 life_removeWanted = false;
+life_sync_time = time;
 
 //Persistent Saving
 __CONST__(life_save_civ,TRUE); //Save weapons for civs?
@@ -36,7 +37,7 @@ __CONST__(life_save_yinv,TRUE); //Save Y-Inventory for players?
 
 //Revive constant variables.
 __CONST__(life_revive_cops,TRUE); //Set to false if you don't want cops to be able to revive downed players.
-__CONST__(life_revive_fee,250); //Fee for players to pay when revived.
+__CONST__(life_revive_fee,0); //Fee for players to pay when revived.
 
 //House Limit
 __CONST__(life_houseLimit,5); //Maximum amount of houses a player can buy (TODO: Make Tiered licenses).

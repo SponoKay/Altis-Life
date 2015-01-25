@@ -63,7 +63,7 @@ switch (_vehicle) do
 		_ret = 
 		[
 			["\A3\soft_f_gamma\Offroad_01\Data\offroad_01_ext_ig01_co.paa","civ"], 
-			["textures\vehicules\police\C_Offroad_01_F Police.paa","cop"]
+			["textures\vehicules\police\C_Offroad_01_F Police.jpg","cop"]
 		];
 	};
 		

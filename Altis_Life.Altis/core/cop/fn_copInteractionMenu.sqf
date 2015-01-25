@@ -136,7 +136,7 @@ _Btn11 buttonSetAction "[] call life_fnc_takeUniform; closeDialog 0;";
 
 
 //Check that you are near jail to jail them.
-if(!((player distance (getMarkerPos "jail_send") < 30) )) then 
+if(!(player distance (getMarkerPos "jail_send") < 30)) then 
 {
 	_Btn6 ctrlEnable false;
 };

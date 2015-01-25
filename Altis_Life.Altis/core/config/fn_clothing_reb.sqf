@@ -24,6 +24,7 @@ switch (_filter) do
 			["U_O_SpecopsUniform_ocamo",nil,17500],
 			["U_B_PilotCoveralls",nil,17500],
 			["U_O_PilotCoveralls",nil,15610],
+			["U_I_pilotCoveralls ",nil,15610],
 			["U_IG_leader","Guerilla Leader",15340],
 			["U_I_CombatUniform",nil,11500],
 			["U_O_CombatUniform_oucamo",nil,11500],
@@ -42,7 +43,9 @@ switch (_filter) do
 			["H_MilCap_oucamo",nil,1200],
 			["H_Shemag_tan",nil,1200],
 			["H_Bandanna_camo",nil,650],
-			["H_Booniehat_dgtl",nil,1200]
+			["H_Booniehat_dgtl",nil,1200],
+			["H_CrewHelmetHeli_B",nil,2000],
+			["H_CrewHelmetHeli_O",nil,2000]
 		];
 	};
 	

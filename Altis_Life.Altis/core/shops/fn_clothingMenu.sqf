@@ -14,6 +14,7 @@ disableSerialization;
 if((_this select 3) in ["bruce","dive","reb","kart","merco"] && playerSide != civilian) exitWith {hint localize "STR_Shop_NotaCiv"; closeDialog 0;};
 if((_this select 3) == "reb" && !license_civ_rebel) exitWith {hint localize "STR_Shop_NotaReb"; closeDialog 0;};
 if((_this select 3) == "merco" && !license_civ_mercenaire) exitWith {hint "Vous n'êtes pas un mercenaire!"; closeDialog 0;};
+if((_this select 3) == "medecin" && !license_civ_medecin) exitWith {hint "Vous n'êtes pas un medecin!"; closeDialog 0;};
 if((_this select 3) in ["cop"] && playerSide != west) exitWith {hint localize "STR_Shop_NotaCop"; closeDialog 0;};
 if((_this select 3) in ["dive"] && !license_civ_dive) exitWith { hint localize "STR_Shop_NotaDive"; closeDialog 0;};
 

@@ -111,7 +111,7 @@ switch (_vehicle) do
 			["textures\vehicules\police\C_SUV_01_F Police.jpg","cop"],
 			["textures\vehicules\civil\C_SUV_01_F Taxi.jpg","civ"],
 			["textures\vehicules\rebelle\C_SUV_01_F Rebelle.jpg","reb"],
-			["textures\vehicules\civil\C_SUV_01_F Secouriste.jpg","civ"],
+			["textures\vehicules\civil\C_SUV_01_F Secouriste.jpg","med"],
 			["textures\vehicules\police\C_SUV_01_F Gendarmerie.jpg","cop"]
 		];
 	};
@@ -122,7 +122,7 @@ switch (_vehicle) do
 		[
 			["\a3\soft_f_gamma\Van_01\Data\van_01_ext_co.paa","civ"],
 			["\a3\soft_f_gamma\Van_01\Data\van_01_ext_red_co.paa","civ"],
-			["textures\vehicules\civil\C_Van_01_box_F Secouriste.jpg","civ","textures\vehicules\civil\C_Van_01_box_F Secouriste 2.jpg"]
+			["textures\vehicules\civil\C_Van_01_box_F Secouriste.jpg","med","textures\vehicules\civil\C_Van_01_box_F Secouriste 2.jpg"]
 		];
 	};
 	
@@ -170,7 +170,7 @@ switch (_vehicle) do
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_vrana_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_wave_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_digital_co.paa","reb"],
-			["textures\vehicules\civil\B_Heli_Light_01_F Secouriste.jpg","civ"],
+			["textures\vehicules\civil\B_Heli_Light_01_F Secouriste.jpg","med"],
 			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_ion_co.paa","merco"]
 		];
 	};
@@ -193,7 +193,7 @@ switch (_vehicle) do
 			["\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_civilian_co.paa","civ"],
 			["\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_indp_co.paa","donate"],
 			["\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_opfor_co.paa","reb"],
-			["textures\vehicules\civil\O_Heli_Light_02_unarmed_F Secouriste.jpg","civ"]
+			["textures\vehicules\civil\O_Heli_Light_02_unarmed_F Secouriste.jpg","med"]
 		];
 	};
 	

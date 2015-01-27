@@ -12,6 +12,7 @@ diag_log "----------------------------------------------------------------------
 diag_log "--------------------------------- Starting Altis Life Client Init ----------------------------------";
 diag_log "------------------------------------------------------------------------------------------------------";
 waitUntil {!isNull player && player == player}; //Wait till the player is ready
+[] spawn life_fnc_escInterupt;
 //Setup initial client core functions
 diag_log "::Life Client:: Initialization Variables";
 [] call compile PreprocessFileLineNumbers "core\configuration.sqf";
@@ -41,7 +42,6 @@ waitUntil {life_session_completed};
 0 cutFadeOut 9999999;
 
 //diag_log "::Life Client:: Group Base Execution";
-[] spawn life_fnc_escInterupt;
 
 switch (playerSide) do
 {

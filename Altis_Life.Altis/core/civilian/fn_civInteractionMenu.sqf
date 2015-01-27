@@ -62,14 +62,14 @@ _Btn4 buttonSetAction "[] spawn life_fnc_lockpick; closeDialog 0;";
 _Btn5 ctrlSetText "Saisir carte/GPS";
 _Btn5 buttonSetAction "[] call life_fnc_takeMap; closeDialog 0;";
 
-if (!("ItemGPS" in assignedItems life_pInact_curTarget) && !("ItemMap" in assignedItems life_pInact_curTarget)) then {
+if (!("ItemGPS" in (items life_pInact_curTarget + assignedItems life_pInact_curTarget)) && !("ItemMap" in (items life_pInact_curTarget + assignedItems life_pInact_curTarget))) then {
 	_Btn5 ctrlEnable false;
 };
 
 _Btn6 ctrlSetText "Saisir téléphone";
 _Btn6 buttonSetAction "[] call life_fnc_takePhone; closeDialog 0;";
 
-if (!("ItemRadio" in assignedItems life_pInact_curTarget)) then {
+if (!("ItemRadio" in (items life_pInact_curTarget + assignedItems life_pInact_curTarget))) then {
 	_Btn6 ctrlEnable false;
 };
 

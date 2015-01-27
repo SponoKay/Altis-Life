@@ -158,6 +158,7 @@ class Life_Client_Core
 		class clothing_dive {};
 		class clothing_kart {};
 		class clothing_merco {};
+		class clothing_medecin {};
 	};
 
 	class Player_Menu
@@ -365,6 +366,7 @@ class Life_Client_Core
 		class effetDrogue {};
 		class tracker {};
 		class trackerMarkers {};
+		class bouchonsOreille {};
 	};
 
 	class Dialog_Controls

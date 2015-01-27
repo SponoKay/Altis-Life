@@ -324,7 +324,7 @@
 			<Original>Text Message:</Original>
 			<English>Text Message:</English>
 			<German>Nachricht:</German>
-			<French>Envoyer le SMS à:</French>
+			<French>SMS à:</French>
 			<Italian>Msg Giocatore:</Italian>
 			<Portuguese>Mensagem:</Portuguese>
 		</Key>
@@ -332,7 +332,7 @@
 			<Original>Text Police</Original>
 			<English>Text Police</English>
 			<German>An die Polizei</German>
-			<French>Envoyer à la police</French>
+			<French>Police Secours</French>
 			<Italian>Msg Polizia</Italian>		
 			<Portuguese>Polícia</Portuguese>
 		</Key>
@@ -340,7 +340,7 @@
 			<Original>Text Admins</Original>
 			<English>Text Admins</English>
 			<German>An die Admins</German>
-			<French>Envoyer aux admins</French>
+			<French>Besoin d'aide</French>
 			<Italian>Msg Admin</Italian>
 			<Portuguese>Text Admin</Portuguese>
 		</Key>
@@ -348,7 +348,7 @@
 			<Original>Admin Message</Original>
 			<English>Admin Message</English>
 			<German>Admin-Nachricht</German>
-			<French>Message Admin</French>
+			<French>SMS Admin</French>
 			<Italian>Admin Msg</Italian>
 			<Portuguese>Msg do Admin</Portuguese>
 		</Key>
@@ -356,7 +356,7 @@
 			<Original>Admin Msg All</Original>
 			<English>Admin Msg All</English>
 			<German>Admin-Nachricht an alle</German>
-			<French>Message Admin à tous</French>
+			<French>Message Admin</French>
 			<Italian>Admin Msg</Italian>			
 			<Portuguese>Admin Msg ALL</Portuguese>
 		</Key>
@@ -364,7 +364,7 @@
 			<Original>Request EMS</Original>
 			<English>Request EMS</English>
 			<German>An die Sanitäter</German>
-			<French>Appeler le SAMU</French>
+			<French>SAMU</French>
 			<Italian>Msg medici</Italian>
 			<Portuguese>Chamar SAMU</Portuguese>
 		</Key>
@@ -392,7 +392,7 @@
 			<Original>Gang Management - Current Gangs</Original>
 			<English>Gang Management - Current Gangs</English>
 			<German>Gang Übersicht - Aktuelle Gangs</German>
-			<French>Gestion de Gangs - Liste des Gangs Actuels</French>
+			<French>Gestion de Gangs - Liste des Gangs</French>
 			<Italian>Gestione Gang - Gang Attuali</Italian>
 			<Portuguese>Gerenciar Gangue</Portuguese>
 		</Key>

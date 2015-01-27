@@ -104,39 +104,51 @@ _Btn5 buttonSetAction "[life_pInact_curTarget] call life_fnc_ticketAction;";
 _Btn6 ctrlSetText localize "STR_pInAct_Arrest";
 _Btn6 buttonSetAction "[life_pInact_curTarget] call life_fnc_arrestAction;";
 
+//Check that you are near jail to jail them.
+if(!(player distance (getMarkerPos "jail_send") < 30)) then 
+{
+	_Btn6 ctrlEnable false;
+};
+
 _Btn7 ctrlSetText localize "STR_pInAct_PutInCar";
 _Btn7 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar;";
 
 _Btn8 ctrlSetText "Saisir armes";
 _Btn8 buttonSetAction "{life_pInact_curTarget removeWeaponGlobal _x} forEach weapons life_pInact_curTarget;";
 
-if (!("ItemGPS" in assignedItems life_pInact_curTarget) && !("ItemMap" in assignedItems life_pInact_curTarget)) then {
-	_Btn9 ctrlEnable false;
+if (count weapons life_pInact_curTarget == 0) then {
+	_Btn8 ctrlEnable false;
 };
 
 _Btn9 ctrlSetText "Saisir cagoule";
-_Btn9 buttonSetAction "[] call life_fnc_takePhone; closeDialog 0;";
+_Btn9 buttonSetAction "[] call life_fnc_takeCagoule; closeDialog 0;";
 
-if (!("ItemRadio" in assignedItems life_pInact_curTarget)) then {
-	_Btn10 ctrlEnable false;
+if (headgear life_pInact_curTarget == "H_Shemag_olive"
+	|| headgear life_pInact_curTarget == "H_ShemagOpen_khk"
+	|| headgear life_pInact_curTarget == "H_Shemag_tan"
+	|| headgear life_pInact_curTarget == "H_ShemagOpen_tan"
+	|| goggles life_pInact_curTarget == "G_Balaclava_blk"
+	|| goggles life_pInact_curTarget == "G_Balaclava_combat"
+	|| goggles life_pInact_curTarget == "G_Balaclava_oli"
+	|| goggles life_pInact_curTarget == "G_Bandanna_aviator"
+	|| goggles life_pInact_curTarget == "G_Bandanna_sport"
+	|| goggles life_pInact_curTarget == "G_Bandanna_shades") then {
+	_Btn9 ctrlEnable false;
 };
 
 _Btn10 ctrlSetText "Saisir Radio";
-_Btn10 buttonSetAction "[] call life_fnc_takeRadio; closeDialog 0;";
+_Btn10 buttonSetAction "[] call life_fnc_takePhone; closeDialog 0;";
+
+if (!("ItemRadio" in (items life_pInact_curTarget + assignedItems life_pInact_curTarget))) then {
+	_Btn10 ctrlEnable false;
+};
+
+_Btn11 ctrlSetText "Saisir vêtements";
+_Btn11 buttonSetAction "[] call life_fnc_takeUniform; closeDialog 0;";
 
 _uni = ["U_IG_Guerilla1_1","U_I_G_Story_Protagonist_F","U_I_G_resistanceLeader_F","U_O_SpecopsUniform_ocamo","U_B_PilotCoveralls","U_O_PilotCoveralls","U_I_pilotCoveralls ","U_IG_leader","U_I_CombatUniform""U_O_CombatUniform_oucamo","U_O_GhillieSuit"];
 _vest = ["V_TacVest_khk","V_BandollierB_cbr","V_TacVest_oli","V_HarnessO_brn","V_PlateCarrier1_rgr"];
 
 if((!(uniform life_pInact_curTarget in _uni)) OR (!(vest life_pInact_curTarget in _vest))) then {
 	_Btn11 ctrlEnable false;
-};
-
-_Btn11 ctrlSetText "Saisir vêtements";
-_Btn11 buttonSetAction "[] call life_fnc_takeUniform; closeDialog 0;";
-
-
-//Check that you are near jail to jail them.
-if(!(player distance (getMarkerPos "jail_send") < 30)) then 
-{
-	_Btn6 ctrlEnable false;
 };

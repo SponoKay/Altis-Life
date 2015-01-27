@@ -7,7 +7,7 @@
 */
 
 if (uniform player == "U_C_Scientist") then {
-	player setObjectTextureGlobal [0,"textures\skins\civil\U_C_Scientist Medecin.jpg"];
+	player setObjectTextureGlobal [0,"textures\skins\civil\U_C_Scientist Secouriste.jpg"];
 };
 
 if (uniform player == "U_Rangemaster") then {
@@ -20,4 +20,8 @@ if (uniform player == "U_B_CombatUniform_mcam") then {
 
 if (backpack player == "B_Bergen_blk") then {
 	(unitBackpack player) setObjectTextureGlobal[0,"textures\skins\police\B_Bergen_blk Police.jpg"];
+};
+
+if (backpack player == "B_TacticalPack_mcamo") then {
+	(unitBackpack player) setObjectTextureGlobal[0,"textures\skins\civil\B_TacticalPack_mcamo Secouriste.jpg"];
 };

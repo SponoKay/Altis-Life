@@ -66,6 +66,7 @@ switch (_var) do
 	case "life_inv_phosphore": {"Phosphore"};
 	case "life_inv_soude": {"Soude"};
 	case "life_inv_meth": {"Crystal de Meth"};
+	case "life_inv_bouchons": {"Bouchons d'oreilles"};
 	case "life_inv_tracker": {"Traceur"};
 	
 	//License Block

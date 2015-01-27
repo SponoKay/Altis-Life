@@ -6,7 +6,7 @@
 */
 "" hintC parseText format[
 "<t size='1.5' color='#3344DD'>Bienvenue à toi %1 sur le serveur d'AltisLife-France.com !</t><br />
-<img image='textures\autre\logo.paa'/><br />
+<img size='5' image='textures\autre\logo.paa'/><br />
 Une touche d'intéraction utilisable avec la plupart des objets du jeu est à votre disposition (par défaut touche ""Windows"")<br />
 Allez dans Configuration -> Commandes -> Commandes personnalisées et modifiez la touche Action 10 si vous le souhaitez<br />
 Avec cette touche, vous pouvez:<br />

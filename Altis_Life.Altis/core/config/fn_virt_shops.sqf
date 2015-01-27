@@ -10,7 +10,7 @@ _shop = _this select 0;
 
 switch (_shop) do
 {
-	case "market": {["Marché d'Altis",["water","rabbit","apple","redgull","tbacon","pickaxe","fuelF","peach","storagesmall","storagebig"]]};
+	case "market": {["Marché d'Altis",["water","rabbit","apple","redgull","tbacon","pickaxe","fuelF","peach","bouchons","storagesmall","storagebig"]]};
 	case "wongs": {["Restaurant des Wongs",["turtlesoup","turtle"]]};
 	case "coffee": {["Café du Patron",["coffee","donuts"]]};
 	case "gang": {["Marché du gang", ["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","blastingcharge","boltcutter"]]};
@@ -21,9 +21,9 @@ switch (_shop) do
 	case "iron": {["Vendeur de fer",["iron_r","copper_r"]]};
 	case "diamond": {["Joaillier",["diamond","diamondc"]]};
 	case "salt": {["Vendeur de sel",["salt_r"]]};
-	case "cop": {["Boutique Policier",["donuts","coffee","spikeStrip","barriere","water","rabbit","apple","redgull","fuelF","mauer"]]};
+	case "cop": {["Boutique Policier",["donuts","coffee","spikeStrip","barriere","water","rabbit","apple","redgull","fuelF","mauer","bouchons"]]};
 	case "cement": {["Vendeur de ciment",["cement"]]};
-	case "blackmarket": {["Marché noir",["cement","salt_r","diamondc","iron_r","copper_r","glass","oilp","apple","peach","lockpick","water","rabbit","redgull","tbacon","pickaxe","fuelF"]]};
-	case "rebmarket": {["Marché rebelle",["menotte","spikeStrip","water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","goldbar"]]};
-	case "mercomarket": {["Marché mercenaire",["menotte","spikeStrip","water","rabbit","apple","redgull","tbacon","pickaxe","fuelF","peach"]]};
+	case "blackmarket": {["Marché noir",["cement","salt_r","diamondc","iron_r","copper_r","glass","oilp","apple","peach","lockpick","water","rabbit","redgull","tbacon","pickaxe","fuelF","goldbar"]]};
+	case "rebmarket": {["Marché rebelle",["menotte","spikeStrip","water","rabbit","apple","peach","redgull","tbacon","lockpick","pickaxe","fuelF","bouchons"]]};
+	case "mercomarket": {["Marché mercenaire",["menotte","spikeStrip","water","rabbit","apple","peach","redgull","tbacon","pickaxe","fuelF","bouchons"]]};
 };

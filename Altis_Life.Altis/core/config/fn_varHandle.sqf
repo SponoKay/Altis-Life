@@ -70,6 +70,7 @@ switch (_mode) do
 			case "phosphore": {"life_inv_phosphore"};
 			case "soude": {"life_inv_soude"};
 			case "meth": {"life_inv_meth"};
+			case "bouchons": {"life_inv_bouchons"};
 			case "tracker": {"life_inv_tracker"};
 		};
 	};
@@ -132,6 +133,7 @@ switch (_mode) do
 			case "life_inv_phosphore": {"phosphore"};
 			case "life_inv_soude": {"soude"};
 			case "life_inv_meth": {"meth"};
+			case "life_inv_bouchons": {"bouchons"};
 			case "life_inv_tracker": {"tracker"};
 		};
 	};

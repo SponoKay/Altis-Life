@@ -342,11 +342,11 @@ switch (_shop) do
 		{
 			_return =
 			[
-				["B_Quadbike_01_F",5000],
-				["C_SUV_01_F",35003],
-				["I_MRAP_03_F",350000],
+				["B_Quadbike_01_F",1700],
+				["C_SUV_01_F",12000],
+				["I_MRAP_03_F",116000],
 				["B_G_Offroad_01_F",35000],
-				["B_G_Offroad_01_armed_F",750000]
+				["B_G_Offroad_01_armed_F",198000]
 			];
 
 		};	
@@ -355,11 +355,11 @@ switch (_shop) do
 		{
 			_return =
 			[
-				["B_Quadbike_01_F",4250],
-				["C_SUV_01_F",29753],
-				["I_MRAP_03_F",297500],
-				["B_G_Offroad_01_F",29750],
-				["B_G_Offroad_01_armed_F",637500]
+				["B_Quadbike_01_F",1500],
+				["C_SUV_01_F",12000],
+				["I_MRAP_03_F",98000],
+				["B_G_Offroad_01_F",19750],
+				["B_G_Offroad_01_armed_F",145000]
 			];
 
 		};			
@@ -368,11 +368,11 @@ switch (_shop) do
 		{
 			_return =
 			[
-				["B_Quadbike_01_F",3500],
-				["C_SUV_01_F",24503],
-				["I_MRAP_03_F",245000],
-				["B_G_Offroad_01_F",24500],
-				["B_G_Offroad_01_armed_F",525000]
+				["B_Quadbike_01_F",1500],
+				["C_SUV_01_F",8000],
+				["I_MRAP_03_F",81000],
+				["B_G_Offroad_01_F",8200],
+				["B_G_Offroad_01_armed_F",109000]
 			];
 					
 		};		
@@ -386,9 +386,9 @@ switch (_shop) do
 		{
 			_return =
 			[
-				["B_Heli_Light_01_F",750000],
-				["O_Heli_Light_02_unarmed_F",1000000],
-				["I_Heli_light_03_unarmed_F",1500000]
+				["B_Heli_Light_01_F",150000],
+				["O_Heli_Light_02_unarmed_F",320000],
+				["I_Heli_light_03_unarmed_F",430000]
 			];	
 		};
 
@@ -396,10 +396,10 @@ switch (_shop) do
 		{
 			_return =
 			[
-				["B_Heli_Light_01_F",637500],
-				["O_Heli_Light_02_unarmed_F",850000],
-				["I_Heli_light_03_unarmed_F",1275000],
-				["O_Heli_Light_02_F",2000000]			
+				["B_Heli_Light_01_F",120000],
+				["O_Heli_Light_02_unarmed_F",290000],
+				["I_Heli_light_03_unarmed_F",390000],
+				["O_Heli_Light_02_F",720000]			
 			];
 		};
 		
@@ -407,10 +407,10 @@ switch (_shop) do
 		{
 			_return =
 			[
-				["B_Heli_Light_01_F",525000],
-				["O_Heli_Light_02_unarmed_F",700000],
-				["I_Heli_light_03_unarmed_F",1050000],
-				["O_Heli_Light_02_F",1750000]				
+				["B_Heli_Light_01_F",98000],
+				["O_Heli_Light_02_unarmed_F",258000],
+				["I_Heli_light_03_unarmed_F",352000],
+				["O_Heli_Light_02_F",630000]				
 			];
 		};
 

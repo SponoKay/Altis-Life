@@ -1,22 +1,18 @@
-if (isNil "demiGOD") then
-{
+if (isNil "demiGOD") then {
 	demiGOD = 0;
 };
 
-if (demiGOD == 0) then
-{
+if (demiGOD == 0) then {
 	demiGOD = 1;
-    cutText ["Godmode activated(cheateur bou !). (No Recoil, No Grass, No reload)", "PLAIN"];
-	player addEventHandler ["handleDamage", {false}];
+    cutText ["Mode invincible activé (pas de dégâts et munitions illimitées)", "PLAIN"];
+	damageGodEvent = player addEventHandler ["handleDamage", {false}];
 	player allowDamage false;
-	player addEventHandler ["Fired", { (_this select 0) setVehicleAmmo 1 }];
+	firedGodEvent = player addEventHandler ["Fired", { (_this select 0) setVehicleAmmo 1 }];
 }
-
-else
-{
+else {
 	demiGOD = 0;
-    cutText ["Godmode Deactivated. (No Recoil, No Grass, No reload)", "PLAIN"];
+    cutText ["Mode invincible désactivé", "PLAIN"];
 	player allowDamage true;
-	player removeAllEventHandlers "handleDamage";
-	player removeAllEventHandlers "Fired";
+	player removeEventHandler ["handleDamage", damageGodEvent];
+	player removeEventHandler ["Fired", firedGodEvent];
 };

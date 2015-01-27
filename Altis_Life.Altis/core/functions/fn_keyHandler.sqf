@@ -276,6 +276,44 @@ switch (_code) do
 			};
 		};
 	};
+	
+	
+	// ANTI ALT + F4
+	 case 62:
+	{
+		if (_alt && !_shift) then {
+			if ((player getVariable ["FAR_isUnconscious", 0] == 1) || !life_alive) then {
+				[6] call SOCK_fnc_updatePartial;
+				diag_log format ["%1 a utilisé ALT + F4 pour se déconnecter (Prenez une capture et signalez le sur notre forum: www.altislife-france.com)",_player getVariable["realname",name _player]];
+				[[0,format["%1 a utilisé ALT + F4 pour se déconnecter (Prenez une capture et signalez le sur notre forum: www.altislife-france.com)",_player getVariable["realname",name _player]]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
+			};
+		};
+	};
+	
+	// ANTI CTRL + ALT + DEL
+    case 211:
+	{
+		if ((player getVariable ["FAR_isUnconscious", 0] == 1) || !life_alive) then {
+			if(_ctrlKey && _alt) then {
+				[6] call SOCK_fnc_updatePartial;
+				diag_log format ["%1 a utilisé CTRL + ALT + DEL pour se déconnecter (Prenez une capture et signalez le sur notre forum: www.altislife-france.com)",_player getVariable["realname",name _player]];
+				[[0,format["%1 a utilisé CTRL + ALT + DEL  pour se déconnecter (Prenez une capture et signalez le sur www.altislife-france.com)",_player getVariable["realname",name _player]]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
+			};
+		};
+	};
+	
+	// ANTI CTRL + ESC
+    case 1:
+	{
+		if ((player getVariable ["FAR_isUnconscious", 0] == 1) || !life_alive) then {
+			if(_ctrlKey) then {
+				[6] call SOCK_fnc_updatePartial;
+				diag_log format ["%1 a utilisé CTRL + ESC pour se déconnecter (Prenez une capture et signalez le sur notre forum: www.altislife-france.com)",_player getVariable["realname",name _player]];
+				[[0,format["%1 a utilisé CTRL + ESC pour se déconnecter (Prenez une capture et signalez le sur notre forum: www.altislife-france.com)",_player getVariable["realname",name _player]]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
+			};
+		};
+	};
+
 };
 
 _handled;

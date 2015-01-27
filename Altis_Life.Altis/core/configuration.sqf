@@ -44,8 +44,8 @@ __CONST__(life_houseLimit,5); //Maximum amount of houses a player can buy (TODO:
 
 //Gang related stuff?
 __CONST__(life_gangPrice,75000); //Price for creating a gang (They're all persistent so keep it high to avoid 345345345 gangs).
-__CONST__(life_gangUpgradeBase,10000); //MASDASDASD
-__CONST__(life_gangUpgradeMultipler,2.5); //BLAH
+__CONST__(life_gangUpgradeBase,100000); //MASDASDASD
+__CONST__(life_gangUpgradeMultipler,3); //BLAH
 
 //Uniform price (0),Hat Price (1),Glasses Price (2),Vest Price (3),Backpack Price (4)
 life_clothing_purchase = [-1,-1,-1,-1,-1];
@@ -163,6 +163,7 @@ life_inv_items =
 	"life_inv_soude",
 	"life_inv_meth",
 	"life_inv_tracker",
+	"life_inv_bouchons",
 	"life_inv_storagesmall",
 	"life_inv_storagebig"
 ];
@@ -250,7 +251,8 @@ sell_array =
 	["barriere",1200],
 	["cement",1950],
 	["goldbar",100000],
-	["menotte",800],
+	["menotte",200],
+	["bouchons",10],
 	["meth",7000],
 	["tracker",2000]
 ];
@@ -285,6 +287,7 @@ buy_array =
 	["storagesmall",75000],
 	["storagebig",150000],
 	["menotte",800],
+	["bouchons",50],
 	["tracker",50000]
 ];
 __CONST__(buy_array,buy_array);

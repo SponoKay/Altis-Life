@@ -28,6 +28,7 @@ switch (_filter) do
 			["U_IG_leader","Guerilla Leader",15340],
 			["U_I_CombatUniform",nil,11500],
 			["U_O_CombatUniform_oucamo",nil,11500],
+			["U_B_CombatUniform_mcam_tshirt",nil,21500],
 			["U_O_GhillieSuit",nil,50000]
 		];
 	};

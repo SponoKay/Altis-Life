@@ -356,7 +356,7 @@
 			<Original>Admin Msg All</Original>
 			<English>Admin Msg All</English>
 			<German>Admin-Nachricht an alle</German>
-			<French>Message Admin</French>
+			<French>Message Global</French>
 			<Italian>Admin Msg</Italian>			
 			<Portuguese>Admin Msg ALL</Portuguese>
 		</Key>
@@ -1088,7 +1088,7 @@
 			<Original>Sync Data</Original>
 			<English>Sync Data</English>
 			<German>Daten speichern</German>
-			<French>Synchroniser données</French>
+			<French>Sauvegarde</French>
 			<Italian>Salva Dati</Italian>
 			<Portuguese>Sincronizar Dados</Portuguese>
 		</Key>

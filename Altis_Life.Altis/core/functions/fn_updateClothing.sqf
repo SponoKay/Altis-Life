@@ -25,3 +25,7 @@ if (backpack player == "B_Bergen_blk") then {
 if (backpack player == "B_TacticalPack_mcamo") then {
 	(unitBackpack player) setObjectTextureGlobal[0,"textures\skins\civil\B_TacticalPack_mcamo Secouriste.jpg"];
 };
+
+if (uniform player == "U_B_CombatUniform_mcam_worn") then {
+	player setObjectTextureGlobal [0,"textures\skins\mercenaire\U_B_CombatUniform_mcam_worn Mercenaire.jpg"];
+};

@@ -72,7 +72,7 @@ switch (_vehicle) do
 		_ret = 
 		[
 			["textures\vehicules\police\I_MRAP_03_F Police.jpg","cop"],
-			["\A3\soft_F_beta\MRAP_03\Data\mrap_03_ext_indp_co.paa", "merco"]
+			["textures\vehicules\mercenaire\I_MRAP_03_F Mercenaire.jpg", "merco"]
 		];
 	};
 		case "O_MRAP_02_F":

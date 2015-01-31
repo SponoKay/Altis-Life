@@ -100,17 +100,14 @@ switch (_filter) do
 	//Backpacks
 	case 4:
 	{
+		_ret set[count _ret,["B_Bergen_blk","Sac de police",800]];
 		_ret set[count _ret,["B_Kitbag_cbr",nil,800]];
 		_ret set[count _ret,["B_FieldPack_cbr",nil,800]];
 		_ret set[count _ret,["B_AssaultPack_cbr",nil,800]];
-		_ret set[count _ret,["B_Bergen_sgg",nil,800]];
 		if(__GETC__(life_coplevel) > 2) then
 		{
 		_ret set[count _ret,["B_Carryall_cbr",nil,800]];
 		_ret set[count _ret,["B_Carryall_oucamo",nil,800]];
-		_ret set[count _ret,["B_FieldPack_blk",nil,800]];
-		_ret set[count _ret,["B_Bergen_blk",nil,800]];
-		_ret set[count _ret,["B_OutdoorPack_blk",nil,800]];
 		_ret set[count _ret,["B_UAV_01_backpack_F",nil,800]];
 		};
 	};

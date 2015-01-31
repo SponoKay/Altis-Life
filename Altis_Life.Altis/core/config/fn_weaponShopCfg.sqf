@@ -46,7 +46,8 @@ switch(_shop) do
 							["6Rnd_RedSignal_F","FusÃ©e Ã©clairante Rouge",50],
 							["16Rnd_9x21_Mag",nil,50],
 							["11Rnd_45ACP_Mag",nil,70],
-							["30Rnd_9x21_Mag",nil,60]
+							["30Rnd_9x21_Mag",nil,60],
+							["30Rnd_65x39_caseless_mag",nil,100]
 						]
 					];
 				};
@@ -66,7 +67,8 @@ switch(_shop) do
 							["16Rnd_9x21_Mag",nil,50],
 							["30Rnd_9x21_Mag",nil,60],
 							["11Rnd_45ACP_Mag",nil,70],
-							["30Rnd_65x39_caseless_mag",nil,100]
+							["30Rnd_65x39_caseless_mag",nil,100],
+							["30Rnd_556x45_Stanag",nil,100]
 						]
 					];
 				};

@@ -22,7 +22,7 @@ switch(_shop) do
 				{
 					["Armurerie",
 						[
-							["hgun_P07_snds_F","Stun Pistol",2000],
+							["hgun_P07_snds_F","Tazer",2000],
 							["SMG_02_F","Sting 9 mm",6200],
 							["hgun_Pistol_Signal_F","Pistolet de dÃ©tresse",2000],
 							["6Rnd_GreenSignal_F","FusÃ©e Ã©clairante Verte",50],
@@ -78,8 +78,9 @@ switch(_shop) do
 							["hgun_P07_snds_F","Stun Pistol",2000],
 							["hgun_Pistol_heavy_01_MRD_F",nil,2000],
 							["SMG_02_F","Sting 9 mm",6200],
-							["arifle_Mk20_F","Mk20C 5.56 mm",5000],
 							["arifle_MXC_F","MXC 6.5 mm",7000],
+							["arifle_Mk20_F","Mk20C 5.56 mm",5000],
+							["arifle_MXM_F","MXM 6.5 mm",5000],
 							["hgun_Pistol_Signal_F","Pistolet de dÃ©tresse",2000],
 							["6Rnd_GreenSignal_F","FusÃ©e Ã©clairante Verte",50],
 							["6Rnd_RedSignal_F","FusÃ©e Ã©clairante Rouge",50],

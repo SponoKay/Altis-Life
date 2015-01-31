@@ -533,7 +533,7 @@ switch (_shop) do
 				_return set[count _return,["C_Boat_Civil_01_police_F",30000]];	
 			};
 			
-				if(__GETC__(life_coplevel) > 3) then //lvl 4 + Sous-Marin+ Bateau Armé
+				if(__GETC__(life_coplevel) > 6) then //lvl 4 + Sous-Marin+ Bateau Armé
 				{
 					_return set[count _return,["B_SDV_01_F",50000]];
 					_return set[count _return,["B_Boat_Armed_01_minigun_F",50000]];	

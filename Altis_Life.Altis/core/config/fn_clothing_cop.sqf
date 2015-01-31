@@ -21,17 +21,19 @@ switch (_filter) do
 	{
 		_ret set[count _ret,["U_Rangemaster","Tenue de police",25]];
 		_ret set[count _ret,["U_B_Wetsuit",nil,5000]];
-		if(__GETC__(life_coplevel) > 1) then
+		
+		if(__GETC__(life_coplevel) > 2) then
 		{
 			_ret set[count _ret,["U_B_CombatUniform_mcam","Tenue du RAID",350]];
 			_ret set[count _ret,["U_B_survival_uniform",nil,1250]];
 		};
-		if(__GETC__(life_coplevel) > 2) then
+		
+		if(__GETC__(life_coplevel) > 4) then
 		{
-			_ret set[count _ret,["U_B_CombatUniform_mcam_worn",nil,550]];
 			_ret set[count _ret,["U_B_GhillieSuit",nil,550]];
 			_ret set[count _ret,["U_B_SpecopsUniform_sgg",nil,550]];
 		};
+		
 	};
 	
 	//Hats

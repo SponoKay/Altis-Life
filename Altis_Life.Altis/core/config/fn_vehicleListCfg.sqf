@@ -491,27 +491,27 @@ switch (_shop) do
 // ********************	
 	case "cop_air":
 	{
-		if(__GETC__(life_coplevel) > 2) then //lvl 2 - Brigadier/Sergent 
+		if(__GETC__(life_coplevel) > 1) then //lvl 2 - Brigadier/Sergent 
 		{
 			_return set[count _return,["B_Heli_Light_01_F",100000]];	
 		};
 
-		if(__GETC__(life_coplevel) > 3) then //lvl 3
+		if(__GETC__(life_coplevel) > 2) then //lvl 3
 		{
 			_return set[count _return,["O_Heli_Light_02_unarmed_F",200000]];
 		};
 
-		if(__GETC__(life_coplevel) > 4) then //lvl 4
+		if(__GETC__(life_coplevel) > 3) then //lvl 4
 		{
 			_return set[count _return,["I_Heli_light_03_unarmed_F",250000]];
 		};
 
-		if(__GETC__(life_coplevel) > 5) then //lvl 5
+		if(__GETC__(life_coplevel) > 4) then //lvl 5
 		{
 			_return set[count _return,["B_Heli_Transport_01_F",1500000]];	
 		};
 		
-		if(__GETC__(life_coplevel) > 6) then //lvl 6
+		if(__GETC__(life_coplevel) > 5) then //lvl 6
 		{
 			_return set[count _return,["B_Heli_Light_01_armed_F",1000000]];
 			_return set[count _return,["B_Heli_Transport_03_unarmed_F",1250000]];
@@ -527,18 +527,17 @@ switch (_shop) do
 		[
 			["B_Boat_Transport_01_F",2000]
 		];
-
-			if(__GETC__(life_coplevel) > 1) then //lvl 2 + Hors-Bord Police
-			{
-				_return set[count _return,["C_Boat_Civil_01_police_F",30000]];	
-			};
-			
-				if(__GETC__(life_coplevel) > 6) then //lvl 4 + Sous-Marin+ Bateau Armé
-				{
-					_return set[count _return,["B_SDV_01_F",50000]];
-					_return set[count _return,["B_Boat_Armed_01_minigun_F",50000]];	
-				};
-
+		
+		if(__GETC__(life_coplevel) > 1) then //lvl 2 + Hors-Bord Police
+		{
+			_return set[count _return,["C_Boat_Civil_01_police_F",30000]];	
+		};
+		
+		if(__GETC__(life_coplevel) > 6) then //lvl 7 + Sous-Marin+ Bateau Armé
+		{
+			_return set[count _return,["B_SDV_01_F",50000]];
+			_return set[count _return,["B_Boat_Armed_01_minigun_F",50000]];	
+		};
 	};
 	
 // *********************	

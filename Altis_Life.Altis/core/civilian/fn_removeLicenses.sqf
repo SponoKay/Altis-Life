@@ -24,8 +24,7 @@ switch (_state) do
 	case 1:
 	{
 		license_civ_gun = false;
-		/*license_civ_rebel = false;
-		license_civ_driver = false;*/
+		license_civ_rebel = false;
 	};
 	
 	//Remove motor vehicle licenses

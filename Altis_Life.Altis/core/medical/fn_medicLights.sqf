@@ -11,7 +11,7 @@ _vehicle = _this select 0;
 	
 if(isNil "_vehicle" OR isNull _vehicle OR !(_vehicle getVariable "lights")) exitWith {};
 _lightRed = [20, 0.1, 0.1];
-_lightBlue = [0.1, 0.1, 20];
+_lightBlue = [20, 20, 20];
 
 _lightleft = "#lightpoint" createVehicle getpos _vehicle;   
 sleep 0.2;

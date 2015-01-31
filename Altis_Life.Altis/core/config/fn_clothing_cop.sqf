@@ -37,26 +37,26 @@ switch (_filter) do
 	//Hats
 	case 1:
 	{
+	
+		_ret set[count _ret,["H_Cap_police",nil,120]];
+	
 		if(__GETC__(life_coplevel) > 1) then
 		{	
-			_ret set[count _ret,["H_Cap_police",nil,120]];
 			_ret set[count _ret,["H_HelmetB_plain_mcamo",nil,75]];
 			_ret set[count _ret,["H_Booniehat_mcamo",nil,120]];
-			_ret set[count _ret,["H_Cap_police",nil,120]];
 		};
 		
-		if(__GETC__(life_coplevel) > 2) then
+		if(__GETC__(life_coplevel) > 4) then
 		{
 			_ret set[count _ret,["H_MilCap_mcamo",nil,100]];
 			_ret set[count _ret,["H_PilotHelmetHeli_B",nil,100]];
-			_ret set[count _ret,["H_HelmetB_plain_mcamo",nil,100]];
 			_ret set[count _ret,["H_HelmetIA_net",nil,100]];
 			_ret set[count _ret,["H_Beret_blk_POLICE",nil,100]];
 		};
-		if(__GETC__(life_coplevel) > 5) then
+		
+		if(__GETC__(life_coplevel) > 8) then
 		{
 			_ret set[count _ret,["H_Beret_Colonel",nil,100]];
-
 		};
 	};
 	
@@ -75,7 +75,7 @@ switch (_filter) do
 			_ret set[count _ret,["G_Lowprofile",nil,75]];
 			_ret set[count _ret,["G_Combat",nil,75]];
 
-		if(__GETC__(life_coplevel) > 3) then
+		if(__GETC__(life_coplevel) > 6) then
 		{
 		_ret set[count _ret,["G_Balaclava_blk",nil,75]];
 		};
@@ -100,17 +100,11 @@ switch (_filter) do
 	//Backpacks
 	case 4:
 	{
-		_ret set[count _ret,["B_Kitbag_cbr",nil,800]];
-		_ret set[count _ret,["B_FieldPack_cbr",nil,800]];
-		_ret set[count _ret,["B_AssaultPack_cbr",nil,800]];
-		_ret set[count _ret,["B_Bergen_sgg",nil,800]];
-		if(__GETC__(life_coplevel) > 2) then
+		_ret set[count _ret,["B_Bergen_blk","Sac de police",800]];
+		if(__GETC__(life_coplevel) > 4) then
 		{
 		_ret set[count _ret,["B_Carryall_cbr",nil,800]];
 		_ret set[count _ret,["B_Carryall_oucamo",nil,800]];
-		_ret set[count _ret,["B_FieldPack_blk",nil,800]];
-		_ret set[count _ret,["B_Bergen_blk",nil,800]];
-		_ret set[count _ret,["B_OutdoorPack_blk",nil,800]];
 		_ret set[count _ret,["B_UAV_01_backpack_F",nil,800]];
 		};
 	};

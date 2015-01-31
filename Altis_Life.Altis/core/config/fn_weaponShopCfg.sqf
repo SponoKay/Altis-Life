@@ -23,14 +23,11 @@ switch(_shop) do
 					["Armurerie",
 						[
 							["hgun_P07_snds_F","Stun Pistol",2000],
-							["hgun_Pistol_heavy_01_MRD_F",nil,2000],
-							["hgun_PDW2000_F","PDW2000 9 mm",6200],
 							["SMG_02_F","Sting 9 mm",6200],
 							["hgun_Pistol_Signal_F","Pistolet de dÃ©tresse",2000],
 							["6Rnd_GreenSignal_F","FusÃ©e Ã©clairante Verte",50],
 							["6Rnd_RedSignal_F","FusÃ©e Ã©clairante Rouge",50],
 							["16Rnd_9x21_Mag",nil,50],
-							["11Rnd_45ACP_Mag",nil,70],
 							["30Rnd_9x21_Mag",nil,60]
 						]
 					];
@@ -42,18 +39,14 @@ switch(_shop) do
 						[
 							["hgun_P07_snds_F","Stun Pistol",2000],
 							["hgun_Pistol_heavy_01_MRD_F",nil,2000],
-							["hgun_PDW2000_F","PDW2000 9 mm",6200],
 							["SMG_02_F","Sting 9 mm",6200],
-							["arifle_Mk20_F","Mk20C 5.56 mm",5000],
-							["arifle_MXC_F","MXC 6.5 mm",5000],
+							["arifle_MXC_F","MXC 6.5 mm",7000],
 							["hgun_Pistol_Signal_F","Pistolet de dÃ©tresse",2000],
 							["6Rnd_GreenSignal_F","FusÃ©e Ã©clairante Verte",50],
 							["6Rnd_RedSignal_F","FusÃ©e Ã©clairante Rouge",50],
 							["16Rnd_9x21_Mag",nil,50],
 							["11Rnd_45ACP_Mag",nil,70],
-							["30Rnd_9x21_Mag",nil,60],
-							["30Rnd_556x45_Stanag",nil,100],
-							["30Rnd_65x39_caseless_mag",nil,100]
+							["30Rnd_9x21_Mag",nil,60]
 						]
 					];
 				};
@@ -64,34 +57,73 @@ switch(_shop) do
 						[
 							["hgun_P07_snds_F","Stun Pistol",2000],
 							["hgun_Pistol_heavy_01_MRD_F",nil,2000],
-							["hgun_PDW2000_F","PDW2000 9 mm",6200],
+							["SMG_02_F","Sting 9 mm",6200],
+							["arifle_MXC_F","MXC 6.5 mm",7000],
+							["arifle_Mk20_F","Mk20C 5.56 mm",5000],
+							["hgun_Pistol_Signal_F","Pistolet de dÃ©tresse",2000],
+							["6Rnd_GreenSignal_F","FusÃ©e Ã©clairante Verte",50],
+							["6Rnd_RedSignal_F","FusÃ©e Ã©clairante Rouge",50],
+							["16Rnd_9x21_Mag",nil,50],
+							["30Rnd_9x21_Mag",nil,60],
+							["11Rnd_45ACP_Mag",nil,70],
+							["30Rnd_65x39_caseless_mag",nil,100]
+						]
+					];
+				};
+
+				case (__GETC__(life_coplevel) == 4) :
+				{
+					["Armurerie",
+						[
+							["hgun_P07_snds_F","Stun Pistol",2000],
+							["hgun_Pistol_heavy_01_MRD_F",nil,2000],
 							["SMG_02_F","Sting 9 mm",6200],
 							["arifle_Mk20_F","Mk20C 5.56 mm",5000],
-							["arifle_MXC_F","MXC 6.5 mm",5000],
+							["arifle_MXC_F","MXC 6.5 mm",7000],
+							["hgun_Pistol_Signal_F","Pistolet de dÃ©tresse",2000],
+							["6Rnd_GreenSignal_F","FusÃ©e Ã©clairante Verte",50],
+							["6Rnd_RedSignal_F","FusÃ©e Ã©clairante Rouge",50],
+							["16Rnd_9x21_Mag",nil,50],
+							["30Rnd_9x21_Mag",nil,60],
+							["11Rnd_45ACP_Mag",nil,70],
+							["30Rnd_556x45_Stanag",nil,100],
+							["30Rnd_65x39_caseless_mag",nil,100]
+						]
+					];
+				};
+				
+				case (__GETC__(life_coplevel) == 5) :
+				{
+					["Armurerie",
+						[
+							["hgun_P07_snds_F","Stun Pistol",2000],
+							["hgun_Pistol_heavy_01_MRD_F",nil,2000],
+							["SMG_02_F","Sting 9 mm",6200],
+							["arifle_Mk20_F","Mk20C 5.56 mm",5000],
+							["arifle_MXC_F","MXC 6.5 mm",7000],
 							["srifle_LRR_LRPS_F","M320 LRR .408",50000],
 							["LMG_Mk200_F","Mk200 6.5 mm",10000],
 							["srifle_EBR_F","Mk18 ABR 7.62 mm",10000],
 							["arifle_MXM_F","MXM 6.5 mm",5000],
 							["arifle_Katiba_F","Katiba 6.5 mm",5000],
-							["launch_Titan_short_F",nil,100000],
 							["hgun_Pistol_Signal_F","Pistolet de dÃ©tresse",2000],
 							["6Rnd_GreenSignal_F","FusÃ©e Ã©clairante Verte",50],
 							["6Rnd_RedSignal_F","FusÃ©e Ã©clairante Rouge",50],
 							["16Rnd_9x21_Mag",nil,50],
-							["11Rnd_45ACP_Mag",nil,70],
 							["30Rnd_9x21_Mag",nil,60],
+							["11Rnd_45ACP_Mag",nil,70],
+							["30Rnd_556x45_Stanag",nil,100],
+							["30Rnd_65x39_caseless_mag",nil,100],
 							["30Rnd_556x45_Stanag",nil,100],
 							["20Rnd_762x51_Mag",nil,100],
-							["30Rnd_65x39_caseless_mag",nil,100],
 							["30Rnd_65x39_caseless_green",nil,100],
 							["7Rnd_408_Mag",nil,100],
-							["200Rnd_65x39_cased_Box",nil,100],
-							["Titan_AP",nil,75000]
+							["200Rnd_65x39_cased_Box",nil,100]
 						]
 					];
-				};				
+				};
 				
-				case (__GETC__(life_coplevel) > 3) :
+				case (__GETC__(life_coplevel) > 4) :
 				{
 					["Armurerie",
 						[
@@ -100,7 +132,7 @@ switch(_shop) do
 							["hgun_PDW2000_F","PDW2000 9 mm",6200],
 							["SMG_02_F","Sting 9 mm",6200],
 							["arifle_Mk20_F","Mk20C 5.56 mm",5000],
-							["arifle_MXC_F","MXC 6.5 mm",5000],
+							["arifle_MXC_F","MXC 6.5 mm",7000],
 							["srifle_LRR_LRPS_F","M320 LRR .408",50000],
 							["LMG_Mk200_F","Mk200 6.5 mm",10000],
 							["srifle_EBR_F","Mk18 ABR 7.62 mm",10000],
@@ -151,7 +183,6 @@ switch(_shop) do
 					["Accessoires Armes",
 						[
 							["muzzle_snds_L","Silencieux 9 mm ",450],
-							["muzzle_snds_M","Silencieux 5.56 mm",350],
 							["muzzle_snds_H","Silencieux 6.5 mm",380],
 							["optic_Aco_smg",nil,2000],
 							["optic_Arco",nil,2000],
@@ -172,22 +203,19 @@ switch(_shop) do
 							["muzzle_snds_L","Silencieux 9 mm ",450],
 							["muzzle_snds_M","Silencieux 5.56 mm",350],
 							["muzzle_snds_H","Silencieux 6.5 mm",380],
-							["muzzle_snds_B","Silencieux 7.62 mm",400],
 							["optic_Aco_smg",nil,2000],
 							["optic_Arco",nil,2000],
 							["optic_ACO_grn",nil,2000],
 							["optic_Holosight",nil,2000],
 							["optic_MRCO",nil,2000],
 							["optic_DMS",nil,2000],
-							["optic_NVS",nil,2000],
-							["optic_SOS",nil,2000],
 							["acc_pointer_IR",nil,2000],
 							["acc_flashlight",nil,1000]
 						]
 					];
 				};				
 				
-				case (__GETC__(life_coplevel) > 3) :
+				case (__GETC__(life_coplevel) > 4) :
 				{
 					["Accessoires Armes",
 						[
@@ -239,7 +267,7 @@ switch(_shop) do
 					];
 				};
 				
-				case (__GETC__(life_coplevel) > 2) :
+				case (__GETC__(life_coplevel) > 4) :
 				{
 					["Divers",
 						[

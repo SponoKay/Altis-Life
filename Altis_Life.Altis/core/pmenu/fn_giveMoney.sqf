@@ -35,7 +35,7 @@ if(headgear _unit != "H_ShemagOpen_tan"
   && goggles _unit != "G_Bandanna_aviator" 
   && goggles _unit != "G_Bandanna_sport" 
   && goggles _unit != "G_Bandanna_shades") then {
-	hint format[" $%1 to %2",[(parseNumber(_amount))] call life_fnc_numberText,_unit getVariable["realname",name _unit]];
+	hint format["Vous avez donné %1€ à %2",[(parseNumber(_amount))] call life_fnc_numberText,_unit getVariable["realname",name _unit]];
 }
 else {
 	hint format["Vous avez donné %1€ à un inconnu",[(parseNumber(_amount))] call life_fnc_numberText];

@@ -218,7 +218,7 @@ switch(_shop) do
 					];
 				};				
 				
-				case (__GETC__(life_coplevel) > 4) :
+				case (__GETC__(life_coplevel) > 3) :
 				{
 					["Accessoires Armes",
 						[

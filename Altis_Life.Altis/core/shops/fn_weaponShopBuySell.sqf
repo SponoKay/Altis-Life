@@ -33,7 +33,7 @@ if((uiNamespace getVariable["Weapon_Shop_Filter",0]) == 1) then
 	hint parseText format[localize "STR_Shop_Weapon_Sold",_itemInfo select 1,[_price] call life_fnc_numberText];
 	[nil,(uiNamespace getVariable["Weapon_Shop_Filter",0])] call life_fnc_weaponShopFilter; //Update the menu.*/
 }
-	else
+else
 {
 	private["_hideout"];
 	_hideout = (nearestObjects[getPosATL player,["Land_u_Barracks_V2_F","Land_i_Barracks_V2_F"],25]) select 0;

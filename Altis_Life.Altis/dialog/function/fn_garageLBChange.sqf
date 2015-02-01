@@ -15,7 +15,7 @@ _index = _this select 1;
 _dataArr = _control lbData _index; _dataArr = call compile format["%1",_dataArr];
 _className = _dataArr select 0;
 _vehicleColor = [_className,_dataArr select 1] call life_fnc_vehicleColorStr;
-_hasInsurance = (parseNumber _dataArr select 2) - 1;
+_hasInsurance = parseNumber (_dataArr select 2) - 1;
 _vehicleInfo = [_className] call life_fnc_fetchVehInfo;
 _trunkSpace = [_className] call life_fnc_vehicleWeightCfg;
 

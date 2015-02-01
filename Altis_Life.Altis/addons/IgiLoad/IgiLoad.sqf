@@ -1,9 +1,9 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//	IgiLoad v0.9.10_RC_d																					//
+//	IgiLoad v0.9.10_RC_e_(Arma3_1.32)																		//
 //	Version info: This is not official version of IgiLoad it is only WIP (RC)								//
 //	Author: Igi_PL																							//
 //	Web: http://www.igipl.net/																				//
-//	Version date: 2014.06.22																				//
+//	Version date: 2014.10.16																				//
 //																											//
 //	USE:																									//
 //	1. In mission "init.sqf" add line: "0 = execVM "IgiLoad\IgiLoadInit.sqf";".								//
@@ -1822,7 +1822,7 @@ if (_obj_main_type in IL_Supported_Vehicles_MOHAWK) then
 	_obj_main addAction [
 	"<t color=""#0000ff"">Open cargo ramp in CH-49</t>",
 	{
-		_this select 0 animate ['CargoRamp_Open', 1];
+		_this select 0 animatedoor ['CargoRamp_Open', 1];
 	},[],IL_Action_O_Priority,false,true,"",
 	"((driver _target == _this) || (('Turret' in (assignedVehicleRole _this)) && (vehicle _this == _target) && (_target getVariable 'can_copilot')) || ((_this in (nearestObjects[ _target modelToWorld [0,-6,-3], [], IL_SDistL + IL_SDistL_Heli_offset])) && (_target getVariable 'can_outside'))) && (_target animationPhase 'CargoRamp_Open' == 0) && (_target getVariable 'can_load')"
 	];
@@ -1830,7 +1830,7 @@ if (_obj_main_type in IL_Supported_Vehicles_MOHAWK) then
 	_obj_main addAction [
 	"<t color=""#0000ff"">Close cargo ramp in CH-49</t>",
 	{
-		_this select 0 animate ['CargoRamp_Open', 0];
+		_this select 0 animatedoor ['CargoRamp_Open', 0];
 	},[],IL_Action_O_Priority,false,true,"",
 	"((driver _target == _this) || (('Turret' in (assignedVehicleRole _this)) && (vehicle _this == _target) && (_target getVariable 'can_copilot')) || ((_this in (nearestObjects[ _target modelToWorld [0,-6,-3], [], IL_SDistL + IL_SDistL_Heli_offset])) && (_target getVariable 'can_outside'))) && (_target animationPhase 'CargoRamp_Open' == 1) && (_target getVariable 'can_load')"
 	];

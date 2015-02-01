@@ -7,7 +7,7 @@
 	Can't be bothered to answer it.. Already deleted it by accident..
 */
 disableSerialization;
-private["_control","_index","_className","_dataArr","_vehicleColor","_vehicleInfo","_trunkSpace","_sellPrice","_retrievePrice"];
+private["_control","_index","_className","_dataArr","_vehicleColor","_vehicleInfo","_trunkSpace","_sellPrice","_retrievePrice","_hasInsurance","_insurance"];
 _control = _this select 0;
 _index = _this select 1;
 
@@ -15,6 +15,7 @@ _index = _this select 1;
 _dataArr = _control lbData _index; _dataArr = call compile format["%1",_dataArr];
 _className = _dataArr select 0;
 _vehicleColor = [_className,_dataArr select 1] call life_fnc_vehicleColorStr;
+_hasInsurance = (parseNumber _dataArr select 2) - 1;
 _vehicleInfo = [_className] call life_fnc_fetchVehInfo;
 _trunkSpace = [_className] call life_fnc_vehicleWeightCfg;
 
@@ -26,6 +27,13 @@ if(playerSide == west) then {
 	_retrievePrice = 1000
 };
 
+if (_hasInsurance) then {
+  _insurance = "<t color='#00FF00'>Assuré</t>";
+}
+else {
+  _insurance = "<t color='#FF0000'>Non assuré</t>";
+};
+
 (getControl(2800,2803)) ctrlSetStructuredText parseText format[
 	(localize "STR_Shop_Veh_UI_RetrievalP")+ " <t color='#8cff9b'>%1€</t><br/>
 	" +(localize "STR_Shop_Veh_UI_SellP")+ " <t color='#8cff9b'>%2€</t><br/>
@@ -34,7 +42,8 @@ if(playerSide == west) then {
 	" +(localize "STR_Shop_Veh_UI_HPower")+ " %4<br/>
 	" +(localize "STR_Shop_Veh_UI_PSeats")+ " %5<br/>
 	" +(localize "STR_Shop_Veh_UI_Trunk")+ " %6<br/>
-	" +(localize "STR_Shop_Veh_UI_Fuel")+ " %7
+	" +(localize "STR_Shop_Veh_UI_Fuel")+ " %7<br/>
+	Assurance: %8
 	",
 [_retrievePrice] call life_fnc_numberText,
 [_sellPrice] call life_fnc_numberText,
@@ -43,7 +52,8 @@ _vehicleInfo select 11,
 _vehicleInfo select 10,
 if(_trunkSpace == -1) then {"None"} else {_trunkSpace},
 _vehicleInfo select 12,
-_vehicleColor
+_vehicleColor,
+_insurance
 ];
 
 ctrlShow [2803,true];

@@ -394,3 +394,32 @@ life_garage_sell =
 	["B_MRAP_01_F",10000]
 ];
 __CONST__(life_garage_sell,life_garage_sell);
+
+life_garage_insurance =
+[
+	["B_Quadbike_01_F",950],
+	["C_Hatchback_01_F",4500],
+	["C_Offroad_01_F", 6500],
+	["B_G_Offroad_01_F",3500],
+	["C_SUV_01_F",15000],
+	["C_Van_01_transport_F",25000],
+	["C_Hatchback_01_sport_F",7500],
+	["C_Van_01_fuel_F",3850],
+	["I_Heli_Transport_02_F",125000],
+	["C_Van_01_box_F",35000],
+	["I_Truck_02_transport_F",49800],
+	["I_Truck_02_covered_F",62000],
+	["B_Truck_01_transport_F",135000],
+	["B_Truck_01_box_F", 150000],
+	["O_MRAP_02_F",65000],
+	["B_Heli_Light_01_F",57000],
+	["O_Heli_Light_02_unarmed_F",72500],
+	["C_Rubberboat",950],
+	["C_Boat_Civil_01_F",6800],
+	["B_Boat_Transport_01_F",850],
+	["C_Boat_Civil_01_police_F",4950],
+	["B_Boat_Armed_01_minigun_F",21000],
+	["B_SDV_01_F",45000],
+	["B_MRAP_01_F",10000]
+];
+__CONST__(life_garage_insurance,life_garage_insurance);

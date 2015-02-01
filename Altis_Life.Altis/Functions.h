@@ -394,5 +394,6 @@ class Life_Client_Core
 		class gangDeposit {};
 		class callDialog {};
 		class sendChannel {};
+		class vehicleInsure {};
 	};
 };

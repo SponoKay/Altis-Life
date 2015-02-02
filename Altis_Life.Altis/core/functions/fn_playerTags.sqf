@@ -52,31 +52,33 @@ _units = _units - [player];
 		if(count _sPos > 1 && {_distance < 15}) then {
 			_text = switch (true) do {
 				case (_x in (units grpPlayer) && playerSide == civilian): {format["<t color='#00FF00'>%1</t>",(_x getVariable ["realname",name _x])];};
-				case (!isNil {(_x getVariable "rank")}): {format["<img image='%1' size='1'></img> %2<br/><t size='0.8' color='#0266C8'>%3</t>",switch ((_x getVariable "rank")) do {
-					case 2: {"textures\grades\police\Gardien de la Paix.jpg"};
-					case 3: {"textures\grades\police\Brigadier.jpg"};
-					case 4: {"textures\grades\police\Brigadier Chef.jpg"};
-					case 5: {"textures\grades\police\Major.jpg"};
-					case 6: {"textures\grades\police\Lieutenant.jpg"};
-					case 7: {"textures\grades\police\Capitaine.jpg"};
-					case 8: {"textures\grades\police\Commandant.jpg"};
-					case 9: {"textures\grades\police\Colonel.jpg"};
-					case 10: {"textures\grades\police\Général.jpg"};
-					default {"textures\grades\police\Recrue.jpg"};
-					},_x getVariable ["realname",name _x],switch ((_x getVariable "rank")) do {
-					case 2: {"Gardien de la Paix"};
-					case 3: {"Brigadier"};
-					case 4: {"Brigadier Chef"};
-					case 5: {"Major"};
-					case 6: {"Lieutenant"};
-					case 7: {"Capitaine"};
-					case 8: {"Commandant"};
-					case 9: {"Colonel"};
-					case 10: {"Général"};
-					default {"Recrue"};
+				case (!isNil {(_x getVariable "rank")}): {format["<img image='%1' size='1'></img> %2<br/><t size='0.8' color='#0266C8'>%3</t>",
+					switch ((_x getVariable "rank")) do {
+						case 2: {"textures\grades\police\Gardien de la Paix.jpg"};
+						case 3: {"textures\grades\police\Brigadier.jpg"};
+						case 4: {"textures\grades\police\Brigadier Chef.jpg"};
+						case 5: {"textures\grades\police\Major.jpg"};
+						case 6: {"textures\grades\police\Lieutenant.jpg"};
+						case 7: {"textures\grades\police\Capitaine.jpg"};
+						case 8: {"textures\grades\police\Commandant.jpg"};
+						case 9: {"textures\grades\police\Colonel.jpg"};
+						case 10: {"textures\grades\police\General.jpg"};
+						default {"textures\grades\police\Recrue.jpg"};
+					},_x getVariable ["realname",name _x],
+					switch ((_x getVariable "rank")) do {
+						case 2: {"Gardien de la Paix"};
+						case 3: {"Brigadier"};
+						case 4: {"Brigadier Chef"};
+						case 5: {"Major"};
+						case 6: {"Lieutenant"};
+						case 7: {"Capitaine"};
+						case 8: {"Commandant"};
+						case 9: {"Colonel"};
+						case 10: {"Général"};
+						default {"Recrue"};
 					}]};
 				case (_x getVariable "medecin"): {format["<t color='#02A001'><img image='\a3\ui_f\data\map\MapControl\hospital_ca.paa' size='1.5'></img></t> %1<br/><t size='0.8' color='#99FF99'>Médecin</t>",_x getVariable ["realname",name _x]]};
-				case (_x getVariable "mercenaire"): {format["<t color='#A00102'><img image='\a3\ui_f\data\gui\cfg\CommunicationMenu\defend_ca.paa' size='1.5'></img></t> %1<br/><t size='0.8' color='#99FF99'>Mercenaire</t>",_x getVariable ["realname",name _x]]};
+				case (_x getVariable "mercenaire"): {format["<t color='#FF3333'><img image='\a3\ui_f\data\gui\cfg\CommunicationMenu\defend_ca.paa' size='1.5'></img></t> %1<br/><t size='0.8' color='#99FF99'>Mercenaire</t>",_x getVariable ["realname",name _x]]};
 				default {
 					if(!isNil {(group _x) getVariable "gang_name"}) then {
 						format["%1<br/><t size='0.8' color='#B6B6B6'>%2</t>",_x getVariable ["realname",name _x],(group _x) getVariable ["gang_name",""]];

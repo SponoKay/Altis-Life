@@ -12,7 +12,7 @@ if(lbCurSel 2802 == -1) exitWith {hint localize "STR_Global_NoSelection"};
 _dataArr = lbData[2802,(lbCurSel 2802)];
 _dataArr = call compile format["%1",_dataArr];
 _vehicle = _dataArr select 0;
-_hasInsurance = parseNumber (_dataArr select 2) - 1;
+_hasInsurance =  (_dataArr select 2) - 1;
 _vid = lbValue[2802,(lbCurSel 2802)];
 _pid = getPlayerUID player;
 _unit = player;

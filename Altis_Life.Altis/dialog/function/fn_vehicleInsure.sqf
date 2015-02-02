@@ -21,17 +21,9 @@ if(isNil "_vehicle") exitWith {hint localize "STR_Garage_Selection_Error"};
 
 if(_hasInsurance > 0) exitWith {hint "Ce véhicule est déjà assuré!"};
 
-if (life_action_inUse) exitWith {};
-
-life_action_inUse = true; 
-
 _price = [_vehicle,__GETC__(life_garage_insurance)] call TON_fnc_index;
 if(_price == -1) then {_price = 1000;} else {_price = (__GETC__(life_garage_insurance) select _price) select 1;};
 
 [[_vid,_pid,_price,player,life_garage_type],"TON_fnc_vehicleInsure",false,false] spawn life_fnc_MP;
-
-hint "Véhicule assuré avec succès"
-
-life_action_inUse = false;
 
 closeDialog 0;

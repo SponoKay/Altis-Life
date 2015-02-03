@@ -37,22 +37,22 @@ else {
 (getControl(2800,2803)) ctrlSetStructuredText parseText format[
 	(localize "STR_Shop_Veh_UI_RetrievalP")+ " <t color='#8cff9b'>%1€</t><br/>
 	" +(localize "STR_Shop_Veh_UI_SellP")+ " <t color='#8cff9b'>%2€</t><br/>
-	" +(localize "STR_Shop_Veh_UI_Color")+ " %8<br/>
-	" +(localize "STR_Shop_Veh_UI_MaxSpeed")+ " %3 km/h<br/>
-	" +(localize "STR_Shop_Veh_UI_HPower")+ " %4<br/>
-	" +(localize "STR_Shop_Veh_UI_PSeats")+ " %5<br/>
-	" +(localize "STR_Shop_Veh_UI_Trunk")+ " %6<br/>
-	" +(localize "STR_Shop_Veh_UI_Fuel")+ " %7<br/>
-	Assurance: %8
+	" +(localize "STR_Shop_Veh_UI_Color")+ " %3<br/>
+	" +(localize "STR_Shop_Veh_UI_MaxSpeed")+ " %4 km/h<br/>
+	" +(localize "STR_Shop_Veh_UI_HPower")+ " %5<br/>
+	" +(localize "STR_Shop_Veh_UI_PSeats")+ " %6<br/>
+	" +(localize "STR_Shop_Veh_UI_Trunk")+ " %7<br/>
+	" +(localize "STR_Shop_Veh_UI_Fuel")+ " %8<br/>
+	Assurance: %9
 	",
 [_retrievePrice] call life_fnc_numberText,
 [_sellPrice] call life_fnc_numberText,
+_vehicleColor,
 _vehicleInfo select 8,
 _vehicleInfo select 11,
 _vehicleInfo select 10,
 if(_trunkSpace == -1) then {"None"} else {_trunkSpace},
 _vehicleInfo select 12,
-_vehicleColor,
 _insurance
 ];
 

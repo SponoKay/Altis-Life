@@ -77,7 +77,7 @@ switch (_filter) do
 			_ret set[count _ret,["G_Lowprofile",nil,75]];
 			_ret set[count _ret,["G_Combat",nil,75]];
 
-		if(__GETC__(life_coplevel) > 6) then
+		if(__GETC__(life_coplevel) > 5) then
 		{
 		_ret set[count _ret,["G_Balaclava_blk",nil,75]];
 		};

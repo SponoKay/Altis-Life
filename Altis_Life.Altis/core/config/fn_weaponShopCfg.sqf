@@ -249,7 +249,7 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != west): {"Interdit aux civils !"};
-				case (__GETC__(life_coplevel) < 3)  :
+				case (__GETC__(life_coplevel) < 4)  :
 				{
 					["Divers",
 						[

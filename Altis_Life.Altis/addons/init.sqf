@@ -10,7 +10,7 @@
 
 [] execVM "addons\module_cleanup\init.sqf";
 
-call compileFinal preprocessFileLineNumbers "addons\FAR_revive\FAR_revive_init.sqf";
+[] execVM "addons\FAR_revive\FAR_revive_init.sqf";
 
 [
 	60, // seconds to delete dead bodies (0 means don't delete) 

@@ -47,6 +47,8 @@ switch (_className) do
 	case "I_Heli_Transport_02_F": {125}; // Mohawk
 	case "I_Heli_light_03_unarmed_F": {40}; //Hellcat
     case "B_Heli_Transport_01_F": {40}; //Ghost Hawk
+	case "B_Heli_Attack_01_F": {60};// Blackfoot
+	case "O_Heli_Attack_02_F": {60};// Kajman
 
 	
 	case "C_Rubberboat": {90}; // Petit bateau

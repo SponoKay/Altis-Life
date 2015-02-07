@@ -255,13 +255,13 @@ switch (_vehicle) do
 		};
 	};
 	
-	case "O_Heli_Attack_02_black_F":
+	/*case "O_Heli_Attack_02_black_F":
 	{
 		switch (_index) do
 		{
 			case 0: {_color = "Black"};
 		};
-	};
+	};*/
 	
 	case "I_Heli_Transport_02_F":
 	{

@@ -2054,7 +2054,7 @@ class Mission
 					side="CIV";
 					vehicle="C_scientist_F";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction[""Medical Assistance"",life_fnc_healHospital]; this setObjectTexture[0,""textures\skins\civil\B_TacticalPack_mcamo Secouriste.jpg""];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Assistance médicale"",life_fnc_healHospital]; this setObjectTexture[0,""textures\skins\civil\B_TacticalPack_mcamo Secouriste.jpg""];";
 				};
 				class Item17
 				{

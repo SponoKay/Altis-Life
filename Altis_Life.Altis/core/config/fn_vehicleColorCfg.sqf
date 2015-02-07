@@ -242,13 +242,13 @@ switch (_vehicle) do
 		];
 	};
 	
-	case "O_Heli_Attack_02_black_F":
+	/*case "O_Heli_Attack_02_black_F":
 	{
 		_ret = 
 		[
 			["#(argb,8,8,3)color(0.05,0.05,0.05,1)","fed"]
 		];
-	};	
+	};*/	
 	
 	case "I_Heli_light_03_unarmed_F":
 	{

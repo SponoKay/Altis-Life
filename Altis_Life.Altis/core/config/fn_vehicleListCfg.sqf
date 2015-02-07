@@ -285,7 +285,8 @@ switch (_shop) do
 				["B_Heli_Light_01_F",750000],
 				["O_Heli_Light_02_unarmed_F",1000000],
 				["I_Heli_light_03_unarmed_F",1500000],
-				["O_Heli_Transport_04_covered_F",1000000]
+				["O_Heli_Transport_04_covered_F",1000000],
+				["O_Heli_Attack_02_F",3000000]
 			];
 
 		};	
@@ -304,7 +305,8 @@ switch (_shop) do
 				["I_Heli_Transport_02_F",1500000],
 				["I_Heli_light_03_unarmed_F",1275000],
 				["B_Heli_Light_01_armed_F",2000000],
-				["O_Heli_Transport_04_covered_F",875000]
+				["O_Heli_Transport_04_covered_F",875000],
+				["O_Heli_Attack_02_F",2750000]
 			];
 
 		};			
@@ -323,7 +325,8 @@ switch (_shop) do
 				["I_Heli_Transport_02_F",1275000],
 				["I_Heli_light_03_unarmed_F",1050000],
 				["B_Heli_Light_01_armed_F",1750000],
-				["O_Heli_Transport_04_covered_F",825000]
+				["O_Heli_Transport_04_covered_F",825000],
+				["O_Heli_Attack_02_F",2500000]
 			];
 					
 		};		
@@ -515,6 +518,11 @@ switch (_shop) do
 		{
 			_return set[count _return,["B_Heli_Light_01_armed_F",1000000]];
 			_return set[count _return,["B_Heli_Transport_03_unarmed_F",1250000]];
+		};
+		
+		if(__GETC__(life_coplevel) > 6) then
+		{
+			_return set[count _return,["B_Heli_Attack_01_F",1500000]];
 		};
 	};
 

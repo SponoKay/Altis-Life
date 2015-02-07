@@ -79,7 +79,7 @@ switch (_filter) do
 
 		if(__GETC__(life_coplevel) > 5) then
 		{
-		_ret set[count _ret,["G_Balaclava_blk",nil,75]];
+			_ret set[count _ret,["G_Balaclava_blk",nil,75]];
 		};
 	};
 	

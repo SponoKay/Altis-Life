@@ -10,7 +10,7 @@ _unit = _this select 0;
 _container = _this select 1;
 
 _isPack = getNumber(configFile >> "CfgVehicles" >> (typeOf _container) >> "isBackpack");
-if(_isPack == 1 && side _unit != west) then {
+if(_isPack == 1 && playerSide != west) then {
 	hint localize "STR_MISC_Backpack";
 	[] spawn {
 		waitUntil {!isNull (findDisplay 602)};

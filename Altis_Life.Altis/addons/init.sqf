@@ -10,6 +10,10 @@
 
 [] execVM "addons\module_cleanup\init.sqf";
 
+[] execVM "addons\keyrestore.sqf"; //Redonne les clés des vehicules apres une déco.
+
+[] execVM "addons\teargas.sqf"; //Gaz Lacrimo
+
 call compileFinal preprocessFileLineNumbers "addons\FAR_revive\FAR_revive_init.sqf";
 
 [

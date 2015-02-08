@@ -110,6 +110,7 @@ class Life_Client_Core
 		class takeCagoule {};
 		class takeMap {};
 		class takePhone {};
+		class takeUniform {};
 	};
 
 	class Housing

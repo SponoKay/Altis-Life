@@ -22,6 +22,9 @@ switch (playerSide) do
 		life_actions = life_actions + [player addAction["Reprendre la barrière",life_fnc_pickupItem,"",0,false,false,"",
 		' !isNull cursorTarget && (typeOf cursorTarget) == "Land_Suitcase_F" && ((cursorTarget getVariable "item") select 0) == "barriere" && (player distance cursorTarget) < 3 ']];
 		*/
+		
+		//Insigne de police
+		life_actions = life_actions + [player addAction["<t color='#00FF00'>Montrer insigne de police</t>",life_fnc_copShowLicense,"",1,false,true,"",' playerSide == west && !isNull cursorTarget && cursorTarget isKindOf "Man" && isPlayer cursorTarget ']];
 	};
 	case civilian:
 	{

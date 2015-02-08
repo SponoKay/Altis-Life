@@ -12,7 +12,7 @@ _barriere setDir 90;
 _barriere setVariable["item",true];
 _barriere setVariable["idleTime",time,true];
 
-life_action_barriere = life_actions + [player addAction["Placer la barrière",{if(!isNull life_barriere) then {detach life_barriere; life_barriere = ObjNull;};},"",999,false,false,"",'!isNull life_barriere']];
+life_action_barriere = player addAction["Placer la barrière",{if(!isNull life_barriere) then {detach life_barriere; life_barriere = ObjNull;};},"",999,false,false,"",'!isNull life_barriere'];
 
 life_barriere = _barriere;
 waitUntil {isNull life_barriere};

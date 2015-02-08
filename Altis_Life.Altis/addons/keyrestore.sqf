@@ -4,7 +4,7 @@ _allVeh = allMissionObjects "Car" + allMissionObjects "Air" + allMissionObjects 
 _name = name player;
 {
 	_owners = _x getVariable ["vehicle_info_owners",[]];
-	_index = [_name,_owners] call fnc_index;
+	_index = [_name,_owners] call TON_fnc_index;
 	
 	if(!(_index == -1)) then {
 		life_vehicles pushBack _x;

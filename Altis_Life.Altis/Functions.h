@@ -307,6 +307,8 @@ class Life_Client_Core
 		class doorAnimate {};
 		class fedCamDisplay {};
 		class copLoadout {};
+		class copShowLicense {};
+        class copLicenseShown {};
 	};
 
 	class Gangs

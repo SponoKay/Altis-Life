@@ -14,5 +14,7 @@ if(([true,"barriere",1] call life_fnc_handleInv)) then
 {
 	titleText["Vous avez ramassé votre barrière.","PLAIN"];
 	playSound "bag";
+	player removeAction life_action_barrierePackup;
+	life_action_barrierePackup = nil;
 	deleteVehicle _barriere;
 };
